@@ -37,10 +37,10 @@ class AnimalsViewController: UIViewController {
 
     }
  
-    var picsArray:[String] = ["dog.png","rabbit.png","cat.png","girraffe.png","bear.png","cow.png","frog.png","zebra.png","monkey.png","koala.png","elephant.png","pig.png","sheep.png","duck.png","lion.png","snake.png","hippopotamus.png","crocodile.png","cangroo.png","chimp.png","chicken.png","goat.png","horse.png"]
-    var namesArray:[String] = ["köpek","tavşan","kedi","zürafa","ayı","inek","kurbağa","zebra","maymun","koala","fil","domuz","koyun","ördek","aslan","yılan","su aygırı","timsah","kanguru","şempanze","tavuk","keçi","at"]
+    var picsArray:[String] = ["dog.png","rabbit.png","cat.png","girraffe.png","bear.png","cow.png","frog.png","zebra.png","monkey.png","koala.png","elephant.png","pig.png","sheep.png","duck.png","lion.png","snake.png","hippopotamus.png","crocodile.png","cangroo.png","chimp.png","chicken.png","goat.png","horse.png","bee.png","butterfly.png","fish.png"]
+    var namesArray:[String] = ["köpek","tavşan","kedi","zürafa","ayı","inek","kurbağa","zebra","maymun","koala","fil","domuz","koyun","ördek","aslan","yılan","su aygırı","timsah","kanguru","şempanze","tavuk","keçi","at","arı","kelebek","balık"]
     
-    var randomNumber = arc4random_uniform(22)
+    var randomNumber = arc4random_uniform(25)
 
   
     override func didReceiveMemoryWarning() {
@@ -58,7 +58,7 @@ class AnimalsViewController: UIViewController {
         speechSynthesizer.speakUtterance(speechUtterance)
     
         if temp == Int(randomNumber) {
-            randomNumber = arc4random_uniform(22)
+            randomNumber = arc4random_uniform(25)
             temp = Int(randomNumber)
 
 
@@ -66,7 +66,7 @@ class AnimalsViewController: UIViewController {
         
         else {
             temp = Int(randomNumber)
-            randomNumber = arc4random_uniform(22)
+            randomNumber = arc4random_uniform(25)
 
         }
         
