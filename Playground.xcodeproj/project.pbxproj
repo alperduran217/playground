@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6402EB2D1CAEC41E00C54CDF /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */; };
-		6402EB301CAEC5CA00C54CDF /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB2F1CAEC5CA00C54CDF /* dog.png */; };
 		6402EB351CAED24100C54CDF /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB311CAED24100C54CDF /* rabbit.png */; };
 		6402EB381CAED24100C54CDF /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB341CAED24100C54CDF /* bear.png */; };
-		6402EB431CAED8D200C54CDF /* cow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB391CAED8D200C54CDF /* cow.png */; };
 		6402EB441CAED8D200C54CDF /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB3A1CAED8D200C54CDF /* frog.png */; };
-		6402EB4A1CAED8D200C54CDF /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB401CAED8D200C54CDF /* pig.png */; };
-		6402EB4B1CAED8D200C54CDF /* sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB411CAED8D200C54CDF /* sheep.png */; };
-		6402EB4C1CAED8D200C54CDF /* duck.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB421CAED8D200C54CDF /* duck.png */; };
 		6402EB4E1CAED92F00C54CDF /* koala.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB4D1CAED92F00C54CDF /* koala.png */; };
 		6402EB5A1CAEE46A00C54CDF /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB4F1CAEE46A00C54CDF /* monkey.png */; };
 		6402EB5B1CAEE46A00C54CDF /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB501CAEE46A00C54CDF /* lion.png */; };
@@ -28,6 +23,14 @@
 		6402EB621CAEE46A00C54CDF /* cangroo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB571CAEE46A00C54CDF /* cangroo.png */; };
 		6402EB631CAEE46A00C54CDF /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB581CAEE46A00C54CDF /* cat.png */; };
 		6402EB641CAEE46A00C54CDF /* chimp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB591CAEE46A00C54CDF /* chimp.png */; };
+		6402EB6D1CAEE64300C54CDF /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB651CAEE64300C54CDF /* chicken.png */; };
+		6402EB6E1CAEE64300C54CDF /* sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB661CAEE64300C54CDF /* sheep.png */; };
+		6402EB6F1CAEE64300C54CDF /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB671CAEE64300C54CDF /* pig.png */; };
+		6402EB701CAEE64300C54CDF /* duck.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB681CAEE64300C54CDF /* duck.png */; };
+		6402EB711CAEE64300C54CDF /* cow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB691CAEE64300C54CDF /* cow.png */; };
+		6402EB721CAEE64300C54CDF /* goat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB6A1CAEE64300C54CDF /* goat.png */; };
+		6402EB731CAEE64300C54CDF /* horse.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB6B1CAEE64300C54CDF /* horse.png */; };
+		6402EB741CAEE64300C54CDF /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB6C1CAEE64300C54CDF /* dog.png */; };
 		649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649191E11CAEAE91006A40AB /* AppDelegate.swift */; };
 		649191E71CAEAE91006A40AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649191E51CAEAE91006A40AB /* Main.storyboard */; };
 		649191E91CAEAE91006A40AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649191E81CAEAE91006A40AB /* Assets.xcassets */; };
@@ -55,14 +58,9 @@
 
 /* Begin PBXFileReference section */
 		6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
-		6402EB2F1CAEC5CA00C54CDF /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 		6402EB311CAED24100C54CDF /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
 		6402EB341CAED24100C54CDF /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
-		6402EB391CAED8D200C54CDF /* cow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cow.png; sourceTree = "<group>"; };
 		6402EB3A1CAED8D200C54CDF /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
-		6402EB401CAED8D200C54CDF /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
-		6402EB411CAED8D200C54CDF /* sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep.png; sourceTree = "<group>"; };
-		6402EB421CAED8D200C54CDF /* duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duck.png; sourceTree = "<group>"; };
 		6402EB4D1CAED92F00C54CDF /* koala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koala.png; sourceTree = "<group>"; };
 		6402EB4F1CAEE46A00C54CDF /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey.png; sourceTree = "<group>"; };
 		6402EB501CAEE46A00C54CDF /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
@@ -75,6 +73,14 @@
 		6402EB571CAEE46A00C54CDF /* cangroo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cangroo.png; sourceTree = "<group>"; };
 		6402EB581CAEE46A00C54CDF /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		6402EB591CAEE46A00C54CDF /* chimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chimp.png; sourceTree = "<group>"; };
+		6402EB651CAEE64300C54CDF /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.png; sourceTree = "<group>"; };
+		6402EB661CAEE64300C54CDF /* sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep.png; sourceTree = "<group>"; };
+		6402EB671CAEE64300C54CDF /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		6402EB681CAEE64300C54CDF /* duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duck.png; sourceTree = "<group>"; };
+		6402EB691CAEE64300C54CDF /* cow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cow.png; sourceTree = "<group>"; };
+		6402EB6A1CAEE64300C54CDF /* goat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goat.png; sourceTree = "<group>"; };
+		6402EB6B1CAEE64300C54CDF /* horse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse.png; sourceTree = "<group>"; };
+		6402EB6C1CAEE64300C54CDF /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 		649191DE1CAEAE91006A40AB /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649191E11CAEAE91006A40AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649191E61CAEAE91006A40AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +123,14 @@
 		6402EB2E1CAEC5BF00C54CDF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6402EB651CAEE64300C54CDF /* chicken.png */,
+				6402EB661CAEE64300C54CDF /* sheep.png */,
+				6402EB671CAEE64300C54CDF /* pig.png */,
+				6402EB681CAEE64300C54CDF /* duck.png */,
+				6402EB691CAEE64300C54CDF /* cow.png */,
+				6402EB6A1CAEE64300C54CDF /* goat.png */,
+				6402EB6B1CAEE64300C54CDF /* horse.png */,
+				6402EB6C1CAEE64300C54CDF /* dog.png */,
 				6402EB4F1CAEE46A00C54CDF /* monkey.png */,
 				6402EB501CAEE46A00C54CDF /* lion.png */,
 				6402EB511CAEE46A00C54CDF /* snake.png */,
@@ -130,13 +144,8 @@
 				6402EB591CAEE46A00C54CDF /* chimp.png */,
 				6402EB311CAED24100C54CDF /* rabbit.png */,
 				6402EB341CAED24100C54CDF /* bear.png */,
-				6402EB391CAED8D200C54CDF /* cow.png */,
 				6402EB3A1CAED8D200C54CDF /* frog.png */,
 				6402EB4D1CAED92F00C54CDF /* koala.png */,
-				6402EB401CAED8D200C54CDF /* pig.png */,
-				6402EB411CAED8D200C54CDF /* sheep.png */,
-				6402EB421CAED8D200C54CDF /* duck.png */,
-				6402EB2F1CAEC5CA00C54CDF /* dog.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -303,11 +312,12 @@
 				6402EB631CAEE46A00C54CDF /* cat.png in Resources */,
 				6402EB601CAEE46A00C54CDF /* hippopotamus.png in Resources */,
 				6402EB5A1CAEE46A00C54CDF /* monkey.png in Resources */,
-				6402EB4A1CAED8D200C54CDF /* pig.png in Resources */,
-				6402EB4C1CAED8D200C54CDF /* duck.png in Resources */,
+				6402EB6F1CAEE64300C54CDF /* pig.png in Resources */,
+				6402EB6D1CAEE64300C54CDF /* chicken.png in Resources */,
 				6402EB5F1CAEE46A00C54CDF /* elephant.png in Resources */,
 				649191EC1CAEAE91006A40AB /* LaunchScreen.storyboard in Resources */,
-				6402EB431CAED8D200C54CDF /* cow.png in Resources */,
+				6402EB741CAEE64300C54CDF /* dog.png in Resources */,
+				6402EB701CAEE64300C54CDF /* duck.png in Resources */,
 				6402EB4E1CAED92F00C54CDF /* koala.png in Resources */,
 				6402EB5C1CAEE46A00C54CDF /* snake.png in Resources */,
 				6402EB5B1CAEE46A00C54CDF /* lion.png in Resources */,
@@ -315,12 +325,14 @@
 				6402EB5E1CAEE46A00C54CDF /* giraffe.png in Resources */,
 				6402EB621CAEE46A00C54CDF /* cangroo.png in Resources */,
 				6402EB641CAEE46A00C54CDF /* chimp.png in Resources */,
-				6402EB301CAEC5CA00C54CDF /* dog.png in Resources */,
+				6402EB6E1CAEE64300C54CDF /* sheep.png in Resources */,
 				6402EB381CAED24100C54CDF /* bear.png in Resources */,
-				6402EB4B1CAED8D200C54CDF /* sheep.png in Resources */,
 				6402EB351CAED24100C54CDF /* rabbit.png in Resources */,
 				6402EB5D1CAEE46A00C54CDF /* zebra.png in Resources */,
+				6402EB721CAEE64300C54CDF /* goat.png in Resources */,
+				6402EB711CAEE64300C54CDF /* cow.png in Resources */,
 				649191E71CAEAE91006A40AB /* Main.storyboard in Resources */,
+				6402EB731CAEE64300C54CDF /* horse.png in Resources */,
 				6402EB611CAEE46A00C54CDF /* crocodile.png in Resources */,
 				6402EB441CAED8D200C54CDF /* frog.png in Resources */,
 			);
