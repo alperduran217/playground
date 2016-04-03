@@ -37,7 +37,6 @@
 		64590C221CB11E45005CA4A4 /* United Kingdom.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 64590C211CB11E45005CA4A4 /* United Kingdom.GIF */; };
 		64590C241CB11E4E005CA4A4 /* Turkey.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 64590C231CB11E4E005CA4A4 /* Turkey.GIF */; };
 		64590C261CB11F93005CA4A4 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C251CB11F93005CA4A4 /* LanguageViewController.swift */; };
-		64590C281CB11FCC005CA4A4 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C271CB11FCC005CA4A4 /* EpisodesViewController.swift */; };
 		64590C2B1CB12098005CA4A4 /* Animals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64590C2A1CB12098005CA4A4 /* Animals.jpg */; };
 		64590C2E1CB125D7005CA4A4 /* Shapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C2D1CB125D7005CA4A4 /* Shapes.png */; };
 		64590C3B1CB1268E005CA4A4 /* parallelogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C2F1CB1268E005CA4A4 /* parallelogram.png */; };
@@ -53,6 +52,10 @@
 		64590C451CB1268E005CA4A4 /* pentagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C391CB1268E005CA4A4 /* pentagon.png */; };
 		64590C461CB1268E005CA4A4 /* hexagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C3A1CB1268E005CA4A4 /* hexagon.png */; };
 		64590C481CB1274C005CA4A4 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C471CB1274C005CA4A4 /* ShapesViewController.swift */; };
+		64590C4A1CB12CC4005CA4A4 /* BolumlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C491CB12CC4005CA4A4 /* BolumlerViewController.swift */; };
+		64590C4C1CB13165005CA4A4 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */; };
+		64590C4E1CB131CF005CA4A4 /* AnimalsENViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */; };
+		64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */; };
 		649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649191E11CAEAE91006A40AB /* AppDelegate.swift */; };
 		649191E71CAEAE91006A40AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649191E51CAEAE91006A40AB /* Main.storyboard */; };
 		649191E91CAEAE91006A40AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649191E81CAEAE91006A40AB /* Assets.xcassets */; };
@@ -109,7 +112,6 @@
 		64590C211CB11E45005CA4A4 /* United Kingdom.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "United Kingdom.GIF"; sourceTree = "<group>"; };
 		64590C231CB11E4E005CA4A4 /* Turkey.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Turkey.GIF; sourceTree = "<group>"; };
 		64590C251CB11F93005CA4A4 /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
-		64590C271CB11FCC005CA4A4 /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		64590C2A1CB12098005CA4A4 /* Animals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Animals.jpg; sourceTree = "<group>"; };
 		64590C2D1CB125D7005CA4A4 /* Shapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shapes.png; sourceTree = "<group>"; };
 		64590C2F1CB1268E005CA4A4 /* parallelogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallelogram.png; sourceTree = "<group>"; };
@@ -125,6 +127,10 @@
 		64590C391CB1268E005CA4A4 /* pentagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pentagon.png; sourceTree = "<group>"; };
 		64590C3A1CB1268E005CA4A4 /* hexagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hexagon.png; sourceTree = "<group>"; };
 		64590C471CB1274C005CA4A4 /* ShapesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
+		64590C491CB12CC4005CA4A4 /* BolumlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BolumlerViewController.swift; sourceTree = "<group>"; };
+		64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsENViewController.swift; sourceTree = "<group>"; };
+		64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesENViewController.swift; sourceTree = "<group>"; };
 		649191DE1CAEAE91006A40AB /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649191E11CAEAE91006A40AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649191E61CAEAE91006A40AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -271,8 +277,11 @@
 				6402EB2E1CAEC5BF00C54CDF /* Images */,
 				649191E11CAEAE91006A40AB /* AppDelegate.swift */,
 				649191E51CAEAE91006A40AB /* Main.storyboard */,
+				64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */,
+				64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */,
+				64590C491CB12CC4005CA4A4 /* BolumlerViewController.swift */,
+				64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */,
 				64590C471CB1274C005CA4A4 /* ShapesViewController.swift */,
-				64590C271CB11FCC005CA4A4 /* EpisodesViewController.swift */,
 				64590C251CB11F93005CA4A4 /* LanguageViewController.swift */,
 				6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */,
 				649191E81CAEAE91006A40AB /* Assets.xcassets */,
@@ -476,10 +485,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64590C4C1CB13165005CA4A4 /* EpisodesViewController.swift in Sources */,
+				64590C4A1CB12CC4005CA4A4 /* BolumlerViewController.swift in Sources */,
+				64590C4E1CB131CF005CA4A4 /* AnimalsENViewController.swift in Sources */,
 				64590C481CB1274C005CA4A4 /* ShapesViewController.swift in Sources */,
 				649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */,
+				64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */,
 				6402EB2D1CAEC41E00C54CDF /* AnimalsViewController.swift in Sources */,
-				64590C281CB11FCC005CA4A4 /* EpisodesViewController.swift in Sources */,
 				64590C261CB11F93005CA4A4 /* LanguageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

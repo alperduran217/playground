@@ -1,5 +1,5 @@
 //
-//  ShapesViewController.swift
+//  ShapesENViewController.swift
 //  Playground
 //
 //  Created by Mehmet Alper Duran on 03/04/16.
@@ -10,8 +10,9 @@ import UIKit
 import QuartzCore
 import AVFoundation
 
-class ShapesViewController: UIViewController {
+class ShapesENViewController: UIViewController {
 
+    
     let button = UIButton()
     
     override func viewDidLoad() {
@@ -36,7 +37,7 @@ class ShapesViewController: UIViewController {
     }
     
     var picsArray:[String] = ["parallelogram.png","star.png","rectangle.png","heart.png","square.png","triangle.png","oval.png","circle.png","trapezoid.png","deltoid.png","pentagon.png","hexagon.png"]
-    var namesArray:[String] = ["Paralel kenar", "yıldız", "dikdörtgen", "kalp", "kare", "üçgen", "oval", "daire", "yamuk", "deltoid", "beşgen", "altıgen"]
+    var namesArray:[String] = ["parallelogram", "star", "rectangle", "heart", "square", "triangle", "oval", "circle", "trapezoid", "deltoid", "pentagon", "hexagon"]
     
     var randomNumber = arc4random_uniform(12)
     
@@ -52,7 +53,8 @@ class ShapesViewController: UIViewController {
     {
         
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
-        
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+
         speechSynthesizer.speakUtterance(speechUtterance)
         
         randomNumber = arc4random_uniform(12)
@@ -68,5 +70,4 @@ class ShapesViewController: UIViewController {
         
         
     }
-
 }

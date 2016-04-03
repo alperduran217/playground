@@ -1,5 +1,5 @@
 //
-//  EpisodesViewController.swift
+//  BolumlerViewController.swift
 //  Playground
 //
 //  Created by Mehmet Alper Duran on 03/04/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EpisodesViewController: UIViewController, UIScrollViewDelegate {
+class BolumlerViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet weak var scrollView: UIScrollView!
-
+    
     func scrollViewDidEndDecelerating(scrollView: UIScrollView){
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
@@ -33,4 +33,4 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
         
         self.pageControl.currentPage = Int(currentPage)
     }
-}
+    }

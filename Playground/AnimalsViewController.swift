@@ -55,6 +55,7 @@ class AnimalsViewController: UIViewController {
         
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
         
+        
         speechSynthesizer.speakUtterance(speechUtterance)
     
             randomNumber = arc4random_uniform(25)
