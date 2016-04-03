@@ -34,6 +34,25 @@
 		6402EB781CAEE73600C54CDF /* bee.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB751CAEE73600C54CDF /* bee.png */; };
 		6402EB791CAEE73600C54CDF /* butterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB761CAEE73600C54CDF /* butterfly.png */; };
 		6402EB7A1CAEE73600C54CDF /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB771CAEE73600C54CDF /* fish.png */; };
+		64590C221CB11E45005CA4A4 /* United Kingdom.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 64590C211CB11E45005CA4A4 /* United Kingdom.GIF */; };
+		64590C241CB11E4E005CA4A4 /* Turkey.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 64590C231CB11E4E005CA4A4 /* Turkey.GIF */; };
+		64590C261CB11F93005CA4A4 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C251CB11F93005CA4A4 /* LanguageViewController.swift */; };
+		64590C281CB11FCC005CA4A4 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C271CB11FCC005CA4A4 /* EpisodesViewController.swift */; };
+		64590C2B1CB12098005CA4A4 /* Animals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64590C2A1CB12098005CA4A4 /* Animals.jpg */; };
+		64590C2E1CB125D7005CA4A4 /* Shapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C2D1CB125D7005CA4A4 /* Shapes.png */; };
+		64590C3B1CB1268E005CA4A4 /* parallelogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C2F1CB1268E005CA4A4 /* parallelogram.png */; };
+		64590C3C1CB1268E005CA4A4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C301CB1268E005CA4A4 /* star.png */; };
+		64590C3D1CB1268E005CA4A4 /* rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C311CB1268E005CA4A4 /* rectangle.png */; };
+		64590C3E1CB1268E005CA4A4 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C321CB1268E005CA4A4 /* heart.png */; };
+		64590C3F1CB1268E005CA4A4 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C331CB1268E005CA4A4 /* square.png */; };
+		64590C401CB1268E005CA4A4 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C341CB1268E005CA4A4 /* triangle.png */; };
+		64590C411CB1268E005CA4A4 /* oval.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C351CB1268E005CA4A4 /* oval.png */; };
+		64590C421CB1268E005CA4A4 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C361CB1268E005CA4A4 /* circle.png */; };
+		64590C431CB1268E005CA4A4 /* trapezoid.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C371CB1268E005CA4A4 /* trapezoid.png */; };
+		64590C441CB1268E005CA4A4 /* deltoid.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C381CB1268E005CA4A4 /* deltoid.png */; };
+		64590C451CB1268E005CA4A4 /* pentagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C391CB1268E005CA4A4 /* pentagon.png */; };
+		64590C461CB1268E005CA4A4 /* hexagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C3A1CB1268E005CA4A4 /* hexagon.png */; };
+		64590C481CB1274C005CA4A4 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C471CB1274C005CA4A4 /* ShapesViewController.swift */; };
 		649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649191E11CAEAE91006A40AB /* AppDelegate.swift */; };
 		649191E71CAEAE91006A40AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649191E51CAEAE91006A40AB /* Main.storyboard */; };
 		649191E91CAEAE91006A40AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649191E81CAEAE91006A40AB /* Assets.xcassets */; };
@@ -87,6 +106,25 @@
 		6402EB751CAEE73600C54CDF /* bee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee.png; sourceTree = "<group>"; };
 		6402EB761CAEE73600C54CDF /* butterfly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly.png; sourceTree = "<group>"; };
 		6402EB771CAEE73600C54CDF /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish.png; sourceTree = "<group>"; };
+		64590C211CB11E45005CA4A4 /* United Kingdom.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "United Kingdom.GIF"; sourceTree = "<group>"; };
+		64590C231CB11E4E005CA4A4 /* Turkey.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Turkey.GIF; sourceTree = "<group>"; };
+		64590C251CB11F93005CA4A4 /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		64590C271CB11FCC005CA4A4 /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		64590C2A1CB12098005CA4A4 /* Animals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Animals.jpg; sourceTree = "<group>"; };
+		64590C2D1CB125D7005CA4A4 /* Shapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shapes.png; sourceTree = "<group>"; };
+		64590C2F1CB1268E005CA4A4 /* parallelogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallelogram.png; sourceTree = "<group>"; };
+		64590C301CB1268E005CA4A4 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		64590C311CB1268E005CA4A4 /* rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.png; sourceTree = "<group>"; };
+		64590C321CB1268E005CA4A4 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		64590C331CB1268E005CA4A4 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		64590C341CB1268E005CA4A4 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		64590C351CB1268E005CA4A4 /* oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oval.png; sourceTree = "<group>"; };
+		64590C361CB1268E005CA4A4 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		64590C371CB1268E005CA4A4 /* trapezoid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trapezoid.png; sourceTree = "<group>"; };
+		64590C381CB1268E005CA4A4 /* deltoid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deltoid.png; sourceTree = "<group>"; };
+		64590C391CB1268E005CA4A4 /* pentagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pentagon.png; sourceTree = "<group>"; };
+		64590C3A1CB1268E005CA4A4 /* hexagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hexagon.png; sourceTree = "<group>"; };
+		64590C471CB1274C005CA4A4 /* ShapesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		649191DE1CAEAE91006A40AB /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649191E11CAEAE91006A40AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649191E61CAEAE91006A40AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +167,9 @@
 		6402EB2E1CAEC5BF00C54CDF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				64590C2C1CB12514005CA4A4 /* Shapes */,
+				64590C291CB12084005CA4A4 /* Episodes */,
+				64590C201CB11E3A005CA4A4 /* Flags */,
 				6402EB7B1CAEE78800C54CDF /* Animals */,
 			);
 			name = Images;
@@ -167,6 +208,43 @@
 			name = Animals;
 			sourceTree = "<group>";
 		};
+		64590C201CB11E3A005CA4A4 /* Flags */ = {
+			isa = PBXGroup;
+			children = (
+				64590C211CB11E45005CA4A4 /* United Kingdom.GIF */,
+				64590C231CB11E4E005CA4A4 /* Turkey.GIF */,
+			);
+			name = Flags;
+			sourceTree = "<group>";
+		};
+		64590C291CB12084005CA4A4 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				64590C2D1CB125D7005CA4A4 /* Shapes.png */,
+				64590C2A1CB12098005CA4A4 /* Animals.jpg */,
+			);
+			name = Episodes;
+			sourceTree = "<group>";
+		};
+		64590C2C1CB12514005CA4A4 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				64590C2F1CB1268E005CA4A4 /* parallelogram.png */,
+				64590C301CB1268E005CA4A4 /* star.png */,
+				64590C311CB1268E005CA4A4 /* rectangle.png */,
+				64590C321CB1268E005CA4A4 /* heart.png */,
+				64590C331CB1268E005CA4A4 /* square.png */,
+				64590C341CB1268E005CA4A4 /* triangle.png */,
+				64590C351CB1268E005CA4A4 /* oval.png */,
+				64590C361CB1268E005CA4A4 /* circle.png */,
+				64590C371CB1268E005CA4A4 /* trapezoid.png */,
+				64590C381CB1268E005CA4A4 /* deltoid.png */,
+				64590C391CB1268E005CA4A4 /* pentagon.png */,
+				64590C3A1CB1268E005CA4A4 /* hexagon.png */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
 		649191D51CAEAE91006A40AB = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +271,9 @@
 				6402EB2E1CAEC5BF00C54CDF /* Images */,
 				649191E11CAEAE91006A40AB /* AppDelegate.swift */,
 				649191E51CAEAE91006A40AB /* Main.storyboard */,
+				64590C471CB1274C005CA4A4 /* ShapesViewController.swift */,
+				64590C271CB11FCC005CA4A4 /* EpisodesViewController.swift */,
+				64590C251CB11F93005CA4A4 /* LanguageViewController.swift */,
 				6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */,
 				649191E81CAEAE91006A40AB /* Assets.xcassets */,
 				649191EA1CAEAE91006A40AB /* LaunchScreen.storyboard */,
@@ -326,18 +407,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64590C3E1CB1268E005CA4A4 /* heart.png in Resources */,
+				64590C401CB1268E005CA4A4 /* triangle.png in Resources */,
 				6402EB631CAEE46A00C54CDF /* cat.png in Resources */,
+				64590C3D1CB1268E005CA4A4 /* rectangle.png in Resources */,
 				6402EB7A1CAEE73600C54CDF /* fish.png in Resources */,
 				6402EB601CAEE46A00C54CDF /* hippopotamus.png in Resources */,
 				6402EB5A1CAEE46A00C54CDF /* monkey.png in Resources */,
+				64590C451CB1268E005CA4A4 /* pentagon.png in Resources */,
 				6402EB6F1CAEE64300C54CDF /* pig.png in Resources */,
 				6402EB6D1CAEE64300C54CDF /* chicken.png in Resources */,
 				6402EB5F1CAEE46A00C54CDF /* elephant.png in Resources */,
 				649191EC1CAEAE91006A40AB /* LaunchScreen.storyboard in Resources */,
+				64590C221CB11E45005CA4A4 /* United Kingdom.GIF in Resources */,
 				6402EB741CAEE64300C54CDF /* dog.png in Resources */,
 				6402EB701CAEE64300C54CDF /* duck.png in Resources */,
 				6402EB781CAEE73600C54CDF /* bee.png in Resources */,
 				6402EB4E1CAED92F00C54CDF /* koala.png in Resources */,
+				64590C2E1CB125D7005CA4A4 /* Shapes.png in Resources */,
+				64590C411CB1268E005CA4A4 /* oval.png in Resources */,
 				6402EB5C1CAEE46A00C54CDF /* snake.png in Resources */,
 				6402EB5B1CAEE46A00C54CDF /* lion.png in Resources */,
 				649191E91CAEAE91006A40AB /* Assets.xcassets in Resources */,
@@ -347,12 +435,21 @@
 				6402EB6E1CAEE64300C54CDF /* sheep.png in Resources */,
 				6402EB381CAED24100C54CDF /* bear.png in Resources */,
 				6402EB791CAEE73600C54CDF /* butterfly.png in Resources */,
+				64590C421CB1268E005CA4A4 /* circle.png in Resources */,
 				6402EB351CAED24100C54CDF /* rabbit.png in Resources */,
+				64590C431CB1268E005CA4A4 /* trapezoid.png in Resources */,
 				6402EB5D1CAEE46A00C54CDF /* zebra.png in Resources */,
 				6402EB721CAEE64300C54CDF /* goat.png in Resources */,
+				64590C3F1CB1268E005CA4A4 /* square.png in Resources */,
+				64590C2B1CB12098005CA4A4 /* Animals.jpg in Resources */,
+				64590C3C1CB1268E005CA4A4 /* star.png in Resources */,
+				64590C3B1CB1268E005CA4A4 /* parallelogram.png in Resources */,
+				64590C461CB1268E005CA4A4 /* hexagon.png in Resources */,
 				6402EB711CAEE64300C54CDF /* cow.png in Resources */,
 				649191E71CAEAE91006A40AB /* Main.storyboard in Resources */,
 				6402EB731CAEE64300C54CDF /* horse.png in Resources */,
+				64590C441CB1268E005CA4A4 /* deltoid.png in Resources */,
+				64590C241CB11E4E005CA4A4 /* Turkey.GIF in Resources */,
 				6402EB611CAEE46A00C54CDF /* crocodile.png in Resources */,
 				6402EB441CAED8D200C54CDF /* frog.png in Resources */,
 			);
@@ -379,8 +476,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64590C481CB1274C005CA4A4 /* ShapesViewController.swift in Sources */,
 				649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */,
 				6402EB2D1CAEC41E00C54CDF /* AnimalsViewController.swift in Sources */,
+				64590C281CB11FCC005CA4A4 /* EpisodesViewController.swift in Sources */,
+				64590C261CB11F93005CA4A4 /* LanguageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
