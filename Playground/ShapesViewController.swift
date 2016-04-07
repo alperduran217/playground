@@ -12,33 +12,26 @@ import AVFoundation
 
 class ShapesViewController: UIViewController {
 
-    let button = UIButton()
+ // PRE-LOAD
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        
-        
         let image = UIImage(named: picsArray[Int(randomNumber)]) as UIImage?
         
-        
-        
         button.setImage(image, forState: .Normal)
+        
         button.frame = CGRectMake(70, 200, 250, 250)
+        
         button.setTitle("Test Button", forState: UIControlState.Normal)
+        
         button.addTarget(self, action: #selector(AnimalsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
         
-        
     }
-    
-    var picsArray:[String] = ["parallelogram.png","star.png","rectangle.png","heart.png","square.png","triangle.png","oval.png","circle.png","trapezoid.png","deltoid.png","pentagon.png","hexagon.png"]
-    var namesArray:[String] = ["Paralel kenar", "yıldız", "dikdörtgen", "kalp", "kare", "üçgen", "oval", "daire", "yamuk", "deltoid", "beşgen", "altıgen"]
-    
-    var randomNumber = arc4random_uniform(12)
     
     
     override func didReceiveMemoryWarning() {
@@ -46,7 +39,21 @@ class ShapesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+//  VARIABLES
+    
+    var picsArray:[String] = ["parallelogram.png","star.png","rectangle.png","heart.png","square.png","triangle.png","oval.png","circle.png","trapezoid.png","deltoid.png","pentagon.png","hexagon.png"]
+    var namesArray:[String] = ["Paralel kenar", "yıldız", "dikdörtgen", "kalp", "kare", "üçgen", "oval", "daire", "yamuk", "deltoid", "beşgen", "altıgen"]
+    
+    var randomNumber = arc4random_uniform(12)
+    
+
     let speechSynthesizer = AVSpeechSynthesizer()
+    
+    let button = UIButton()
+
+    
+//  FUNCTIONS
     
     func buttonAction(sender:UIButton!)
     {
@@ -56,12 +63,6 @@ class ShapesViewController: UIViewController {
         speechSynthesizer.speakUtterance(speechUtterance)
         
         randomNumber = arc4random_uniform(12)
-        
-        
-        
-        
-        
-        
         
         button.setImage(UIImage(named: picsArray[Int(randomNumber)]), forState: UIControlState.Normal)
         

@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZD-K4-DXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2491" y="488"/>
+            <point key="canvasLocation" x="-2827" y="104"/>
         </scene>
         <!--Shapes View Controller-->
         <scene sceneID="LeR-Aq-HYW">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agn-9C-JJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-525" y="519"/>
+            <point key="canvasLocation" x="-761" y="455"/>
         </scene>
         <!--Animals View Controller-->
         <scene sceneID="9AO-ye-L8v">
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-gx-Itb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="-287"/>
+            <point key="canvasLocation" x="-1643" y="488"/>
         </scene>
         <!--Bolumler View Controller-->
         <scene sceneID="PBr-dS-GNS">
@@ -284,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scp-yL-87x" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1669" y="1239"/>
+            <point key="canvasLocation" x="-1325" y="1259"/>
         </scene>
         <!--AnimalsEN View Controller-->
         <scene sceneID="at2-Kg-jjL">
@@ -506,7 +506,7 @@
         <image name="United Kingdom.GIF" width="516" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OMg-wQ-nRQ"/>
-        <segue reference="6IN-xd-sKD"/>
+        <segue reference="T3f-ff-hMI"/>
+        <segue reference="9ZF-Xa-JDT"/>
     </inferredMetricsTieBreakers>
 </document>

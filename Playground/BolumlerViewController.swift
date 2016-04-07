@@ -10,9 +10,11 @@ import UIKit
 
 class BolumlerViewController: UIViewController, UIScrollViewDelegate {
 
+//  PRE-LOAD
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.delegate = self
+        scrollView.delegate = self 
 
         // Do any additional setup after loading the view.
     }
@@ -21,11 +23,16 @@ class BolumlerViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//  MAIN STORYBOARD
+    
     @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView){
+// FUNCTIONS
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView){ // This function makes slider move vertically
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
         
@@ -33,4 +40,5 @@ class BolumlerViewController: UIViewController, UIScrollViewDelegate {
         
         self.pageControl.currentPage = Int(currentPage)
     }
+    
     }

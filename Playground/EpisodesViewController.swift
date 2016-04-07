@@ -10,6 +10,8 @@ import UIKit
 
 class EpisodesViewController: UIViewController, UIScrollViewDelegate {
 
+//  PRE-LOAD
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
@@ -21,11 +23,16 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//  MAIN STORYBOARD
+    
     @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    
+//  FUNCTIONS
 
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView){
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView){ // This function makes slider move vertically
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
         
