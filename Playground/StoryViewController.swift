@@ -22,10 +22,10 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
         setInitialFontAttribute()
 
-        pvSpeechProgress.alpha = 0.0
-        pvSpeechProgress.progress = 0.0
+
         // Do any additional setup after loading the view.
         
+
 
     }
 
@@ -35,6 +35,11 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     }
 
 // MAIN STORYBOARD
+    @IBAction func pauseSpeech(sender: AnyObject) {
+        
+        speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Word)
+
+    }
     
     @IBOutlet weak var storyImage: UIImageView!
     
@@ -61,12 +66,20 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
                 speechSynthesizer.speakUtterance(speechUtterance)
             }        
         }
+        
+        else{
+            speechSynthesizer.continueSpeaking()
+        }
+        
         let speechUtterance = AVSpeechUtterance(string: storyText.text)
         
 
         
         
         speechSynthesizer.speakUtterance(speechUtterance)
+        
+        
+   
     }
     
     
@@ -83,6 +96,25 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     var spokenTextLengths: Int = 0
     
     var previousSelectedRange: NSRange!
+    
+    var counterSadBunny = 1
+    
+    var counterScaredBunny = 1
+    
+    var counterFrog = 1
+    
+    var counterFunBunny = 1
+
+    var timer = NSTimer()
+    
+    var timer2 = NSTimer()
+    
+    var timer3 = NSTimer()
+    
+    var timer4 = NSTimer()
+    
+    var isAnimating = true
+
 
 
 // FUNCTIONS
@@ -109,6 +141,8 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             unselectLastWord()
             previousSelectedRange = nil
         }
+        
+     
 
     }
     
@@ -165,8 +199,28 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         // Keep the currently selected range so as to remove the orange text color next.
         previousSelectedRange = rangeInTotalText
-
         
+        if previousSelectedRange.location == 281 {
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation), userInfo: nil, repeats: true)
+
+        }
+        
+        if previousSelectedRange.location == 429 {
+            
+            timer.invalidate()
+            storyImage.image = UIImage(named: "ScaredBunny1.tiff")
+            timer2 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation2), userInfo: nil, repeats: true)
+            
+        }
+        
+        if previousSelectedRange.location == 534 {
+            
+            timer2.invalidate()
+            timer3 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation3), userInfo: nil, repeats: true)
+            
+        }
+        
+
     }
     
     func unselectLastWord() {
@@ -189,4 +243,90 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             storyText.textStorage.endEditing()
         }
     }
+    
+    
+    
+    func doAnimation() {
+        
+        
+            if counterSadBunny == 14 {
+                
+                counterSadBunny = 1
+                
+            } else {
+                
+                counterSadBunny += 1
+                
+            }
+            
+            
+            
+            storyImage.image = UIImage(named: "sadBunny\(counterSadBunny).tiff")
+        
+
+    }
+    
+    func doAnimation2() {
+        
+        
+        if counterScaredBunny == 55 {
+            
+            counterScaredBunny = 1
+            
+        } else {
+            
+            counterScaredBunny += 1
+            
+        }
+        
+        
+        
+        storyImage.image = UIImage(named: "ScaredBunny\(counterScaredBunny).tiff")
+        
+        
+    }
+    
+    func doAnimation3() {
+        
+        
+        if counterFrog == 6 {
+            
+            counterFrog = 1
+            
+        } else {
+            
+            counterFrog += 1
+            
+        }
+        
+        
+        
+        storyImage.image = UIImage(named: "frogs\(counterFrog).tiff")
+        
+        
+    }
+    
+    
+    func doAnimation4() {
+        
+        
+        if counterFunBunny == 66 {
+            
+            counterFunBunny = 1
+            
+        } else {
+            
+            counterFunBunny += 1
+            
+        }
+        
+        
+        
+        storyImage.image = UIImage(named: "funBunny\(counterFunBunny).tiff")
+        
+        
+    }
+    
+
+
 }
