@@ -25,7 +25,7 @@ class ShapesENViewController: UIViewController {
         
         button.frame = CGRectMake(70, 200, 250, 250)
         
-        button.setTitle("Test Button", forState: UIControlState.Normal)
+        button.setTitle("", forState: UIControlState.Normal)
         
         button.addTarget(self, action: #selector(AnimalsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -39,6 +39,7 @@ class ShapesENViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 //  VARIABLES
+    @IBOutlet weak var label: UILabel!
     
     let button = UIButton() 
     
@@ -55,17 +56,44 @@ class ShapesENViewController: UIViewController {
     func buttonAction(sender:UIButton!)
     {
         
+        
+        
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
         
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-
+        
         speechSynthesizer.speakUtterance(speechUtterance)
         
-        randomNumber = arc4random_uniform(12)
+        delay(2.0) {
+            
+            
+            self.randomNumber = arc4random_uniform(12)
+            
+            
+            self.button.setImage(UIImage(named: self.picsArray[Int(self.randomNumber)]), forState: UIControlState.Normal)
+            
+            self.label.text = ""
+            
+        }
         
-        button.setImage(UIImage(named: picsArray[Int(randomNumber)]), forState: UIControlState.Normal)
+        label.text = namesArray[Int(randomNumber)]
         
         
         
     }
+    
+    //  Delay function for button
+    
+    func delay(delay: Double, closure: ()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(),
+            closure
+        )
+    }
+    
+
 }

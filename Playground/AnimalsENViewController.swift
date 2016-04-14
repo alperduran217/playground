@@ -40,6 +40,7 @@ class AnimalsENViewController: UIViewController {
     }
     
 //  VARIABLES
+    @IBOutlet weak var label: UILabel!
     
     let speechSynthesizer = AVSpeechSynthesizer()
     var picsArray:[String] = ["dog.png","rabbit.png","cat.png","giraffe.png","bear.png","cow.png","frog.png","zebra.png","monkey.png","koala.png","elephant.png","pig.png","sheep.png","duck.png","lion.png","snake.png","hippopotamus.png","crocodile.png","cangroo.png","chimp.png","chicken.png","goat.png","horse.png","bee.png","butterfly.png","fish.png"]
@@ -54,18 +55,45 @@ class AnimalsENViewController: UIViewController {
     func buttonAction(sender:UIButton!)
     {
         
+        
+        
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
         
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-
+        
         speechSynthesizer.speakUtterance(speechUtterance)
         
-        randomNumber = arc4random_uniform(25)
+        delay(2.0) {
+            
+            
+            self.randomNumber = arc4random_uniform(25)
+            
+            
+            self.button.setImage(UIImage(named: self.picsArray[Int(self.randomNumber)]), forState: UIControlState.Normal)
+            
+            self.label.text = ""
+            
+        }
         
-        button.setImage(UIImage(named: picsArray[Int(randomNumber)]), forState: UIControlState.Normal)
+        label.text = namesArray[Int(randomNumber)]
         
         
     }
+    
+    //  Delay function for button
+    
+    func delay(delay: Double, closure: ()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(),
+            closure
+        )
+    }
+    
+
 
 
 }

@@ -310,17 +310,34 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bE-Qg-GVM">
+                                <rect key="frame" x="20" y="435" width="560" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="FcU-RY-lzd"/>
+                                    <constraint firstAttribute="height" constant="145" id="TiN-HS-GJu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="80"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.71445033979999995" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5bE-Qg-GVM" firstAttribute="leading" secondItem="Y6f-IO-L7u" secondAttribute="leadingMargin" id="4o5-Hh-Li1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D9H-UN-dyS" secondAttribute="trailing" constant="-20" id="FRb-iZ-ihL"/>
+                            <constraint firstItem="O5n-gN-4XW" firstAttribute="top" secondItem="5bE-Qg-GVM" secondAttribute="bottom" constant="20" id="PIk-6Q-k2L"/>
+                            <constraint firstItem="5bE-Qg-GVM" firstAttribute="trailing" secondItem="Y6f-IO-L7u" secondAttribute="trailingMargin" id="Rvr-qz-5jc"/>
                             <constraint firstItem="D9H-UN-dyS" firstAttribute="top" secondItem="Gc2-Zb-LcT" secondAttribute="bottom" id="Y1l-1a-ZTP"/>
+                            <constraint firstItem="5bE-Qg-GVM" firstAttribute="centerX" secondItem="Y6f-IO-L7u" secondAttribute="centerX" id="dEl-pa-V2b"/>
                             <constraint firstItem="D9H-UN-dyS" firstAttribute="leading" secondItem="Y6f-IO-L7u" secondAttribute="leadingMargin" constant="-20" id="irK-ta-YxG"/>
                             <constraint firstItem="D9H-UN-dyS" firstAttribute="centerX" secondItem="Y6f-IO-L7u" secondAttribute="centerX" id="vQO-bF-X5Q"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="label" destination="5bE-Qg-GVM" id="wrh-vM-Jyx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqd-JX-M3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,10 +368,24 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRb-Ab-IeQ">
+                                <rect key="frame" x="20" y="435" width="560" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="qgw-oP-HAV"/>
+                                    <constraint firstAttribute="width" constant="560" id="ufY-an-hEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="80"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.85490196080000003" green="0.23529411759999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="DRb-Ab-IeQ" firstAttribute="trailing" secondItem="rip-Av-W6d" secondAttribute="trailingMargin" id="1S9-kq-h4v"/>
                             <constraint firstItem="94C-VN-JjK" firstAttribute="leading" secondItem="rip-Av-W6d" secondAttribute="leadingMargin" constant="-20" id="7Si-pC-flO"/>
+                            <constraint firstItem="DRb-Ab-IeQ" firstAttribute="leading" secondItem="rip-Av-W6d" secondAttribute="leadingMargin" id="8pw-Eg-S5a"/>
+                            <constraint firstItem="DRb-Ab-IeQ" firstAttribute="centerX" secondItem="rip-Av-W6d" secondAttribute="centerX" id="Gfd-TJ-Ww6"/>
+                            <constraint firstItem="jfl-wp-Jv3" firstAttribute="top" secondItem="DRb-Ab-IeQ" secondAttribute="bottom" constant="20" id="Pm5-5m-7Z2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="94C-VN-JjK" secondAttribute="trailing" constant="-20" id="XdR-4j-0gD"/>
                             <constraint firstItem="94C-VN-JjK" firstAttribute="top" secondItem="069-Gc-Gfw" secondAttribute="bottom" id="byN-zS-vas"/>
                             <constraint firstItem="94C-VN-JjK" firstAttribute="centerX" secondItem="rip-Av-W6d" secondAttribute="centerX" id="dyo-Dq-Ap1"/>
@@ -362,6 +393,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="label" destination="DRb-Ab-IeQ" id="LWx-EU-aAZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glg-dd-qgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -802,7 +836,11 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                                 <color key="barTintColor" red="0.039827038750000002" green="0.77851283979999997" blue="0.67251420449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="G8N-aC-qT1">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="Oqb-z5-Mvm"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="Oqb-z5-Mvm">
+                                            <connections>
+                                                <segue destination="ZNv-Xl-jUc" kind="show" id="Eel-bH-MZp"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -849,6 +887,6 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="z2D-wJ-vUg"/>
-        <segue reference="6IN-xd-sKD"/>
+        <segue reference="DKq-lr-IXx"/>
     </inferredMetricsTieBreakers>
 </document>

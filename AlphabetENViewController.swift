@@ -56,7 +56,6 @@ class AlphabetENViewController: UIViewController {
     {
 
         
-        button.enabled = false
         
         
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
@@ -66,7 +65,6 @@ class AlphabetENViewController: UIViewController {
         speechSynthesizer.speakUtterance(speechUtterance)
         
         delay(2.0) {
-            self.button.enabled = true
             
             
             self.randomNumber = arc4random_uniform(25)
