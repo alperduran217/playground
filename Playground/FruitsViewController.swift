@@ -46,11 +46,11 @@ class FruitsViewController: UIViewController {
     
     let speechSynthesizer = AVSpeechSynthesizer()
     
-    var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png"]
+    var picsArray:[String] = ["apple.png","apricot.png","avocado.png","banana.png","beans.png","blackberry.png","carrot.png","cherry.png","corn.png","cucumber.png","grapes.png","green apple.png","lemon.png","orang.png","peach.png","pear.png","pepper.png","pomegranate.png","strawberry.png","tomatos.png","watermelon.png"]
     
-    var namesArray:[String] = ["blue","green","orange","red","yellow"]
+    var namesArray:[String] = ["Apple","Apricot","Avocado","Banana","Beans","Blackberry","Carrot","Cherry","Corn","Cucumber","Grapes","Green Apple", "Lemon","Lime","Orange","Peach","Pear","Pepper","Pomegrante","Strawberry","Tomatos","Watermelon"]
     
-    var randomNumber = arc4random_uniform(5)
+    var randomNumber = arc4random_uniform(21)
     
     //  FUNCTIONS
     
@@ -68,7 +68,7 @@ class FruitsViewController: UIViewController {
         delay(2.0) {
             
             
-            self.randomNumber = arc4random_uniform(5)
+            self.randomNumber = arc4random_uniform(21)
             
             
             self.button.setImage(UIImage(named: self.picsArray[Int(self.randomNumber)]), forState: UIControlState.Normal)
