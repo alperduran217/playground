@@ -79,7 +79,7 @@
                                 <state key="normal" title="Button" image="settingButton.png"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="0.23057650862068965" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JfJ-na-1II" firstAttribute="top" secondItem="RKn-6c-gxv" secondAttribute="bottom" constant="30" id="1xA-a7-iGf"/>
                             <constraint firstItem="JfJ-na-1II" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="IVk-1x-M8Q"/>
@@ -434,7 +434,24 @@
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qM4-16-W5P">
                                                 <rect key="frame" x="1200" y="0.0" width="600" height="556"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPD-Hc-cq7">
+                                                        <rect key="frame" x="118" y="76" width="364" height="403"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="403" id="fLH-qY-YUG"/>
+                                                            <constraint firstAttribute="width" constant="364" id="rrK-6p-8xE"/>
+                                                        </constraints>
+                                                        <state key="normal" image="0-alphabet.jpg"/>
+                                                        <connections>
+                                                            <segue destination="AVF-K0-lET" kind="show" id="xnf-gQ-6lf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.039827038750000002" green="0.77851283979999997" blue="0.67251420449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="oPD-Hc-cq7" firstAttribute="centerX" secondItem="qM4-16-W5P" secondAttribute="centerX" id="Dey-tf-dYW"/>
+                                                    <constraint firstItem="oPD-Hc-cq7" firstAttribute="top" secondItem="qM4-16-W5P" secondAttribute="top" constant="76" id="zIx-lM-XTK"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -768,8 +785,61 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
             </objects>
             <point key="canvasLocation" x="-3359" y="-678"/>
         </scene>
+        <!--AlphabetEN View Controller-->
+        <scene sceneID="B8s-He-tR9">
+            <objects>
+                <viewController id="AVF-K0-lET" customClass="AlphabetENViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u2l-1C-bx2"/>
+                        <viewControllerLayoutGuide type="bottom" id="wcu-ab-PUS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3r1-TX-2VI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMN-g6-0jK">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.039827038750000002" green="0.77851283979999997" blue="0.67251420449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="G8N-aC-qT1">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="Oqb-z5-Mvm"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adl-ih-eXO">
+                                <rect key="frame" x="20" y="434" width="560" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="fTN-32-Fuv"/>
+                                    <constraint firstAttribute="height" constant="145" id="qPw-Ur-VUk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="80"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039827038750000002" green="0.77851283979999997" blue="0.67251420449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hMN-g6-0jK" firstAttribute="centerX" secondItem="3r1-TX-2VI" secondAttribute="centerX" id="IZj-7r-Rwm"/>
+                            <constraint firstItem="hMN-g6-0jK" firstAttribute="leading" secondItem="3r1-TX-2VI" secondAttribute="leadingMargin" constant="-20" id="KKn-2H-rxG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hMN-g6-0jK" secondAttribute="trailing" constant="-20" id="QwM-jq-jdv"/>
+                            <constraint firstItem="hMN-g6-0jK" firstAttribute="top" secondItem="u2l-1C-bx2" secondAttribute="bottom" id="kEz-EQ-y3U"/>
+                            <constraint firstItem="wcu-ab-PUS" firstAttribute="top" secondItem="Adl-ih-eXO" secondAttribute="bottom" constant="21" id="kLk-9T-J2P"/>
+                            <constraint firstItem="Adl-ih-eXO" firstAttribute="centerX" secondItem="3r1-TX-2VI" secondAttribute="centerX" id="oXX-K7-pdi"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="label" destination="Adl-ih-eXO" id="1mK-cn-YHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzf-Sc-Jn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136" y="-1384"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="0-alphabet.jpg" width="800" height="929"/>
         <image name="Animals.jpg" width="920" height="1131"/>
         <image name="Shapes.png" width="1624" height="1282"/>
         <image name="book1.tiff" width="400" height="311"/>
@@ -779,6 +849,6 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="z2D-wJ-vUg"/>
-        <segue reference="hL3-Jx-JWx"/>
+        <segue reference="6IN-xd-sKD"/>
     </inferredMetricsTieBreakers>
 </document>
