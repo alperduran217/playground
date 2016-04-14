@@ -1,19 +1,23 @@
 //
-//  AlphabetENViewController.swift
+//  FruitsViewController.swift
 //  Playground
 //
 //  Created by Mehmet Alper Duran on 14/04/16.
 //  Copyright © 2016 Alper Duran. All rights reserved.
 //
 
+
 import UIKit
 import QuartzCore
 import AVFoundation
 
-class AlphabetENViewController: UIViewController {
+
+class FruitsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
         
         let image = UIImage(named: picsArray[Int(randomNumber)]) as UIImage?
         
@@ -21,40 +25,37 @@ class AlphabetENViewController: UIViewController {
         
         button.frame = CGRectMake(70, 200, 250, 250)
         
-        label.frame = CGRectMake(70, 250, 100, 100)
-        
         button.setTitle("", forState: UIControlState.Normal)
         
         button.addTarget(self, action: #selector(AnimalsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
 
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  
-    //  VARIABLES
+    
+// VARIABLES
+    
     @IBOutlet weak var label: UILabel!
-    
-    let speechSynthesizer = AVSpeechSynthesizer()
-    var picsArray:[String] = ["A.png","B.png","C.png","D.png","E.png","F.png","G.png","H.png","I.png","J.png","K.png","L.png","M.png","N.png","O.png","P.png","Q.png","R.png","S.png","T.png","U.png","V.png","W.png","X.png","Y.png","Z.png"]
-    var namesArray:[String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    
-    var randomNumber = arc4random_uniform(26)
     
     let button = UIButton()
     
+    let speechSynthesizer = AVSpeechSynthesizer()
+    
+    var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png"]
+    
+    var namesArray:[String] = ["blue","green","orange","red","yellow"]
+    
+    var randomNumber = arc4random_uniform(5)
     
     //  FUNCTIONS
     
     func buttonAction(sender:UIButton!)
     {
-
         
         
         
@@ -67,24 +68,22 @@ class AlphabetENViewController: UIViewController {
         delay(2.0) {
             
             
-            self.randomNumber = arc4random_uniform(26)
+            self.randomNumber = arc4random_uniform(5)
             
             
             self.button.setImage(UIImage(named: self.picsArray[Int(self.randomNumber)]), forState: UIControlState.Normal)
             
             self.label.text = ""
-
+            
         }
         
         label.text = namesArray[Int(randomNumber)]
-
-   
+        
         
         
     }
     
-
-//  Delay function for button
+    //  Delay function for button
     
     func delay(delay: Double, closure: ()->()) {
         dispatch_after(
@@ -96,8 +95,5 @@ class AlphabetENViewController: UIViewController {
             closure
         )
     }
-
-
- 
 
 }
