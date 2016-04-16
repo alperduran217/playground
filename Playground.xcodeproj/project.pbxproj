@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6402EB2D1CAEC41E00C54CDF /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */; };
 		6402EB351CAED24100C54CDF /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB311CAED24100C54CDF /* rabbit.png */; };
 		6402EB381CAED24100C54CDF /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB341CAED24100C54CDF /* bear.png */; };
 		6402EB441CAED8D200C54CDF /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6402EB3A1CAED8D200C54CDF /* frog.png */; };
@@ -116,8 +115,6 @@
 		64590C441CB1268E005CA4A4 /* deltoid.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C381CB1268E005CA4A4 /* deltoid.png */; };
 		64590C451CB1268E005CA4A4 /* pentagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C391CB1268E005CA4A4 /* pentagon.png */; };
 		64590C461CB1268E005CA4A4 /* hexagon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64590C3A1CB1268E005CA4A4 /* hexagon.png */; };
-		64590C481CB1274C005CA4A4 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C471CB1274C005CA4A4 /* ShapesViewController.swift */; };
-		64590C4A1CB12CC4005CA4A4 /* BolumlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C491CB12CC4005CA4A4 /* BolumlerViewController.swift */; };
 		64590C4C1CB13165005CA4A4 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */; };
 		64590C4E1CB131CF005CA4A4 /* AnimalsENViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */; };
 		64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */; };
@@ -291,6 +288,7 @@
 		64996D421CB9B56800C2F543 /* funBunny65.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D001CB9B56800C2F543 /* funBunny65.tiff */; };
 		64996D431CB9B56800C2F543 /* funBunny66.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D011CB9B56800C2F543 /* funBunny66.tiff */; };
 		64996D451CB9B59100C2F543 /* funBunny17.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D441CB9B59100C2F543 /* funBunny17.tiff */; };
+		64D15D441CC2B08E00769000 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D15D431CC2B08E00769000 /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,7 +309,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		6402EB311CAED24100C54CDF /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
 		6402EB341CAED24100C54CDF /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
 		6402EB3A1CAED8D200C54CDF /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
@@ -421,8 +418,6 @@
 		64590C381CB1268E005CA4A4 /* deltoid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deltoid.png; sourceTree = "<group>"; };
 		64590C391CB1268E005CA4A4 /* pentagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pentagon.png; sourceTree = "<group>"; };
 		64590C3A1CB1268E005CA4A4 /* hexagon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hexagon.png; sourceTree = "<group>"; };
-		64590C471CB1274C005CA4A4 /* ShapesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
-		64590C491CB12CC4005CA4A4 /* BolumlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BolumlerViewController.swift; sourceTree = "<group>"; };
 		64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsENViewController.swift; sourceTree = "<group>"; };
 		64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesENViewController.swift; sourceTree = "<group>"; };
@@ -602,6 +597,7 @@
 		64996D001CB9B56800C2F543 /* funBunny65.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny65.tiff; sourceTree = "<group>"; };
 		64996D011CB9B56800C2F543 /* funBunny66.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny66.tiff; sourceTree = "<group>"; };
 		64996D441CB9B59100C2F543 /* funBunny17.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny17.tiff; sourceTree = "<group>"; };
+		64D15D431CC2B08E00769000 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -893,19 +889,17 @@
 				644650271CB7D63100AF5B98 /* Sounds */,
 				6402EB2E1CAEC5BF00C54CDF /* Images */,
 				649191E11CAEAE91006A40AB /* AppDelegate.swift */,
-				6445FFAA1CBFBDA900A26C14 /* ColorsViewController.swift */,
-				6445FF991CBFAF4E00A26C14 /* AlphabetENViewController.swift */,
-				641C2FB21CB8F6D20035817B /* GamesViewController.swift */,
 				649191E51CAEAE91006A40AB /* Main.storyboard */,
 				641C2FD91CB911450035817B /* StoryViewController.swift */,
+				6446501F1CB7D06600AF5B98 /* MainMenuViewController.swift */,
+				641C2FB21CB8F6D20035817B /* GamesViewController.swift */,
+				64D15D431CC2B08E00769000 /* OptionsViewController.swift */,
+				6445FFAA1CBFBDA900A26C14 /* ColorsViewController.swift */,
+				6445FF991CBFAF4E00A26C14 /* AlphabetENViewController.swift */,
 				6445FFAC1CBFBE1E00A26C14 /* FruitsViewController.swift */,
 				64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */,
-				6446501F1CB7D06600AF5B98 /* MainMenuViewController.swift */,
-				64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */,
-				64590C491CB12CC4005CA4A4 /* BolumlerViewController.swift */,
 				64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */,
-				64590C471CB1274C005CA4A4 /* ShapesViewController.swift */,
-				6402EB2C1CAEC41E00C54CDF /* AnimalsViewController.swift */,
+				64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */,
 				649191E81CAEAE91006A40AB /* Assets.xcassets */,
 				649191EA1CAEAE91006A40AB /* LaunchScreen.storyboard */,
 				649191ED1CAEAE91006A40AB /* Info.plist */,
@@ -1518,16 +1512,14 @@
 				641C2FDA1CB911450035817B /* StoryViewController.swift in Sources */,
 				6445FFAD1CBFBE1E00A26C14 /* FruitsViewController.swift in Sources */,
 				6445FF9A1CBFAF4E00A26C14 /* AlphabetENViewController.swift in Sources */,
+				64D15D441CC2B08E00769000 /* OptionsViewController.swift in Sources */,
 				644650201CB7D06600AF5B98 /* MainMenuViewController.swift in Sources */,
 				64590C4C1CB13165005CA4A4 /* EpisodesViewController.swift in Sources */,
-				64590C4A1CB12CC4005CA4A4 /* BolumlerViewController.swift in Sources */,
 				64590C4E1CB131CF005CA4A4 /* AnimalsENViewController.swift in Sources */,
 				641C2FB31CB8F6D20035817B /* GamesViewController.swift in Sources */,
-				64590C481CB1274C005CA4A4 /* ShapesViewController.swift in Sources */,
 				649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */,
 				64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */,
 				6445FFAB1CBFBDA900A26C14 /* ColorsViewController.swift in Sources */,
-				6402EB2D1CAEC41E00C54CDF /* AnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

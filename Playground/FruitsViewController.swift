@@ -27,9 +27,20 @@ class FruitsViewController: UIViewController {
         
         button.setTitle("", forState: UIControlState.Normal)
         
-        button.addTarget(self, action: #selector(AnimalsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(FruitsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
+        
+        
+        if languageChoice == 0 {
+            
+            namesArray = namesArrayTur
+        }
+        
+        if languageChoice == 1 {
+            
+            namesArray = namesArrayEng
+        }
 
     }
 
@@ -40,6 +51,8 @@ class FruitsViewController: UIViewController {
     
 // VARIABLES
     
+    var namesArray:[String] = []
+    
     @IBOutlet weak var label: UILabel!
     
     let button = UIButton()
@@ -48,7 +61,9 @@ class FruitsViewController: UIViewController {
     
     var picsArray:[String] = ["apple.png","apricot.png","avocado.png","banana.png","beans.png","blackberry.png","carrot.png","cherry.png","corn.png","cucumber.png","grapes.png","green apple.png","lemon.png","orang.png","peach.png","pear.png","pepper.png","pomegranate.png","strawberry.png","tomatos.png","watermelon.png"]
     
-    var namesArray:[String] = ["Apple","Apricot","Avocado","Banana","Beans","Blackberry","Carrot","Cherry","Corn","Cucumber","Grapes","Green Apple", "Lemon","Lime","Orange","Peach","Pear","Pepper","Pomegrante","Strawberry","Tomatos","Watermelon"]
+    var namesArrayEng:[String] = ["Apple","Apricot","Avocado","Banana","Beans","Blackberry","Carrot","Cherry","Corn","Cucumber","Grapes","Green Apple", "Lemon","Orange","Peach","Pear","Pepper","Pomegrante","Strawberry","Tomatos","Watermelon"]
+    
+    var namesArrayTur:[String] = ["Elma","Kayısı","Avokado","Muz","Fasulye","Böğürtlen","Havuç","Kiraz","Mısır","Salatalık","Üzüm","Yeşil Elma", "Limon", "Portakal","Şeftali","Armut","Biber","Nar","Çilek","Domates","Karpuz"]
     
     var randomNumber = arc4random_uniform(21)
     
@@ -57,17 +72,20 @@ class FruitsViewController: UIViewController {
     func buttonAction(sender:UIButton!)
     {
         
-        
+        button.enabled = false
         
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
         
-        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        
+        if languageChoice == 1 {
+            
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            
+        }
         speechSynthesizer.speakUtterance(speechUtterance)
         
         delay(2.0) {
             
-            
+            self.button.enabled = true
             self.randomNumber = arc4random_uniform(21)
             
             

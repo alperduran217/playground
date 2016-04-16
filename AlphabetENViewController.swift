@@ -25,9 +25,20 @@ class AlphabetENViewController: UIViewController {
         
         button.setTitle("", forState: UIControlState.Normal)
         
-        button.addTarget(self, action: #selector(AnimalsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(AlphabetENViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
+        
+        
+        if languageChoice == 0 {
+            
+            namesArray = namesArrayTur
+        }
+        
+        if languageChoice == 1 {
+            
+            namesArray = namesArrayEng
+        }
 
 
         // Do any additional setup after loading the view.
@@ -40,15 +51,17 @@ class AlphabetENViewController: UIViewController {
   
     //  VARIABLES
     @IBOutlet weak var label: UILabel!
-    
+    var namesArray:[String] = []
     let speechSynthesizer = AVSpeechSynthesizer()
     var picsArray:[String] = ["A.png","B.png","C.png","D.png","E.png","F.png","G.png","H.png","I.png","J.png","K.png","L.png","M.png","N.png","O.png","P.png","Q.png","R.png","S.png","T.png","U.png","V.png","W.png","X.png","Y.png","Z.png"]
-    var namesArray:[String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    var namesArrayEng:[String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     
     var randomNumber = arc4random_uniform(26)
     
     let button = UIButton()
     
+    var namesArrayTur:[String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
     
     //  FUNCTIONS
     
@@ -56,17 +69,21 @@ class AlphabetENViewController: UIViewController {
     {
 
         
-        
+        button.enabled = false
+
         
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
         
-        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        
+        if languageChoice == 1 {
+            
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            
+        }
         speechSynthesizer.speakUtterance(speechUtterance)
         
         delay(2.0) {
             
-            
+            self.button.enabled = true
             self.randomNumber = arc4random_uniform(26)
             
             

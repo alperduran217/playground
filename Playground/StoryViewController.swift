@@ -35,9 +35,23 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     }
 
 // MAIN STORYBOARD
+    @IBAction func stopSpeech(sender: AnyObject) {
+        
+        speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+        
+        animateActionButtonAppearance(false)
+
+    }
+    
+    @IBOutlet weak var btnStop: UIButton!
+    @IBOutlet weak var btnSpeak: UIButton!
+    @IBOutlet weak var btnPause: UIButton!
+    
     @IBAction func pauseSpeech(sender: AnyObject) {
         
         speechSynthesizer.pauseSpeakingAtBoundary(AVSpeechBoundary.Word)
+        
+        animateActionButtonAppearance(false)
 
     }
     
@@ -78,6 +92,8 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         speechSynthesizer.speakUtterance(speechUtterance)
         
+        animateActionButtonAppearance(true)
+
         
    
     }
@@ -118,6 +134,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
 
 // FUNCTIONS
+    
     func setInitialFontAttribute() {
         let rangeOfWholeText = NSMakeRange(0, storyText.text.utf16.count)
         let attributedText = NSMutableAttributedString(string: storyText.text)
@@ -128,7 +145,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     }
     
     
-
+//  The function checks the speech finishes it or not
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didFinishSpeechUtterance utterance: AVSpeechUtterance) {
         spokenTextLengths = spokenTextLengths + utterance.speechString.utf16.count + 1
         
@@ -205,7 +222,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
         }
         
-        if previousSelectedRange.location == 429 {
+        if previousSelectedRange.location == 425 {
             
             timer.invalidate()
             storyImage.image = UIImage(named: "ScaredBunny1.tiff")
@@ -213,12 +230,14 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
         }
         
-        if previousSelectedRange.location == 534 {
+        if previousSelectedRange.location == 526 {
             
             timer2.invalidate()
             timer3 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation3), userInfo: nil, repeats: true)
             
         }
+        
+
         
 
     }
@@ -325,6 +344,25 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         storyImage.image = UIImage(named: "funBunny\(counterFunBunny).tiff")
         
         
+    }
+    
+    
+    func animateActionButtonAppearance(shouldHideSpeakButton: Bool) {
+        var speakButtonAlphaValue: CGFloat = 1.0
+        var pauseStopButtonsAlphaValue: CGFloat = 0.0
+        
+        if shouldHideSpeakButton {
+            speakButtonAlphaValue = 0.0
+            pauseStopButtonsAlphaValue = 1.0
+        }
+        
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            self.btnSpeak.alpha = speakButtonAlphaValue
+            
+            self.btnPause.alpha = pauseStopButtonsAlphaValue
+            
+            self.btnStop.alpha = pauseStopButtonsAlphaValue
+        })
     }
     
 

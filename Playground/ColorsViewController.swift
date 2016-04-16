@@ -26,9 +26,20 @@ class ColorsViewController: UIViewController {
         
         button.setTitle("", forState: UIControlState.Normal)
         
-        button.addTarget(self, action: #selector(AnimalsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(ColorsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         self.view.addSubview(button)
+        
+        
+        if languageChoice == 0 {
+            
+            namesArray = namesArrayTur
+        }
+        
+        if languageChoice == 1 {
+            
+            namesArray = namesArrayEng
+        }
 
     }
 
@@ -48,7 +59,12 @@ class ColorsViewController: UIViewController {
     
     var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png"]
     
-    var namesArray:[String] = ["blue","green","orange","red","yellow"]
+    var namesArrayEng:[String] = ["blue","green","orange","red","yellow"]
+    
+    var namesArrayTur:[String] = ["Mavi","Yeşil","Turuncu","Kırmızı","Sarı"]
+    
+    var namesArray:[String] = []
+
     
     var randomNumber = arc4random_uniform(5)
     
@@ -57,17 +73,22 @@ class ColorsViewController: UIViewController {
     func buttonAction(sender:UIButton!)
     {
         
-        
+        button.enabled = false
+
         
         let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
         
-        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        
+        if languageChoice == 1 {
+            
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            
+        }
         speechSynthesizer.speakUtterance(speechUtterance)
         
         delay(2.0) {
             
-            
+            self.button.enabled = true
+
             self.randomNumber = arc4random_uniform(5)
             
             
