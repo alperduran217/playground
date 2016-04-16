@@ -131,6 +131,16 @@
                                                 <segue destination="ZNv-Xl-jUc" kind="show" id="DKq-lr-IXx"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="Qwj-CP-LG0">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XbZ-YY-Vi8">
+                                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="settingButton.png"/>
+                                                <connections>
+                                                    <segue destination="qKK-TK-7r0" kind="show" id="7wa-g2-MU8"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -165,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqd-JX-M3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1489" y="-946"/>
+            <point key="canvasLocation" x="-1513" y="-1112"/>
         </scene>
         <!--ShapesEN View Controller-->
         <scene sceneID="Vjp-OF-u7N">
@@ -188,6 +198,16 @@
                                             <connections>
                                                 <segue destination="ZNv-Xl-jUc" kind="show" id="6IN-xd-sKD"/>
                                             </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="lhB-HV-VUJ">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="29k-Bj-8eq">
+                                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="settingButton.png"/>
+                                                <connections>
+                                                    <segue destination="qKK-TK-7r0" kind="show" id="zA0-sf-588"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -223,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glg-dd-qgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874" y="-946"/>
+            <point key="canvasLocation" x="-862" y="-1112"/>
         </scene>
         <!--Episodes View Controller-->
         <scene sceneID="B4R-pI-omK">
@@ -678,6 +698,16 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                                                 <segue destination="ZNv-Xl-jUc" kind="show" id="Eel-bH-MZp"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="6MJ-sc-xlR">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zEV-3B-Le8">
+                                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="settingButton.png"/>
+                                                <connections>
+                                                    <segue destination="qKK-TK-7r0" kind="show" id="IQm-g8-XEd"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -710,7 +740,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzf-Sc-Jn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-272" y="-946"/>
+            <point key="canvasLocation" x="-212" y="-1112"/>
         </scene>
         <!--Episodes View Controller-->
         <scene sceneID="nGy-8a-adx">
@@ -901,6 +931,16 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                                                 <segue destination="FoE-4p-RZq" kind="show" id="xGx-TS-56k"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="MQp-ra-2JC">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HAU-a7-6xX">
+                                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="settingButton.png"/>
+                                                <connections>
+                                                    <segue destination="qKK-TK-7r0" kind="show" id="sNg-hi-Fwa"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -955,6 +995,16 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                                 <items>
                                     <navigationItem id="HbF-2q-RVh">
                                         <barButtonItem key="leftBarButtonItem" title="&lt;" id="7US-us-mbK"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="eZ5-YQ-Mww">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O1r-Hg-xUy">
+                                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="settingButton.png"/>
+                                                <connections>
+                                                    <segue destination="qKK-TK-7r0" kind="show" id="tdo-On-al1"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -978,6 +1028,13 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wo1-6F-T13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem style="plain" id="IBa-Dm-Dpx">
+                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TK3-yW-cQU">
+                        <rect key="frame" x="516" y="2" width="64" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="settingButton.png"/>
+                    </button>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="1179" y="-946"/>
         </scene>
@@ -996,8 +1053,9 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
         <image name="tiger1.tiff" width="117" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hL3-Jx-JWx"/>
-        <segue reference="wzS-tT-ewt"/>
+        <segue reference="DKq-lr-IXx"/>
+        <segue reference="7wa-g2-MU8"/>
         <segue reference="xGx-TS-56k"/>
+        <segue reference="wzS-tT-ewt"/>
     </inferredMetricsTieBreakers>
 </document>
