@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SpriteKit
 
 
 class MainMenuViewController: UIViewController {
@@ -16,6 +17,7 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             print("AVAudioSession Category Playback OK")
@@ -36,8 +38,6 @@ class MainMenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     var backgroundMusicPlayer = AVAudioPlayer()
     
     func playBackgroundMusic(filename: String) {

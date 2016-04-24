@@ -26,7 +26,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         // Do any additional setup after loading the view.
         
 
-
+        storyText.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +43,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     }
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var btnStop: UIButton!
     @IBOutlet weak var btnSpeak: UIButton!
     @IBOutlet weak var btnPause: UIButton!
@@ -281,7 +282,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
             
             storyImage.image = UIImage(named: "sadBunny\(counterSadBunny).tiff")
-        
+            label.text = "Kendisinden çok daha küçük hayvanların ormanda korkusuzca gezdiğini gören tavşan korkaklığına daha bir üzülürmüş. "
 
     }
     
