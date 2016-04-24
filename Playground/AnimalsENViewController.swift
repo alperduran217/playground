@@ -56,18 +56,18 @@ class AnimalsENViewController: UIViewController {
     
     let speechSynthesizer = AVSpeechSynthesizer()
     
-    var picsArray:[String] =  ["dog.png","rabbit.png","cat.png","giraffe.png","bear.png","cow.png","frog.png","zebra.png","monkey.png","koala.png","elephant.png","pig.png","sheep.png","duck.png","lion.png","snake.png","hippopotamus.png","crocodile.png","cangroo.png","chimp.png","chicken.png","goat.png","horse.png","bee.png","butterfly.png","fish.png"]
+    var picsArray:[String] =  ["monkey.png","lion.png","snake.png","zebra.png","giraffe.png","elephant.png","crocodile.png","cat.png"]
     
     var namesArray:[String] = []
     
     
-    var namesArrayEng:[String] = ["dog","rabbit","cat","giraffe","bear","cow","frog","zebra","monkey","koala","elephant","pig","sheep","duck","lion","snake","hippopotamus","crocodile","cangroo","chimp","chicken","goat","horse","bee","butterfly","fish"]
+    var namesArrayEng:[String] = ["Monkey","Lion","Snake","Zebra","Giraffe","Elephant","Crocodile","Cat"]
     
-    var namesArrayTur:[String] = ["köpek","tavşan","kedi","zürafa","ayı","inek","kurbağa","zebra","maymun","koala","fil","domuz","koyun","ördek","aslan","yılan","su aygırı","timsah","kanguru","şempanze","tavuk","keçi","at","arı","kelebek","balık"]
+    var namesArrayTur:[String] = ["Maymun","Aslan","Yılan","Zebra","Zürafa","Fil","Timsah","Kedi"]
     
  
     
-    var randomNumber = arc4random_uniform(25)
+    var randomNumber = arc4random_uniform(8)
     
     let button = UIButton()
     
@@ -93,7 +93,7 @@ class AnimalsENViewController: UIViewController {
             
             self.button.enabled = true
             
-            self.randomNumber = arc4random_uniform(25)
+            self.randomNumber = arc4random_uniform(8)
             
             
             self.button.setImage(UIImage(named: self.picsArray[Int(self.randomNumber)]), forState: UIControlState.Normal)
