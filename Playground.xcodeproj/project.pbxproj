@@ -119,6 +119,7 @@
 		64590C4C1CB13165005CA4A4 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */; };
 		64590C4E1CB131CF005CA4A4 /* AnimalsENViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */; };
 		64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */; };
+		645C62B21CCCDF94000FB0C2 /* RecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645C62B11CCCDF94000FB0C2 /* RecordsTableViewController.swift */; };
 		6484AC501CBFC87900FF1B5B /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 6484AC391CBFC87900FF1B5B /* apple.png */; };
 		6484AC511CBFC87900FF1B5B /* apricot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6484AC3A1CBFC87900FF1B5B /* apricot.png */; };
 		6484AC521CBFC87900FF1B5B /* avocado.png in Resources */ = {isa = PBXBuildFile; fileRef = 6484AC3B1CBFC87900FF1B5B /* avocado.png */; };
@@ -142,6 +143,7 @@
 		6484AC641CBFC87900FF1B5B /* strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = 6484AC4D1CBFC87900FF1B5B /* strawberry.png */; };
 		6484AC651CBFC87900FF1B5B /* tomatos.png in Resources */ = {isa = PBXBuildFile; fileRef = 6484AC4E1CBFC87900FF1B5B /* tomatos.png */; };
 		6484AC661CBFC87900FF1B5B /* watermelon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6484AC4F1CBFC87900FF1B5B /* watermelon.png */; };
+		64879AB61CCCF87D00CF9E40 /* AttentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64879AB51CCCF87D00CF9E40 /* AttentionViewController.swift */; };
 		649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649191E11CAEAE91006A40AB /* AppDelegate.swift */; };
 		649191E71CAEAE91006A40AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649191E51CAEAE91006A40AB /* Main.storyboard */; };
 		649191E91CAEAE91006A40AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649191E81CAEAE91006A40AB /* Assets.xcassets */; };
@@ -423,6 +425,7 @@
 		64590C4B1CB13165005CA4A4 /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		64590C4D1CB131CF005CA4A4 /* AnimalsENViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsENViewController.swift; sourceTree = "<group>"; };
 		64590C4F1CB1333E005CA4A4 /* ShapesENViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesENViewController.swift; sourceTree = "<group>"; };
+		645C62B11CCCDF94000FB0C2 /* RecordsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsTableViewController.swift; sourceTree = "<group>"; };
 		6484AC391CBFC87900FF1B5B /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		6484AC3A1CBFC87900FF1B5B /* apricot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apricot.png; sourceTree = "<group>"; };
 		6484AC3B1CBFC87900FF1B5B /* avocado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avocado.png; sourceTree = "<group>"; };
@@ -446,6 +449,7 @@
 		6484AC4D1CBFC87900FF1B5B /* strawberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strawberry.png; sourceTree = "<group>"; };
 		6484AC4E1CBFC87900FF1B5B /* tomatos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomatos.png; sourceTree = "<group>"; };
 		6484AC4F1CBFC87900FF1B5B /* watermelon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watermelon.png; sourceTree = "<group>"; };
+		64879AB51CCCF87D00CF9E40 /* AttentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttentionViewController.swift; sourceTree = "<group>"; };
 		649191DE1CAEAE91006A40AB /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649191E11CAEAE91006A40AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649191E61CAEAE91006A40AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -892,6 +896,8 @@
 				6402EB2E1CAEC5BF00C54CDF /* Images */,
 				649191E11CAEAE91006A40AB /* AppDelegate.swift */,
 				649191E51CAEAE91006A40AB /* Main.storyboard */,
+				64879AB51CCCF87D00CF9E40 /* AttentionViewController.swift */,
+				645C62B11CCCDF94000FB0C2 /* RecordsTableViewController.swift */,
 				641C2FD91CB911450035817B /* StoryViewController.swift */,
 				6446501F1CB7D06600AF5B98 /* MainMenuViewController.swift */,
 				644618411CCBE49A0079788B /* OperationViewController.swift */,
@@ -1513,6 +1519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				641C2FDA1CB911450035817B /* StoryViewController.swift in Sources */,
+				645C62B21CCCDF94000FB0C2 /* RecordsTableViewController.swift in Sources */,
 				6445FFAD1CBFBE1E00A26C14 /* FruitsViewController.swift in Sources */,
 				6445FF9A1CBFAF4E00A26C14 /* AlphabetENViewController.swift in Sources */,
 				64D15D441CC2B08E00769000 /* OptionsViewController.swift in Sources */,
@@ -1522,6 +1529,7 @@
 				641C2FB31CB8F6D20035817B /* GamesViewController.swift in Sources */,
 				644618421CCBE49A0079788B /* OperationViewController.swift in Sources */,
 				649191E21CAEAE91006A40AB /* AppDelegate.swift in Sources */,
+				64879AB61CCCF87D00CF9E40 /* AttentionViewController.swift in Sources */,
 				64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */,
 				6445FFAB1CBFBDA900A26C14 /* ColorsViewController.swift in Sources */,
 			);

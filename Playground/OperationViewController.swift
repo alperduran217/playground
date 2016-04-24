@@ -14,7 +14,14 @@ class OperationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        doOperation()
+        
+        // Labels are invisible until the user taps the start button
+        div.alpha = 0
+        add.alpha = 0
+        minus.alpha = 0
+        multi.alpha = 0
+        
+       
 
  
     }
@@ -24,7 +31,7 @@ class OperationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var points:Int = 0
+    var points:Int = 0 // where earned pointes are stored
     
     var operation = 0
     
@@ -43,6 +50,13 @@ class OperationViewController: UIViewController {
     var result:Int = 0
     
     var fakeResult:Int = 0
+    
+    var timer = NSTimer()
+    
+    var timer2 = NSTimer()
+    
+    var timeValue:Int = 50
+
 
     @IBOutlet var operationView: UIView!
     @IBOutlet weak var multi: UILabel!
@@ -53,15 +67,28 @@ class OperationViewController: UIViewController {
     
     @IBAction func startAction(sender: AnyObject) {
         start.alpha = 0
+        doOperation()
+        
+        // timer lets decrease counter
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(OperationViewController.reverseCounter), userInfo: nil, repeats: true)
+        
+        // segue action after the timer goes on 51
+        
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(51.0, target: self, selector: #selector(OperationViewController.timeToMoveOn), userInfo: nil, repeats: false)
+        
+        
+        
+
     }
     @IBAction func button2Act(sender: AnyObject) {
-        
+       buttonReverse()
         doOperation()
         button2Answer()
         
     }
     @IBAction func button1act(sender: AnyObject) {
-        
+        buttonReverse()
         doOperation()
         button1Answer()
       
@@ -145,7 +172,7 @@ class OperationViewController: UIViewController {
             result = labelRandomNumber1 / labelRandomNumber2
             fakeResult = result + randomNumber
             
-            if randomChoice == 0{
+            
                 
                 button1.setTitle("\(result)", forState: .Normal)
                 button2.setTitle("\(fakeResult)", forState: .Normal)
@@ -153,24 +180,7 @@ class OperationViewController: UIViewController {
                 button1Value = result
                 button2Value = fakeResult
                 
-                randomChoice = Int(arc4random_uniform(2))
 
-        
-            }
-            
-            
-            if randomChoice == 1{
-                button1.setTitle("\(fakeResult)", forState: .Normal)
-                button2.setTitle("\(result)", forState: .Normal)
-                
-                button2Value = result
-                button1Value = fakeResult
-                
-                randomChoice = Int(arc4random_uniform(2))
-
-            }
-            
-            
 
         }
         
@@ -179,7 +189,7 @@ class OperationViewController: UIViewController {
             result = labelRandomNumber1 + labelRandomNumber2
             fakeResult = result + randomNumber
             
-            if randomChoice == 0{
+         
                 
                 button1.setTitle("\(result)", forState: .Normal)
                 button2.setTitle("\(fakeResult)", forState: .Normal)
@@ -187,19 +197,7 @@ class OperationViewController: UIViewController {
                 button1Value = result
                 button2Value = fakeResult
                 
-            }
-            
-            
-            if randomChoice == 1{
-                button1.setTitle("\(fakeResult)", forState: .Normal)
-                button2.setTitle("\(result)", forState: .Normal)
-                
-                
-                button2Value = result
-                button1Value = fakeResult
-            }
-            
-            randomChoice = Int(arc4random_uniform(2))
+   
 
         }
         
@@ -207,53 +205,27 @@ class OperationViewController: UIViewController {
             result = labelRandomNumber1 - labelRandomNumber2
             fakeResult = result + randomNumber
             
-            if randomChoice == 0{
                 
                 button1.setTitle("\(result)", forState: .Normal)
                 button2.setTitle("\(fakeResult)", forState: .Normal)
                 
                 button1Value = result
                 button2Value = fakeResult
-            }
             
-            
-            if randomChoice == 1{
-                button1.setTitle("\(fakeResult)", forState: .Normal)
-                button2.setTitle("\(result)", forState: .Normal)
-                
-                
-                button2Value = result
-                button1Value = fakeResult
-            }
-            
-            randomChoice = Int(arc4random_uniform(2))
-
         }
         
         if operation == 4 {
             result = labelRandomNumber1 * labelRandomNumber2
             fakeResult = result + randomNumber
             
-            if randomChoice == 0{
+            
                 
                 button1.setTitle("\(result)", forState: .Normal)
                 button2.setTitle("\(fakeResult)", forState: .Normal)
                 
                 button1Value = result
                 button2Value = fakeResult
-            }
-            
-            
-            if randomChoice == 1{
-                button1.setTitle("\(fakeResult)", forState: .Normal)
-                button2.setTitle("\(result)", forState: .Normal)
-                
-                
-                button2Value = result
-                button1Value = fakeResult
-            }
-            
-            randomChoice = Int(arc4random_uniform(2))
+          
 
         }
     
@@ -328,6 +300,46 @@ class OperationViewController: UIViewController {
         
     }
     
+
+    
+    
+    func reverseCounter() {
+        
+        timeValue = timeValue - 1
+        
+        timeLabel.text = String(timeValue)
+        
+    }
+    
+    func buttonReverse() {
+        
+        randomChoice = Int(arc4random_uniform(2))
+
+        if randomChoice == 0 {
+            button1.frame = CGRectMake(142, 100, 115, 359)
+            button2.frame = CGRectMake(142, 100, 343, 359)
+            
+
+        }
+        
+        if randomChoice == 1 {
+            button2.frame = CGRectMake(142, 100, 115, 359)
+            button1.frame = CGRectMake(142, 100, 343, 359)
+            
+        }
+        
+
+    }
+    
+    func timeToMoveOn() {
+        
+        records.append(String(points))
+        
+        NSUserDefaults.standardUserDefaults().setObject(records, forKey: "records")
+
+        
+        self.performSegueWithIdentifier("goToResults", sender: self)
+    }
     
     func delay(delay: Double, closure: ()->()) {
         dispatch_after(
