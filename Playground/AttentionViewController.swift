@@ -9,11 +9,13 @@
 import UIKit
 
 class AttentionViewController: UIViewController {
-
+    
+    
+    //This function executes immediatly when the app start working.
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // This chunk of code disappears all of the buttons except the Start button
         answer1.alpha = 0
         answer2.alpha = 0
         answer3.alpha = 0
@@ -28,30 +30,131 @@ class AttentionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+// VARIABLES
+    
+    var timer = NSTimer()   //This is a time variable. This variable created for Counter.
+    var timer2 = NSTimer()  //This is an another time variable. This variable created for automatic segues.
+    
+    
+    var timeValue = 50
+    
+    var points = 0
+    
+    var foundValue1 = 0
+    var foundValue2 = 0
+    var foundValue3 = 0
+    var foundValue4 = 0
+    
+    
+    
+    
+    var randomButton:Int = Int(arc4random_uniform(3))
+
+    
+    var randomChoice:Int = 0
+    
+    var trueAnswer:Int = -1
+    
+    var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png","apple.png","apricot.png","avocado.png","banana.png","beans.png","blackberry.png","carrot.png","cherry.png","corn.png","cucumber.png","grapes.png","green apple.png","lemon.png","orang.png","peach.png","pepper.png","pomegranate.png","strawberry.png","tomatos.png","watermelon.png","parallelogram.png","star.png","rectangle.png","heart.png","square.png","triangle.png","oval.png","circle.png","trapezoid.png","deltoid.png","pentagon.png","hexagon.png","monkey.png","lion.png","snake.png","zebra.png","giraffe.png","elephant.png","crocodile.png","cat.png"]
+    
+
+    //Variables on View
     @IBOutlet weak var questionPic: UIImageView!
+    
     @IBOutlet weak var answer1: UIButton!
     @IBOutlet weak var answer2: UIButton!
     @IBOutlet weak var answer3: UIButton!
     @IBOutlet weak var answer4: UIButton!
     @IBAction func answerAction1(sender: AnyObject) {
-        setupImage()
-        correctAnswer()
-        delayPic()
+        
+        if foundValue1 == 1 {
+
+            foundValue1 = 0
+
+            self.view.backgroundColor = UIColor.greenColor()
+            
+            points = points + 10
+            
+            pointsLabel.text = String(points)
+            
+            delay(0.2) {
+                self.view.backgroundColor = UIColor.whiteColor()
+                
+            }
+
+        }
+        
+        reappear()
+        
     }
     @IBAction func answerAction2(sender: AnyObject) {
-        setupImage()
-        correctAnswer()
-        delayPic()
+      
+        
+        if foundValue2 == 1 {
+            
+            foundValue2 = 0
+            
+            self.view.backgroundColor = UIColor.greenColor()
+            
+            points = points + 10
+            
+            pointsLabel.text = String(points)
+            
+            delay(0.2) {
+                self.view.backgroundColor = UIColor.whiteColor()
+                
+            }
+
+        }
+        
+        
+        
+        reappear()
     }
     @IBAction func answerAction3(sender: AnyObject) {
-        setupImage()
-        correctAnswer()
-        delayPic()
+    
+        
+        if foundValue3 == 1 {
+            foundValue3 = 0
+            
+            self.view.backgroundColor = UIColor.greenColor()
+            
+            points = points + 10
+            
+            pointsLabel.text = String(points)
+            
+            delay(0.2) {
+                self.view.backgroundColor = UIColor.whiteColor()
+                
+            }
+
+        }
+        
+        reappear()
     }
     @IBAction func answerAction4(sender: AnyObject) {
-        setupImage()
-        correctAnswer()
-        delayPic()
+   
+        
+        if foundValue4 == 1 {
+            foundValue4 = 0
+
+            
+            
+            self.view.backgroundColor = UIColor.greenColor()
+            
+            points = points + 10
+            
+            pointsLabel.text = String(points)
+            
+            delay(0.2) {
+                self.view.backgroundColor = UIColor.whiteColor()
+                
+            }
+
+        }
+        
+        reappear()
+        
     }
     @IBAction func startAction(sender: AnyObject) {
         
@@ -60,58 +163,62 @@ class AttentionViewController: UIViewController {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(OperationViewController.reverseCounter), userInfo: nil, repeats: true)
         
-
+        // segue action after the timer goes on 51
         
-        setupImage()
-        correctAnswer()
-        delayPic()
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(51.0, target: self, selector: #selector(AttentionViewController.timeToMoveOn), userInfo: nil, repeats: false)
+
+
+       reappear()
     }
     
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var start: UIButton!
     
-    var timer = NSTimer()
-    var timer2 = NSTimer()
     
-    var timeValue = 50
     
-    var foundValue = 0
-    
-    var randomButton:Int = -1
-    
-    var randomChoice:Int = 0
-    
-    var trueAnswer:Int = -1
-    
-    var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png","apple.png","apricot.png","avocado.png","banana.png","beans.png","blackberry.png","carrot.png","cherry.png","corn.png","cucumber.png","grapes.png","green apple.png","lemon.png","orang.png","peach.png","pear.png","pepper.png","pomegranate.png","strawberry.png","tomatos.png","watermelon.png","parallelogram.png","star.png","rectangle.png","heart.png","square.png","triangle.png","oval.png","circle.png","trapezoid.png","deltoid.png","pentagon.png","hexagon.png","monkey.png","lion.png","snake.png","zebra.png","giraffe.png","elephant.png","crocodile.png","cat.png"]
+// This function makes every image appear
 
     func setupImage() {
         
         let picsArrayValue = UInt32(picsArray.count)
         
-        randomChoice = Int(arc4random_uniform(picsArrayValue))
-        trueAnswer = randomChoice
+        trueAnswer = Int(arc4random_uniform(picsArrayValue))
+        
         questionPic.image = UIImage(named: picsArray[Int(trueAnswer)])
-        randomChoice = Int(arc4random_uniform(picsArrayValue))
-        answer1.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
-        randomChoice = Int(arc4random_uniform(picsArrayValue))
-        answer2.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
-        randomChoice = Int(arc4random_uniform(picsArrayValue))
-        answer3.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
-        randomChoice = Int(arc4random_uniform(picsArrayValue))
-        answer4.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
-        randomChoice = Int(arc4random_uniform(picsArrayValue))
-
+       
     }
     
+// This function randomize the correct answer each time
+    
     func correctAnswer() {
-        randomButton = Int(arc4random_uniform(3))
         
         if randomButton == 0 {
             
             
+            
             answer1.setImage(UIImage(named: picsArray[Int(trueAnswer)]), forState: UIControlState.Normal)
+            
+            foundValue1 = 1
+            
+            let picsArrayValue = UInt32(picsArray.count)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer2.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer3.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer4.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            randomButton = Int(arc4random_uniform(3))
+
 
         }
         
@@ -119,13 +226,53 @@ class AttentionViewController: UIViewController {
         if randomButton == 1 {
             answer2.setImage(UIImage(named: picsArray[Int(trueAnswer)]), forState: UIControlState.Normal)
 
+            foundValue2 = 1
             
+            let picsArrayValue = UInt32(picsArray.count)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer1.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer3.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer4.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+
+            randomButton = Int(arc4random_uniform(3))
+
         }
         
         
         if randomButton == 2 {
             
             answer3.setImage(UIImage(named: picsArray[Int(trueAnswer)]), forState: UIControlState.Normal)
+            
+            foundValue3 = 1
+            
+            let picsArrayValue = UInt32(picsArray.count)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer2.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer1.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer4.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            randomButton = Int(arc4random_uniform(3))
+
 
         }
         
@@ -133,12 +280,43 @@ class AttentionViewController: UIViewController {
         if randomButton == 3 {
             
             answer4.setImage(UIImage(named: picsArray[Int(trueAnswer)]), forState: UIControlState.Normal)
+            
+            foundValue4 = 1
+            
+            let picsArrayValue = UInt32(picsArray.count)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer2.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer3.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            answer1.setImage(UIImage(named: picsArray[Int(randomChoice)]), forState: UIControlState.Normal)
+            
+            randomChoice = Int(arc4random_uniform(picsArrayValue))
+            
+            randomButton = Int(arc4random_uniform(3))
+
 
         }
     }
     
-
     
+    func reappear() {
+        
+        setupImage()
+        correctAnswer()
+        delayPic()
+
+    }
+    
+
+// This function first shows the question and than shows the choices
+
     func delayPic() {
         
         answer1.alpha = 0
@@ -159,6 +337,8 @@ class AttentionViewController: UIViewController {
     
     }
     
+//  Counter from 50 to 0
+    
     func reverseCounter() {
         
         timeValue = timeValue - 1
@@ -167,7 +347,7 @@ class AttentionViewController: UIViewController {
         
     }
 
-    
+//  Makes delay inside the function
     
     func delay(delay: Double, closure: ()->()) {
         dispatch_after(
@@ -179,6 +359,17 @@ class AttentionViewController: UIViewController {
             closure
         )
     }
+    
+    func timeToMoveOn() {
+        
+        recordsOperation.append(String(points))
+        
+        NSUserDefaults.standardUserDefaults().setObject(recordsOperation, forKey: "recordsOperation")
+        
+        
+        self.performSegueWithIdentifier("goToAttentionResults", sender: self)
+    }
+
 
 
 }

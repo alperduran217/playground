@@ -274,6 +274,7 @@
 		64996D421CB9B56800C2F543 /* funBunny65.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D001CB9B56800C2F543 /* funBunny65.tiff */; };
 		64996D431CB9B56800C2F543 /* funBunny66.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D011CB9B56800C2F543 /* funBunny66.tiff */; };
 		64996D451CB9B59100C2F543 /* funBunny17.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D441CB9B59100C2F543 /* funBunny17.tiff */; };
+		649EAFBB1CCE5125004AF2C3 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EAFBA1CCE5125004AF2C3 /* RecordsViewController.swift */; };
 		64D15D441CC2B08E00769000 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D15D431CC2B08E00769000 /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -569,6 +570,7 @@
 		64996D001CB9B56800C2F543 /* funBunny65.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny65.tiff; sourceTree = "<group>"; };
 		64996D011CB9B56800C2F543 /* funBunny66.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny66.tiff; sourceTree = "<group>"; };
 		64996D441CB9B59100C2F543 /* funBunny17.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny17.tiff; sourceTree = "<group>"; };
+		649EAFBA1CCE5125004AF2C3 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		64D15D431CC2B08E00769000 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -846,6 +848,7 @@
 				649191E11CAEAE91006A40AB /* AppDelegate.swift */,
 				649191E51CAEAE91006A40AB /* Main.storyboard */,
 				64879AB51CCCF87D00CF9E40 /* AttentionViewController.swift */,
+				649EAFBA1CCE5125004AF2C3 /* RecordsViewController.swift */,
 				645C62B11CCCDF94000FB0C2 /* RecordsTableViewController.swift */,
 				641C2FD91CB911450035817B /* StoryViewController.swift */,
 				6446501F1CB7D06600AF5B98 /* MainMenuViewController.swift */,
@@ -1464,6 +1467,7 @@
 				64879AB61CCCF87D00CF9E40 /* AttentionViewController.swift in Sources */,
 				64590C501CB1333E005CA4A4 /* ShapesENViewController.swift in Sources */,
 				6445FFAB1CBFBDA900A26C14 /* ColorsViewController.swift in Sources */,
+				649EAFBB1CCE5125004AF2C3 /* RecordsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
