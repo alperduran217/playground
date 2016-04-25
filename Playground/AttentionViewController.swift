@@ -219,7 +219,6 @@ class AttentionViewController: UIViewController {
             
             randomButton = Int(arc4random_uniform(3))
 
-
         }
         
         

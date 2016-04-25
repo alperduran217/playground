@@ -25,6 +25,8 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
         // Do any additional setup after loading the view.
         
+      
+
 
         storyText.alpha = 0
     }
@@ -64,6 +66,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
     @IBAction func speak(sender: AnyObject) {
         if !speechSynthesizer.speaking {
+              timer5 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation5), userInfo: nil, repeats: true)
             let textParagraphs = storyText.text.componentsSeparatedByString("\n")
             
             totalUtterances = textParagraphs.count
@@ -121,6 +124,10 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     var counterFrog = 1
     
     var counterFunBunny = 1
+    
+    var counterRunningBunny = 1
+    
+    var counterHappBunny = 1
 
     var timer = NSTimer()
     
@@ -129,6 +136,10 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     var timer3 = NSTimer()
     
     var timer4 = NSTimer()
+    
+    var timer5 = NSTimer()
+    
+    var timer6 = NSTimer()
     
     var isAnimating = true
 
@@ -218,23 +229,57 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         // Keep the currently selected range so as to remove the orange text color next.
         previousSelectedRange = rangeInTotalText
         
+        if previousSelectedRange.location == 194 {
+            
+          label.text = "Kendisinden çok daha küçük hayvanların ormanda korkusuzca gezdiğini gören tavşan korkaklığına daha bir üzülürmüş. "
+            
+        }
+
+        
+        if previousSelectedRange.location == 354 {
+            
+            label.text = "Korka korka, saklana saklana "
+            
+        }
+        
+        
+        if previousSelectedRange.location == 466 {
+            
+            label.text = "vraak vraaaakkk "
+            
+        }
+        
+        if previousSelectedRange.location == 705 {
+            
+            label.text = "O günden sonra tavşan... "
+            
+            timer3.invalidate()
+            
+             timer6 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation6), userInfo: nil, repeats: true)
+        }
+
+        
         if previousSelectedRange.location == 281 {
+            
+            
+            timer5.invalidate()
             timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation), userInfo: nil, repeats: true)
 
         }
         
         if previousSelectedRange.location == 425 {
             
+            
             timer.invalidate()
             storyImage.image = UIImage(named: "ScaredBunny1.tiff")
-            timer2 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation2), userInfo: nil, repeats: true)
+            timer2 = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: #selector(StoryViewController.doAnimation2), userInfo: nil, repeats: true)
             
         }
         
         if previousSelectedRange.location == 526 {
             
             timer2.invalidate()
-            timer3 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StoryViewController.doAnimation3), userInfo: nil, repeats: true)
+            timer3 = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: #selector(StoryViewController.doAnimation3), userInfo: nil, repeats: true)
             
         }
         
@@ -282,14 +327,14 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
             
             storyImage.image = UIImage(named: "sadBunny\(counterSadBunny).tiff")
-            label.text = "Kendisinden çok daha küçük hayvanların ormanda korkusuzca gezdiğini gören tavşan korkaklığına daha bir üzülürmüş. "
+        
 
     }
     
     func doAnimation2() {
         
         
-        if counterScaredBunny == 55 {
+        if counterScaredBunny == 4 {
             
             counterScaredBunny = 1
             
@@ -309,7 +354,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     func doAnimation3() {
         
         
-        if counterFrog == 6 {
+        if counterFrog == 14 {
             
             counterFrog = 1
             
@@ -346,6 +391,49 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         
     }
+    
+    
+    func doAnimation5() {
+        
+        
+        if counterRunningBunny == 11 {
+            
+            counterRunningBunny = 1
+            
+        } else {
+            
+            counterRunningBunny += 1
+            
+        }
+        
+        
+        
+        storyImage.image = UIImage(named: "runningBunny\(counterRunningBunny).tiff")
+        
+        
+    }
+    
+    func doAnimation6() {
+        
+        
+        if counterHappBunny == 11 {
+            
+            counterHappBunny = 1
+            
+        } else {
+            
+            counterHappBunny += 1
+            
+        }
+        
+        
+        
+        storyImage.image = UIImage(named: "happyBunny\(counterHappBunny).tiff")
+        
+        
+    }
+    
+    
     
     
     func animateActionButtonAppearance(shouldHideSpeakButton: Bool) {
