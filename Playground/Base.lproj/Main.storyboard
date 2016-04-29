@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWo-2Y-Gut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9687" y="-430"/>
+            <point key="canvasLocation" x="-9971" y="-1602"/>
         </scene>
         <!--Title-->
         <scene sceneID="ACW-uS-ukN">
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi2-fL-p1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9687" y="274"/>
+            <point key="canvasLocation" x="-9947" y="-926"/>
         </scene>
         <!--AnimalsEN View Controller-->
         <scene sceneID="at2-Kg-jjL">
@@ -173,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqd-JX-M3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5105" y="-1912"/>
+            <point key="canvasLocation" x="-5051" y="-1874"/>
         </scene>
         <!--ShapesEN View Controller-->
         <scene sceneID="Vjp-OF-u7N">
@@ -396,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOb-rB-sBh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6401" y="-437"/>
+            <point key="canvasLocation" x="-6393" y="-388"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="Q4E-xt-OIU">
@@ -540,7 +540,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sib-o5-GpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8392" y="-1231"/>
+            <point key="canvasLocation" x="-8963" y="-1127"/>
         </scene>
         <!--Games View Controller-->
         <scene sceneID="qp2-3D-tUI">
@@ -718,7 +718,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fb-rD-dKo" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8392" y="-430"/>
+            <point key="canvasLocation" x="-8363" y="-388"/>
         </scene>
         <!--Operation View Controller-->
         <scene sceneID="gsa-Ir-zcm">
@@ -1006,7 +1006,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WE-ah-XPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7763" y="331"/>
+            <point key="canvasLocation" x="-7763" y="407"/>
         </scene>
         <!--AlphabetEN View Controller-->
         <scene sceneID="B8s-He-tR9">
@@ -1072,7 +1072,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzf-Sc-Jn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5044" y="-264"/>
+            <point key="canvasLocation" x="-5044" y="-388"/>
         </scene>
         <!--Episodes View Controller-->
         <scene sceneID="nGy-8a-adx">
@@ -1216,7 +1216,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDE-TS-Gfw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6251" y="323"/>
+            <point key="canvasLocation" x="-6693" y="407"/>
         </scene>
         <!--Colors View Controller-->
         <scene sceneID="xaq-lt-gEC">
@@ -1280,7 +1280,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJX-LZ-t4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5051" y="488"/>
+            <point key="canvasLocation" x="-5051" y="407"/>
         </scene>
         <!--Fruits View Controller-->
         <scene sceneID="Ift-Sm-1ud">
@@ -1359,7 +1359,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                     </button>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="-5025" y="1220"/>
+            <point key="canvasLocation" x="-5044" y="1192"/>
         </scene>
         <!--Attention View Controller-->
         <scene sceneID="Yps-Yr-zVO">
@@ -1498,6 +1498,8 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
                             <constraint firstItem="VPT-NG-8Lz" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="yRH-Dp-hvF"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="answer1" destination="pMt-z4-40w" id="H0O-Lv-HlL"/>
                         <outlet property="answer2" destination="ez0-fm-4XJ" id="KSW-HW-Tig"/>
@@ -1605,11 +1607,11 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.</string>
         <image name="tiger1.tiff" width="117" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BSh-Rl-0WL"/>
-        <segue reference="SPk-BU-phH"/>
-        <segue reference="hL3-Jx-JWx"/>
+        <segue reference="aGq-TJ-3gc"/>
+        <segue reference="tdo-On-al1"/>
         <segue reference="4C0-hF-ibl"/>
-        <segue reference="Id2-kY-DOU"/>
-        <segue reference="IQm-g8-XEd"/>
+        <segue reference="dQO-s5-d8d"/>
+        <segue reference="BSh-Rl-0WL"/>
+        <segue reference="DKq-lr-IXx"/>
     </inferredMetricsTieBreakers>
 </document>

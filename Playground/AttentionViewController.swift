@@ -359,6 +359,8 @@ class AttentionViewController: UIViewController {
         )
     }
     
+// This functio
+    
     func timeToMoveOn() {
         
         recordsOperation.append(String(points))
@@ -370,5 +372,6 @@ class AttentionViewController: UIViewController {
     }
 
 
+    //flaticon.com
 
 }
