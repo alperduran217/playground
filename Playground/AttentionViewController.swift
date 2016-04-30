@@ -60,7 +60,6 @@ class AttentionViewController: UIViewController {
 
     //Variables on View
     @IBOutlet weak var questionPic: UIImageView!
-    
     @IBOutlet weak var answer1: UIButton!
     @IBOutlet weak var answer2: UIButton!
     @IBOutlet weak var answer3: UIButton!
@@ -359,7 +358,7 @@ class AttentionViewController: UIViewController {
         )
     }
     
-// This functio
+// This function take the Attention View to Records View
     
     func timeToMoveOn() {
         
@@ -372,6 +371,5 @@ class AttentionViewController: UIViewController {
     }
 
 
-    //flaticon.com
 
 }

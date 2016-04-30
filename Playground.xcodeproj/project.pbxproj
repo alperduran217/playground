@@ -214,6 +214,15 @@
 		64996D431CB9B56800C2F543 /* funBunny66.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D011CB9B56800C2F543 /* funBunny66.tiff */; };
 		64996D451CB9B59100C2F543 /* funBunny17.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64996D441CB9B59100C2F543 /* funBunny17.tiff */; };
 		649EAFBB1CCE5125004AF2C3 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EAFBA1CCE5125004AF2C3 /* RecordsViewController.swift */; };
+		64BA8D301CD4E2C600A23309 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D2F1CD4E2C600A23309 /* play.png */; };
+		64BA8D321CD4E2CE00A23309 /* unplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D311CD4E2CE00A23309 /* unplay.png */; };
+		64BA8D341CD4E2D500A23309 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D331CD4E2D500A23309 /* stop.png */; };
+		64BA8D361CD4EBD700A23309 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D351CD4EBD700A23309 /* back.png */; };
+		64BA8D381CD4ECDA00A23309 /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D371CD4ECDA00A23309 /* restart.png */; };
+		64BA8D3A1CD4EF2000A23309 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D391CD4EF2000A23309 /* home.png */; };
+		64BA8D3C1CD4F09300A23309 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D3B1CD4F09300A23309 /* header.png */; };
+		64BA8D3F1CD4F14900A23309 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D3E1CD4F14900A23309 /* icon.png */; };
+		64BA8D411CD4F28900A23309 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BA8D401CD4F28900A23309 /* forward.png */; };
 		64CB27461CCEC29E00D51F11 /* runningBunny1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64CB273B1CCEC29E00D51F11 /* runningBunny1.tiff */; };
 		64CB27471CCEC29E00D51F11 /* runningBunny2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64CB273C1CCEC29E00D51F11 /* runningBunny2.tiff */; };
 		64CB27481CCEC29E00D51F11 /* runningBunny3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64CB273D1CCEC29E00D51F11 /* runningBunny3.tiff */; };
@@ -492,6 +501,15 @@
 		64996D011CB9B56800C2F543 /* funBunny66.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny66.tiff; sourceTree = "<group>"; };
 		64996D441CB9B59100C2F543 /* funBunny17.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = funBunny17.tiff; sourceTree = "<group>"; };
 		649EAFBA1CCE5125004AF2C3 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		64BA8D2F1CD4E2C600A23309 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		64BA8D311CD4E2CE00A23309 /* unplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unplay.png; sourceTree = "<group>"; };
+		64BA8D331CD4E2D500A23309 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		64BA8D351CD4EBD700A23309 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		64BA8D371CD4ECDA00A23309 /* restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restart.png; sourceTree = "<group>"; };
+		64BA8D391CD4EF2000A23309 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		64BA8D3B1CD4F09300A23309 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		64BA8D3E1CD4F14900A23309 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		64BA8D401CD4F28900A23309 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		64CB273B1CCEC29E00D51F11 /* runningBunny1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = runningBunny1.tiff; sourceTree = "<group>"; };
 		64CB273C1CCEC29E00D51F11 /* runningBunny2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = runningBunny2.tiff; sourceTree = "<group>"; };
 		64CB273D1CCEC29E00D51F11 /* runningBunny3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = runningBunny3.tiff; sourceTree = "<group>"; };
@@ -733,6 +751,15 @@
 			isa = PBXGroup;
 			children = (
 				644650231CB7D23800AF5B98 /* playButton.png */,
+				64BA8D331CD4E2D500A23309 /* stop.png */,
+				64BA8D3E1CD4F14900A23309 /* icon.png */,
+				64BA8D401CD4F28900A23309 /* forward.png */,
+				64BA8D3B1CD4F09300A23309 /* header.png */,
+				64BA8D371CD4ECDA00A23309 /* restart.png */,
+				64BA8D351CD4EBD700A23309 /* back.png */,
+				64BA8D391CD4EF2000A23309 /* home.png */,
+				64BA8D311CD4E2CE00A23309 /* unplay.png */,
+				64BA8D2F1CD4E2C600A23309 /* play.png */,
 				644650251CB7D49B00AF5B98 /* settingButton.png */,
 			);
 			name = Buttons;
@@ -1185,6 +1212,7 @@
 				64CB278D1CCEC89600D51F11 /* happyBunny10.tiff in Resources */,
 				6445FF871CBFAE9000A26C14 /* K.png in Resources */,
 				64CB27491CCEC29E00D51F11 /* runningBunny4.tiff in Resources */,
+				64BA8D301CD4E2C600A23309 /* play.png in Resources */,
 				64996C371CB99A4C00C2F543 /* sadBunny3.tiff in Resources */,
 				64CB274E1CCEC29E00D51F11 /* runningBunny9.tiff in Resources */,
 				6445FF8B1CBFAE9000A26C14 /* O.png in Resources */,
@@ -1194,8 +1222,11 @@
 				644650261CB7D49B00AF5B98 /* settingButton.png in Resources */,
 				64CB27651CCEC3F500D51F11 /* frogs7.tiff in Resources */,
 				6484AC661CBFC87900FF1B5B /* watermelon.png in Resources */,
+				64BA8D341CD4E2D500A23309 /* stop.png in Resources */,
 				6445FF881CBFAE9000A26C14 /* L.png in Resources */,
 				64CB27631CCEC3F500D51F11 /* frogs5.tiff in Resources */,
+				64BA8D321CD4E2CE00A23309 /* unplay.png in Resources */,
+				64BA8D411CD4F28900A23309 /* forward.png in Resources */,
 				6402EB5F1CAEE46A00C54CDF /* elephant.png in Resources */,
 				64996D271CB9B56800C2F543 /* funBunny38.tiff in Resources */,
 				64CB274A1CCEC29E00D51F11 /* runningBunny5.tiff in Resources */,
@@ -1217,6 +1248,7 @@
 				64996D1E1CB9B56800C2F543 /* funBunny29.tiff in Resources */,
 				64996C381CB99A4C00C2F543 /* sadBunny4.tiff in Resources */,
 				64996D3B1CB9B56800C2F543 /* funBunny58.tiff in Resources */,
+				64BA8D381CD4ECDA00A23309 /* restart.png in Resources */,
 				6445FFA91CBFBD3900A26C14 /* yellow.png in Resources */,
 				641C2FAA1CB85AAA0035817B /* book1.tiff in Resources */,
 				64996C421CB99A4C00C2F543 /* sadBunny14.tiff in Resources */,
@@ -1251,6 +1283,7 @@
 				649191E91CAEAE91006A40AB /* Assets.xcassets in Resources */,
 				6484AC601CBFC87900FF1B5B /* peach.png in Resources */,
 				64996D191CB9B56800C2F543 /* funBunny24.tiff in Resources */,
+				64BA8D3A1CD4EF2000A23309 /* home.png in Resources */,
 				6445FFA51CBFBD3900A26C14 /* green.png in Resources */,
 				64996D0C1CB9B56800C2F543 /* funBunny11.tiff in Resources */,
 				6402EB5E1CAEE46A00C54CDF /* giraffe.png in Resources */,
@@ -1272,6 +1305,7 @@
 				641C2FC71CB8FCC10035817B /* tiger3.tiff in Resources */,
 				64996D291CB9B56800C2F543 /* funBunny40.tiff in Resources */,
 				64996D2A1CB9B56800C2F543 /* funBunny41.tiff in Resources */,
+				64BA8D3F1CD4F14900A23309 /* icon.png in Resources */,
 				64CB27471CCEC29E00D51F11 /* runningBunny2.tiff in Resources */,
 				64996D281CB9B56800C2F543 /* funBunny39.tiff in Resources */,
 				641C2FCA1CB8FCC10035817B /* tiger6.tiff in Resources */,
@@ -1308,6 +1342,7 @@
 				64590C3B1CB1268E005CA4A4 /* parallelogram.png in Resources */,
 				64996D351CB9B56800C2F543 /* funBunny52.tiff in Resources */,
 				64996D0B1CB9B56800C2F543 /* funBunny10.tiff in Resources */,
+				64BA8D361CD4EBD700A23309 /* back.png in Resources */,
 				64CB278E1CCEC89600D51F11 /* happyBunny11.tiff in Resources */,
 				64996D311CB9B56800C2F543 /* funBunny48.tiff in Resources */,
 				6445FF851CBFAE9000A26C14 /* I.png in Resources */,
@@ -1371,6 +1406,7 @@
 				6484AC511CBFC87900FF1B5B /* apricot.png in Resources */,
 				6402EB611CAEE46A00C54CDF /* crocodile.png in Resources */,
 				6484AC531CBFC87900FF1B5B /* banana.png in Resources */,
+				64BA8D3C1CD4F09300A23309 /* header.png in Resources */,
 				64996D091CB9B56800C2F543 /* funBunny8.tiff in Resources */,
 				644650241CB7D23800AF5B98 /* playButton.png in Resources */,
 			);
@@ -1552,7 +1588,7 @@
 		649192071CAEAE92006A40AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = Playground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlperDuran.Playground;
@@ -1564,7 +1600,7 @@
 		649192081CAEAE92006A40AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = Playground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlperDuran.Playground;
