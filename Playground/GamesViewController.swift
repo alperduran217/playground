@@ -31,6 +31,7 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
     }
 
 // MAIN STORYBOARD
+    @IBOutlet weak var gameImage: UIImageView!
     
     @IBOutlet weak var tigerImage: UIImageView!
     
@@ -47,6 +48,8 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var gamesLabel: UILabel!
     
 // VARIABLES
+    
+    var counterGame = 1
     
     var counterBook = 1
     
@@ -95,9 +98,17 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
             
         }
         
+        if counterGame == 17 {
+            counterGame = 1
+        }
+        else {
+            counterGame += 1
+        }
+        
         
         bookImage.image = UIImage(named: "book\(counterBook).tiff")
         tigerImage.image = UIImage(named: "tiger\(counterTiger).tiff")
+        gameImage.image = UIImage(named: "gameIcon\(counterGame).png")
 
         
         

@@ -72,11 +72,22 @@ class AttentionViewController: UIViewController {
 
             self.view.backgroundColor = UIColor.greenColor()
             
+            if languageChoice == 0 {
+            
+            answerLabel.text = "Doğru"
+            
+            }
+            
+            if languageChoice == 1 {
+                
+                answerLabel.text = "Correct"
+                
+            }
             points = points + 10
             
             pointsLabel.text = String(points)
             
-            delay(0.2) {
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }
@@ -93,13 +104,27 @@ class AttentionViewController: UIViewController {
             
             foundValue2 = 0
             
+            
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Doğru"
+                
+            }
+            
+            if languageChoice == 1 {
+                
+                answerLabel.text = "Correct"
+                
+            }
+
+            
             self.view.backgroundColor = UIColor.greenColor()
             
             points = points + 10
             
             pointsLabel.text = String(points)
             
-            delay(0.2) {
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }
@@ -116,13 +141,27 @@ class AttentionViewController: UIViewController {
         if foundValue3 == 1 {
             foundValue3 = 0
             
+            
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Doğru"
+                
+            }
+            
+            if languageChoice == 1 {
+                
+                answerLabel.text = "Correct"
+                
+            }
+
+            
             self.view.backgroundColor = UIColor.greenColor()
             
             points = points + 10
             
             pointsLabel.text = String(points)
             
-            delay(0.2) {
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }
@@ -138,6 +177,18 @@ class AttentionViewController: UIViewController {
             foundValue4 = 0
 
             
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Doğru"
+                
+            }
+            
+            if languageChoice == 1 {
+                
+                answerLabel.text = "Correct"
+                
+            }
+
             
             self.view.backgroundColor = UIColor.greenColor()
             
@@ -145,7 +196,7 @@ class AttentionViewController: UIViewController {
             
             pointsLabel.text = String(points)
             
-            delay(0.2) {
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }
@@ -173,6 +224,19 @@ class AttentionViewController: UIViewController {
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var start: UIButton!
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBAction func restart(sender: AnyObject) {
+        answer1.alpha = 0
+        answer2.alpha = 0
+        answer3.alpha = 0
+        answer4.alpha = 0
+        questionPic.alpha = 0
+        timer.invalidate()
+        timer2.invalidate()
+        timeValue = 50
+        timeLabel.text = "50"
+        start.alpha = 1
+    }
     
     
     

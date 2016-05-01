@@ -58,12 +58,26 @@ class OperationViewController: UIViewController {
     var timeValue:Int = 50
 
 
+    @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet var operationView: UIView!
     @IBOutlet weak var multi: UILabel!
     @IBOutlet weak var div: UILabel!
     @IBOutlet weak var minus: UILabel!
     @IBOutlet weak var add: UILabel!
     @IBOutlet weak var start: UIButton!
+    @IBAction func restart(sender: AnyObject) {
+        
+        div.alpha = 0
+        add.alpha = 0
+        minus.alpha = 0
+        multi.alpha = 0
+        start.alpha = 1
+        timer.invalidate()
+        timer2.invalidate()
+        timeValue = 50
+        timeLabel.text = "50"
+        
+    }
     
     @IBAction func startAction(sender: AnyObject) {
         start.alpha = 0
@@ -193,7 +207,7 @@ class OperationViewController: UIViewController {
                 
                 button1.setTitle("\(result)", forState: .Normal)
                 button2.setTitle("\(fakeResult)", forState: .Normal)
-                
+            
                 button1Value = result
                 button2Value = fakeResult
                 
@@ -254,11 +268,21 @@ class OperationViewController: UIViewController {
         if button1Value == result {
             self.view.backgroundColor = UIColor.greenColor()
             
+            if languageChoice == 1 {
+                answerLabel.text = "Correct"
+            }
+            
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Doğru"
+                
+            }
+            
             points = points + 10
 
             pointsLabel.text = String(points)
 
-            delay(0.2) {
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
 
             }
@@ -267,7 +291,17 @@ class OperationViewController: UIViewController {
         if button1Value == fakeResult {
             self.view.backgroundColor = UIColor.redColor()
             
-            delay(0.2) {
+            if languageChoice == 1 {
+                answerLabel.text = "Wrong"
+            }
+            
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Yanlış"
+                
+            }
+            
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }
@@ -279,11 +313,21 @@ class OperationViewController: UIViewController {
         if button2Value == result {
             self.view.backgroundColor = UIColor.greenColor()
             
+            if languageChoice == 1 {
+                answerLabel.text = "Correct"
+            }
+            
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Doğru"
+                
+            }
+            
             points = points + 10
             
             pointsLabel.text = String(points)
             
-            delay(0.2) {
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }
@@ -292,7 +336,17 @@ class OperationViewController: UIViewController {
         if button2Value == fakeResult {
             self.view.backgroundColor = UIColor.redColor()
             
-            delay(0.2) {
+            if languageChoice == 1 {
+                answerLabel.text = "Wrong"
+            }
+            
+            if languageChoice == 0 {
+                
+                answerLabel.text = "Yanlış"
+                
+            }
+            
+            delay(0.4) {
                 self.view.backgroundColor = UIColor.whiteColor()
                 
             }

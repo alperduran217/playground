@@ -113,6 +113,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="pTF-SE-Ec2"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi2-fL-p1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqd-JX-M3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5051" y="-1874"/>
+            <point key="canvasLocation" x="-3779" y="-1882"/>
         </scene>
         <!--ShapesEN View Controller-->
         <scene sceneID="Vjp-OF-u7N">
@@ -262,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glg-dd-qgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5044" y="-1096"/>
+            <point key="canvasLocation" x="-3772" y="-1104"/>
         </scene>
         <!--Episodes View Controller-->
         <scene sceneID="B4R-pI-omK">
@@ -450,6 +452,9 @@
                                     <constraint firstAttribute="width" constant="35" id="PfO-mQ-nzH"/>
                                 </constraints>
                                 <state key="normal" image="home.png"/>
+                                <connections>
+                                    <segue destination="IU1-D7-bEm" kind="show" id="Ei9-LC-hn5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97006027230000003" green="0.97006027230000003" blue="0.97006027230000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -484,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOb-rB-sBh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6393" y="-388"/>
+            <point key="canvasLocation" x="-5121" y="-396"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="Q4E-xt-OIU">
@@ -766,14 +771,43 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yom-WE-bpo">
                                                 <rect key="frame" x="1200" y="0.0" width="600" height="556"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oyunlar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-Mp-DqF">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Oyunlar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-Mp-DqF">
                                                         <rect key="frame" x="199" y="356" width="203" height="138"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="203" id="EZk-Uk-GnW"/>
+                                                            <constraint firstAttribute="height" constant="138" id="QnH-6U-UZL"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrM-63-MFi">
+                                                        <rect key="frame" x="196" y="176" width="208" height="208"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="208" id="Kua-sj-CdS"/>
+                                                            <constraint firstAttribute="height" constant="208" id="fua-bd-sEX"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="xDe-eD-BHZ" kind="show" id="yIb-Hc-vnC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gameIcon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-GG-Izj">
+                                                        <rect key="frame" x="196" y="172" width="208" height="208"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="208" id="AuI-AH-7Sq"/>
+                                                            <constraint firstAttribute="width" constant="208" id="err-4K-29G"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.039827038750000002" green="0.77851283979999997" blue="0.67251420449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="PrM-63-MFi" firstAttribute="top" secondItem="Yom-WE-bpo" secondAttribute="top" constant="176" id="1tk-Ni-Gu8"/>
+                                                    <constraint firstItem="Zaa-GG-Izj" firstAttribute="top" secondItem="Yom-WE-bpo" secondAttribute="top" constant="172" id="9dv-U4-Gz3"/>
+                                                    <constraint firstItem="yFU-Mp-DqF" firstAttribute="centerX" secondItem="Yom-WE-bpo" secondAttribute="centerX" id="Vi5-h8-cVi"/>
+                                                    <constraint firstItem="PrM-63-MFi" firstAttribute="centerX" secondItem="Yom-WE-bpo" secondAttribute="centerX" id="bJl-o3-cIX"/>
+                                                    <constraint firstItem="yFU-Mp-DqF" firstAttribute="top" secondItem="Yom-WE-bpo" secondAttribute="top" constant="356" id="qNf-v3-aih"/>
+                                                    <constraint firstItem="Zaa-GG-Izj" firstAttribute="centerX" secondItem="Yom-WE-bpo" secondAttribute="centerX" id="qew-GG-uMt"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -855,6 +889,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                     <size key="freeformSize" width="1800" height="600"/>
                     <connections>
                         <outlet property="bookImage" destination="MZK-4x-cbY" id="GeL-8T-wnB"/>
+                        <outlet property="gameImage" destination="Zaa-GG-Izj" id="ViF-iV-3Zd"/>
                         <outlet property="gamesLabel" destination="yFU-Mp-DqF" id="oTC-Im-1Lg"/>
                         <outlet property="learningLabel" destination="Omr-hM-gm1" id="bca-hZ-Knj"/>
                         <outlet property="pageControl" destination="h9Q-6y-ahk" id="o1J-Wg-oHY"/>
@@ -865,7 +900,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fb-rD-dKo" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8363" y="-388"/>
+            <point key="canvasLocation" x="-8403" y="-428"/>
         </scene>
         <!--Operation View Controller-->
         <scene sceneID="gsa-Ir-zcm">
@@ -889,15 +924,19 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="back.png"/>
                                                 <connections>
-                                                    <segue destination="Ayt-gZ-HKo" kind="show" id="SPk-BU-phH"/>
+                                                    <segue destination="xDe-eD-BHZ" kind="show" id="cbi-zI-c24"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="TZV-Qt-8Pf">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d22-kZ-lpe">
-                                                <rect key="frame" x="535" y="-1" width="45" height="45"/>
+                                                <rect key="frame" x="545" y="4" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="restart.png"/>
+                                                <connections>
+                                                    <action selector="restart:" destination="Kie-be-PgD" eventType="touchUpInside" id="tjd-vK-VFw"/>
+                                                    <action selector="startAction:" destination="Kie-be-PgD" eventType="touchUpInside" id="aob-C8-hYf"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1027,6 +1066,16 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                     <action selector="startAction:" destination="Kie-be-PgD" eventType="touchUpInside" id="Vap-ax-jaA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-Gd-Rab">
+                                <rect key="frame" x="115" y="467" width="370" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="fVh-gs-Rsz"/>
+                                    <constraint firstAttribute="width" constant="370" id="wDm-Kb-1xv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1037,6 +1086,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="rKA-G3-Hzd" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="7wZ-HH-CBO"/>
                             <constraint firstItem="HFh-o4-dQ0" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" id="8Nm-uN-hpZ"/>
                             <constraint firstItem="O7v-lG-2G0" firstAttribute="leading" secondItem="TMW-Ag-A7O" secondAttribute="trailing" constant="8" id="BLH-4t-dSA"/>
+                            <constraint firstItem="TJE-Gd-Rab" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="LKn-SD-joJ"/>
                             <constraint firstItem="2le-vh-qfM" firstAttribute="top" secondItem="I1a-75-zIY" secondAttribute="bottom" constant="10" id="LPH-P4-b6y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2le-vh-qfM" secondAttribute="trailing" constant="95" id="MWP-MB-mA1"/>
                             <constraint firstItem="1CB-Zc-xIm" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="NZi-KZ-PZG"/>
@@ -1051,6 +1101,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="kjh-I5-APE" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="50" id="e0v-Fe-KrD"/>
                             <constraint firstItem="TMW-Ag-A7O" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="95" id="eRb-we-XCJ"/>
                             <constraint firstItem="xac-ir-Yly" firstAttribute="top" secondItem="rKA-G3-Hzd" secondAttribute="bottom" constant="46" id="egG-A6-z7e"/>
+                            <constraint firstItem="TJE-Gd-Rab" firstAttribute="top" secondItem="2le-vh-qfM" secondAttribute="bottom" constant="8" id="jrF-j2-SD5"/>
                             <constraint firstItem="rKA-G3-Hzd" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="-20" id="mYm-02-Ram"/>
                             <constraint firstItem="2le-vh-qfM" firstAttribute="leading" secondItem="O7v-lG-2G0" secondAttribute="trailing" constant="8" id="nI1-WK-YH6"/>
                             <constraint firstItem="xac-ir-Yly" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="nVj-DB-reh"/>
@@ -1066,6 +1117,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="add" destination="oyU-xp-5ZJ" id="hY0-d3-H0c"/>
+                        <outlet property="answerLabel" destination="TJE-Gd-Rab" id="Zuz-zv-DfM"/>
                         <outlet property="bigLabel" destination="kjh-I5-APE" id="Ls6-P0-zuQ"/>
                         <outlet property="button1" destination="TMW-Ag-A7O" id="mba-sH-7uD"/>
                         <outlet property="button2" destination="2le-vh-qfM" id="FLs-PX-DN8"/>
@@ -1082,7 +1134,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3i4-dp-A6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8500" y="407"/>
+            <point key="canvasLocation" x="-8596" y="895"/>
         </scene>
         <!--Records Table View Controller-->
         <scene sceneID="Dl0-Ve-d8W">
@@ -1101,20 +1153,20 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                 <items>
                                     <navigationItem id="zgS-f3-Xrz">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="Xgr-Ur-lva">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ujo-BV-Kvk">
-                                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ujo-BV-Kvk">
+                                                <rect key="frame" x="20" y="7" width="56" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
+                                                <state key="normal" image="back.png"/>
                                                 <connections>
                                                     <segue destination="Kie-be-PgD" kind="show" id="ulX-J0-P5B"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="2JZ-U1-axz">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xo1-aG-6uw">
-                                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xo1-aG-6uw">
+                                                <rect key="frame" x="545" y="4" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Home"/>
+                                                <state key="normal" image="home.png"/>
                                                 <connections>
                                                     <segue destination="Ayt-gZ-HKo" kind="show" id="dQO-s5-d8d"/>
                                                 </connections>
@@ -1160,7 +1212,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WE-ah-XPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7763" y="407"/>
+            <point key="canvasLocation" x="-7859" y="895"/>
         </scene>
         <!--AlphabetEN View Controller-->
         <scene sceneID="B8s-He-tR9">
@@ -1231,7 +1283,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzf-Sc-Jn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5044" y="-388"/>
+            <point key="canvasLocation" x="-3772" y="-396"/>
         </scene>
         <!--Episodes Page Two View Controller-->
         <scene sceneID="nGy-8a-adx">
@@ -1423,7 +1475,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDE-TS-Gfw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6693" y="407"/>
+            <point key="canvasLocation" x="-4869" y="239"/>
         </scene>
         <!--Colors View Controller-->
         <scene sceneID="xaq-lt-gEC">
@@ -1500,7 +1552,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJX-LZ-t4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5051" y="407"/>
+            <point key="canvasLocation" x="-3779" y="399"/>
         </scene>
         <!--Fruits View Controller-->
         <scene sceneID="Ift-Sm-1ud">
@@ -1584,7 +1636,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                     </button>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="-5044" y="1192"/>
+            <point key="canvasLocation" x="-3772" y="1184"/>
         </scene>
         <!--Attention View Controller-->
         <scene sceneID="Yps-Yr-zVO">
@@ -1603,20 +1655,23 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                 <items>
                                     <navigationItem id="aqT-88-5e8">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="G6g-1z-fDn">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N7b-cC-myw">
-                                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N7b-cC-myw">
+                                                <rect key="frame" x="20" y="7" width="56" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
+                                                <state key="normal" image="back.png"/>
                                                 <connections>
-                                                    <segue destination="Ayt-gZ-HKo" kind="show" id="5vw-Yq-bkZ"/>
+                                                    <segue destination="xDe-eD-BHZ" kind="show" id="4fc-5d-y0S"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="qgj-hA-vm1">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vNQ-HF-hSf">
-                                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vNQ-HF-hSf">
+                                                <rect key="frame" x="545" y="4" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Restart"/>
+                                                <state key="normal" image="restart.png"/>
+                                                <connections>
+                                                    <action selector="restart:" destination="GjU-ov-aw7" eventType="touchUpInside" id="o8F-II-L9u"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1705,10 +1760,21 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                     <action selector="answerAction4:" destination="GjU-ov-aw7" eventType="touchUpInside" id="lgo-Oe-Ecq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f80-yo-efO">
+                                <rect key="frame" x="178" y="503" width="244" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="pzf-qw-Wxe"/>
+                                    <constraint firstAttribute="height" constant="77" id="sRj-CT-5lk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z54-DD-big" firstAttribute="leading" secondItem="Wx9-JD-MJu" secondAttribute="leadingMargin" id="1iK-LL-lE6"/>
+                            <constraint firstItem="f80-yo-efO" firstAttribute="top" secondItem="ISZ-FL-L4d" secondAttribute="bottom" constant="8" id="22B-nP-bwd"/>
                             <constraint firstItem="VPT-NG-8Lz" firstAttribute="top" secondItem="5D5-oo-7yh" secondAttribute="bottom" id="4DQ-wo-av8"/>
                             <constraint firstItem="sjA-i9-mNt" firstAttribute="trailing" secondItem="Wx9-JD-MJu" secondAttribute="trailingMargin" id="853-lu-t9V"/>
                             <constraint firstItem="ISZ-FL-L4d" firstAttribute="top" secondItem="VPT-NG-8Lz" secondAttribute="bottom" constant="186" id="BRn-Xa-uh9"/>
@@ -1727,6 +1793,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="cGk-cr-aWl" firstAttribute="trailing" secondItem="Wx9-JD-MJu" secondAttribute="trailingMargin" id="hKT-ba-xbk"/>
                             <constraint firstItem="ISZ-FL-L4d" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="nav-4e-wku"/>
                             <constraint firstItem="oBz-EC-fav" firstAttribute="top" secondItem="Wsm-r6-Pws" secondAttribute="bottom" constant="20" id="pCR-nu-V6q"/>
+                            <constraint firstItem="f80-yo-efO" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="u2R-np-LxT"/>
                             <constraint firstItem="VPT-NG-8Lz" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="yRH-Dp-hvF"/>
                         </constraints>
                     </view>
@@ -1737,6 +1804,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                         <outlet property="answer2" destination="ez0-fm-4XJ" id="KSW-HW-Tig"/>
                         <outlet property="answer3" destination="sjA-i9-mNt" id="LeG-YU-iQF"/>
                         <outlet property="answer4" destination="Wsm-r6-Pws" id="wKt-oR-Xt2"/>
+                        <outlet property="answerLabel" destination="f80-yo-efO" id="CK5-Wg-SUv"/>
                         <outlet property="pointsLabel" destination="cGk-cr-aWl" id="XvW-Kg-z0f"/>
                         <outlet property="questionPic" destination="e3L-n5-Bi9" id="KU7-h5-xbd"/>
                         <outlet property="start" destination="ISZ-FL-L4d" id="o5b-bl-uHS"/>
@@ -1746,7 +1814,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdt-sr-sab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8500" y="1084"/>
+            <point key="canvasLocation" x="-8596" y="1572"/>
         </scene>
         <!--Records View Controller-->
         <scene sceneID="oVE-WN-esC">
@@ -1765,20 +1833,20 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                 <items>
                                     <navigationItem id="5N9-YH-iWy">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="hEu-R2-O8v">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O5u-t5-EtC">
-                                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O5u-t5-EtC">
+                                                <rect key="frame" x="20" y="7" width="56" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
+                                                <state key="normal" image="back.png"/>
                                                 <connections>
                                                     <segue destination="GjU-ov-aw7" kind="show" id="99D-c7-Dur"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="Ja0-0t-MMH">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zdv-7H-1v1">
-                                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zdv-7H-1v1">
+                                                <rect key="frame" x="545" y="4" width="35" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Home"/>
+                                                <state key="normal" image="home.png"/>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1821,7 +1889,216 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1e-Nj-dbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7763" y="1084"/>
+            <point key="canvasLocation" x="-7859" y="1572"/>
+        </scene>
+        <!--Games Episodes View Controller-->
+        <scene sceneID="w3R-ZG-nSo">
+            <objects>
+                <viewController id="xDe-eD-BHZ" customClass="GamesEpisodesViewController" customModule="Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kkq-GT-T8w"/>
+                        <viewControllerLayoutGuide type="bottom" id="7gK-NT-Xz0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U8V-M3-8Af">
+                        <rect key="frame" x="0.0" y="0.0" width="1800" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="w9z-Oe-nFy">
+                                <rect key="frame" x="881" y="559" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.69703360479999998" green="0.69703360479999998" blue="0.69703360479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-0m-7Da">
+                                <rect key="frame" x="0.0" y="0.0" width="1800" height="555"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDT-Gh-B1h" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="1800" height="555"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mMx-NG-C7z">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPt-zA-Ali">
+                                                        <rect key="frame" x="196" y="134" width="208" height="208"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="208" id="3uZ-nD-QQQ"/>
+                                                            <constraint firstAttribute="width" constant="208" id="h3x-eR-VPP"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="Kie-be-PgD" kind="show" id="INL-1C-zdz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="artı1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Ju-k7-bvD">
+                                                        <rect key="frame" x="196" y="134" width="208" height="208"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="208" id="Ad9-Jj-7pq"/>
+                                                            <constraint firstAttribute="width" constant="208" id="gl7-0a-EpN"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dört İşlem Oyunu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng7-2E-4IP">
+                                                        <rect key="frame" x="196" y="350" width="209" height="197"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="209" id="G3g-S5-Uwv"/>
+                                                            <constraint firstAttribute="height" constant="197" id="uRd-hH-g3X"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="29"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="nPt-zA-Ali" firstAttribute="centerX" secondItem="mMx-NG-C7z" secondAttribute="centerX" id="5aN-v3-Y4O"/>
+                                                    <constraint firstItem="ng7-2E-4IP" firstAttribute="top" secondItem="2Ju-k7-bvD" secondAttribute="bottom" constant="8" id="9a9-P7-mtQ"/>
+                                                    <constraint firstItem="2Ju-k7-bvD" firstAttribute="centerX" secondItem="mMx-NG-C7z" secondAttribute="centerX" id="He7-yu-cBs"/>
+                                                    <constraint firstItem="nPt-zA-Ali" firstAttribute="top" secondItem="mMx-NG-C7z" secondAttribute="top" constant="134" id="aci-n9-i5q"/>
+                                                    <constraint firstItem="2Ju-k7-bvD" firstAttribute="top" secondItem="mMx-NG-C7z" secondAttribute="top" constant="134" id="fhS-6R-Y1Q"/>
+                                                    <constraint firstItem="ng7-2E-4IP" firstAttribute="centerX" secondItem="mMx-NG-C7z" secondAttribute="centerX" id="tdO-Vc-WnB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N0J-Ti-iRj">
+                                                <rect key="frame" x="600" y="0.0" width="600" height="555"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dikkat Oyunu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVi-dc-nW4">
+                                                        <rect key="frame" x="133" y="356" width="336" height="138"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="336" id="Q5J-G3-w2X"/>
+                                                            <constraint firstAttribute="height" constant="138" id="gbO-hD-b27"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="attentionGif1.tiff" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-Dm-wOH">
+                                                        <rect key="frame" x="181" y="108" width="240" height="240"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="240" id="SWv-kL-taM"/>
+                                                            <constraint firstAttribute="height" constant="240" id="bJB-Tj-Vvb"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCl-s6-FIM">
+                                                        <rect key="frame" x="180" y="108" width="240" height="240"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="240" id="13f-sk-cnt"/>
+                                                            <constraint firstAttribute="width" constant="240" id="QGd-rn-Akp"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="GjU-ov-aw7" kind="show" id="6Tb-Yg-RLf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="VCl-s6-FIM" firstAttribute="centerX" secondItem="N0J-Ti-iRj" secondAttribute="centerX" id="2uP-JJ-aoN"/>
+                                                    <constraint firstItem="bVi-dc-nW4" firstAttribute="top" secondItem="OrC-Dm-wOH" secondAttribute="bottom" constant="8" id="9OQ-FA-ZeU"/>
+                                                    <constraint firstItem="OrC-Dm-wOH" firstAttribute="top" secondItem="N0J-Ti-iRj" secondAttribute="top" constant="108" id="Srn-Qx-UlL"/>
+                                                    <constraint firstItem="OrC-Dm-wOH" firstAttribute="centerX" secondItem="N0J-Ti-iRj" secondAttribute="centerX" id="c9z-kC-Kh9"/>
+                                                    <constraint firstItem="bVi-dc-nW4" firstAttribute="centerX" secondItem="N0J-Ti-iRj" secondAttribute="centerX" id="dNO-xq-mYd"/>
+                                                    <constraint firstItem="VCl-s6-FIM" firstAttribute="top" secondItem="N0J-Ti-iRj" secondAttribute="top" constant="108" id="xJm-wZ-4aR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70X-9S-b0a">
+                                                <rect key="frame" x="1200" y="0.0" width="600" height="556"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kelime Oyunu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYn-mC-GMO">
+                                                        <rect key="frame" x="141" y="356" width="319" height="138"/>
+                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="N0J-Ti-iRj" firstAttribute="width" secondItem="70X-9S-b0a" secondAttribute="width" id="AGp-Z1-5Nh"/>
+                                            <constraint firstItem="mMx-NG-C7z" firstAttribute="leading" secondItem="UDT-Gh-B1h" secondAttribute="leading" id="Cap-Pw-0tS"/>
+                                            <constraint firstItem="70X-9S-b0a" firstAttribute="top" secondItem="UDT-Gh-B1h" secondAttribute="top" id="DuV-B6-CsN"/>
+                                            <constraint firstItem="N0J-Ti-iRj" firstAttribute="leading" secondItem="mMx-NG-C7z" secondAttribute="trailing" id="KSN-fg-s9B"/>
+                                            <constraint firstItem="mMx-NG-C7z" firstAttribute="width" secondItem="N0J-Ti-iRj" secondAttribute="width" id="Kke-rP-xT5"/>
+                                            <constraint firstItem="mMx-NG-C7z" firstAttribute="top" secondItem="UDT-Gh-B1h" secondAttribute="top" id="LGg-K1-RNR"/>
+                                            <constraint firstAttribute="bottom" secondItem="70X-9S-b0a" secondAttribute="bottom" id="Nza-gf-THu"/>
+                                            <constraint firstItem="N0J-Ti-iRj" firstAttribute="top" secondItem="UDT-Gh-B1h" secondAttribute="top" id="RwL-vU-iXn"/>
+                                            <constraint firstAttribute="bottom" secondItem="mMx-NG-C7z" secondAttribute="bottom" id="aO1-gE-C97"/>
+                                            <constraint firstItem="70X-9S-b0a" firstAttribute="leading" secondItem="N0J-Ti-iRj" secondAttribute="trailing" id="gaR-yX-Zxv"/>
+                                            <constraint firstAttribute="bottom" secondItem="N0J-Ti-iRj" secondAttribute="bottom" id="kx6-9W-Bbo"/>
+                                            <constraint firstAttribute="trailing" secondItem="70X-9S-b0a" secondAttribute="trailing" id="oXe-dp-1ob"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mMx-NG-C7z" firstAttribute="width" secondItem="mK5-0m-7Da" secondAttribute="width" id="Afm-U5-He6"/>
+                                    <constraint firstItem="UDT-Gh-B1h" firstAttribute="top" secondItem="mK5-0m-7Da" secondAttribute="top" id="Ebl-6s-u7G"/>
+                                    <constraint firstAttribute="trailing" secondItem="UDT-Gh-B1h" secondAttribute="trailing" id="Nza-Wg-mA3"/>
+                                    <constraint firstItem="UDT-Gh-B1h" firstAttribute="leading" secondItem="mK5-0m-7Da" secondAttribute="leading" id="Szs-Be-w0W"/>
+                                    <constraint firstAttribute="bottom" secondItem="UDT-Gh-B1h" secondAttribute="bottom" id="YqE-y4-tbx"/>
+                                    <constraint firstItem="UDT-Gh-B1h" firstAttribute="width" secondItem="mK5-0m-7Da" secondAttribute="width" id="h2n-eN-JTk"/>
+                                    <constraint firstItem="UDT-Gh-B1h" firstAttribute="height" secondItem="mK5-0m-7Da" secondAttribute="height" id="umT-Mw-kwy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h2n-eN-JTk"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBZ-nt-kZf">
+                                <rect key="frame" x="20" y="557" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Nhx-O4-vcR"/>
+                                    <constraint firstAttribute="height" constant="35" id="cHx-xi-MJY"/>
+                                </constraints>
+                                <state key="normal" image="home.png"/>
+                                <connections>
+                                    <segue destination="Ayt-gZ-HKo" kind="show" id="l2O-oC-CfT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7E-y5-vHY">
+                                <rect key="frame" x="1745" y="557" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3ia-aS-Hc1"/>
+                                    <constraint firstAttribute="width" constant="35" id="pXj-oP-AWE"/>
+                                </constraints>
+                                <state key="normal" image="settingButton.png"/>
+                                <connections>
+                                    <segue destination="qKK-TK-7r0" kind="show" id="ANH-HX-99n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97006027230000003" green="0.97006027230000003" blue="0.97006027230000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mK5-0m-7Da" firstAttribute="top" secondItem="U8V-M3-8Af" secondAttribute="top" id="En2-BO-PwQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mK5-0m-7Da" secondAttribute="trailing" id="G6g-31-d23"/>
+                            <constraint firstItem="HBZ-nt-kZf" firstAttribute="top" secondItem="mK5-0m-7Da" secondAttribute="bottom" constant="2" id="R9h-qA-tfo"/>
+                            <constraint firstItem="J7E-y5-vHY" firstAttribute="top" secondItem="mK5-0m-7Da" secondAttribute="bottom" constant="2" id="Ssp-8E-qWW"/>
+                            <constraint firstItem="J7E-y5-vHY" firstAttribute="trailing" secondItem="U8V-M3-8Af" secondAttribute="trailingMargin" id="Tvo-8x-BxG"/>
+                            <constraint firstItem="w9z-Oe-nFy" firstAttribute="top" secondItem="mK5-0m-7Da" secondAttribute="bottom" constant="4" id="dxi-0F-A0B"/>
+                            <constraint firstItem="mK5-0m-7Da" firstAttribute="centerX" secondItem="w9z-Oe-nFy" secondAttribute="centerX" id="fgN-nr-Z2h"/>
+                            <constraint firstItem="mK5-0m-7Da" firstAttribute="leading" secondItem="U8V-M3-8Af" secondAttribute="leading" id="hgQ-zu-9gM"/>
+                            <constraint firstItem="HBZ-nt-kZf" firstAttribute="leading" secondItem="U8V-M3-8Af" secondAttribute="leadingMargin" id="iGO-hQ-lCY"/>
+                            <constraint firstItem="w9z-Oe-nFy" firstAttribute="leading" secondItem="mK5-0m-7Da" secondAttribute="trailing" constant="-919" id="oRI-57-Ret"/>
+                            <constraint firstItem="7gK-NT-Xz0" firstAttribute="top" secondItem="w9z-Oe-nFy" secondAttribute="bottom" constant="4" id="poG-IA-lwl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oRI-57-Ret"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1800" height="600"/>
+                    <connections>
+                        <outlet property="attentionImage" destination="OrC-Dm-wOH" id="V7Q-9H-hSP"/>
+                        <outlet property="attentionLabel" destination="bVi-dc-nW4" id="LlI-YA-3S6"/>
+                        <outlet property="operationImage" destination="2Ju-k7-bvD" id="GQa-ju-WnZ"/>
+                        <outlet property="operationsLabel" destination="ng7-2E-4IP" id="ib3-EK-44z"/>
+                        <outlet property="pageControl" destination="w9z-Oe-nFy" id="YNc-sQ-dSb"/>
+                        <outlet property="scrollView" destination="mK5-0m-7Da" id="CB7-m6-GZa"/>
+                        <outlet property="wordLabel" destination="eYn-mC-GMO" id="Poc-2d-GdC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7L-oA-1Ta" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8403" y="232"/>
         </scene>
     </scenes>
     <resources>
@@ -1830,12 +2107,15 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
         <image name="Shapes.png" width="1624" height="1282"/>
         <image name="Turkey.GIF" width="388" height="260"/>
         <image name="United Kingdom.GIF" width="516" height="260"/>
+        <image name="artı1.png" width="2080" height="2080"/>
+        <image name="attentionGif1.tiff" width="306" height="332"/>
         <image name="back.png" width="89" height="60"/>
         <image name="book1.tiff" width="400" height="311"/>
         <image name="chicken.png" width="452" height="448"/>
         <image name="colors.png" width="800" height="641"/>
         <image name="forward.png" width="89" height="60"/>
         <image name="fruits.png" width="600" height="578"/>
+        <image name="gameIcon1.png" width="208" height="208"/>
         <image name="header.png" width="1240" height="250"/>
         <image name="home.png" width="47" height="49"/>
         <image name="play.png" width="45" height="60"/>
@@ -1847,9 +2127,13 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
         <image name="unplay.png" width="20" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DYp-Du-MVt"/>
-        <segue reference="Adk-ZJ-Pvn"/>
+        <segue reference="INL-1C-zdz"/>
+        <segue reference="yIb-Hc-vnC"/>
+        <segue reference="dQO-s5-d8d"/>
+        <segue reference="hL3-Jx-JWx"/>
+        <segue reference="Ei9-LC-hn5"/>
         <segue reference="Zam-W0-Jua"/>
-        <segue reference="I7a-q1-MNe"/>
+        <segue reference="DYp-Du-MVt"/>
+        <segue reference="6Tb-Yg-RLf"/>
     </inferredMetricsTieBreakers>
 </document>
