@@ -267,6 +267,7 @@
 		64CB27901CCEC89600D51F11 /* happyBunny13.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64CB27821CCEC89600D51F11 /* happyBunny13.tiff */; };
 		64CB27911CCEC89600D51F11 /* happyBunny14.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 64CB27831CCEC89600D51F11 /* happyBunny14.tiff */; };
 		64D15D441CC2B08E00769000 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D15D431CC2B08E00769000 /* OptionsViewController.swift */; };
+		64FB8C3E1CD5323200D5F0B3 /* EpisodesPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FB8C3D1CD5323200D5F0B3 /* EpisodesPageTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -554,6 +555,7 @@
 		64CB27821CCEC89600D51F11 /* happyBunny13.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = happyBunny13.tiff; sourceTree = "<group>"; };
 		64CB27831CCEC89600D51F11 /* happyBunny14.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = happyBunny14.tiff; sourceTree = "<group>"; };
 		64D15D431CC2B08E00769000 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		64FB8C3D1CD5323200D5F0B3 /* EpisodesPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesPageTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -838,6 +840,7 @@
 				6402EB2E1CAEC5BF00C54CDF /* Images */,
 				649191E11CAEAE91006A40AB /* AppDelegate.swift */,
 				649191E51CAEAE91006A40AB /* Main.storyboard */,
+				64FB8C3D1CD5323200D5F0B3 /* EpisodesPageTwoViewController.swift */,
 				64879AB51CCCF87D00CF9E40 /* AttentionViewController.swift */,
 				649EAFBA1CCE5125004AF2C3 /* RecordsViewController.swift */,
 				645C62B11CCCDF94000FB0C2 /* RecordsTableViewController.swift */,
@@ -1433,6 +1436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FB8C3E1CD5323200D5F0B3 /* EpisodesPageTwoViewController.swift in Sources */,
 				641C2FDA1CB911450035817B /* StoryViewController.swift in Sources */,
 				645C62B21CCCDF94000FB0C2 /* RecordsTableViewController.swift in Sources */,
 				6445FFAD1CBFBE1E00A26C14 /* FruitsViewController.swift in Sources */,

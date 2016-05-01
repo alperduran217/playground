@@ -42,9 +42,29 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
         
         animateActionButtonAppearance(false)
+        
+        timer.invalidate()
+        timer2.invalidate()
+        timer3.invalidate()
+        timer4.invalidate()
+        timer5.invalidate()
+        timer6.invalidate()
+        
 
     }
     
+    @IBAction func backButton(sender: AnyObject) {
+        speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+        
+        animateActionButtonAppearance(false)
+        
+        timer.invalidate()
+        timer2.invalidate()
+        timer3.invalidate()
+        timer4.invalidate()
+        timer5.invalidate()
+        timer6.invalidate()
+    }
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var btnStop: UIButton!
     @IBOutlet weak var btnSpeak: UIButton!
@@ -231,7 +251,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         if previousSelectedRange.location == 194 {
             
-          label.text = "Kendisinden çok daha küçük hayvanların ormanda korkusuzca gezdiğini gören tavşan korkaklığına daha bir üzülürmüş. "
+          label.text = "Tavşan korkaklığına daha bir üzülürmüş. "
             
         }
 
@@ -281,6 +301,20 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             timer2.invalidate()
             timer3 = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: #selector(StoryViewController.doAnimation3), userInfo: nil, repeats: true)
             
+        }
+        
+        if previousSelectedRange.location == 760 {
+            
+            speechSynthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+            
+            animateActionButtonAppearance(false)
+            
+            timer.invalidate()
+            timer2.invalidate()
+            timer3.invalidate()
+            timer4.invalidate()
+            timer5.invalidate()
+            timer6.invalidate()
         }
         
 

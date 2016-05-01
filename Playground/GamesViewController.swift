@@ -14,12 +14,15 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        translator()
+        
          scrollView.delegate = self
         
         // Do any additional setup after loading the view.
         
     timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(GamesViewController.doAnimation), userInfo: nil, repeats: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +40,12 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var learningLabel: UILabel!
+    
+    @IBOutlet weak var readingLabel: UILabel!
+    
+    @IBOutlet weak var gamesLabel: UILabel!
+    
 // VARIABLES
     
     var counterBook = 1
@@ -48,6 +57,19 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
     var isAnimating = true
     
 // FUNCTIONS
+    
+    func translator() {
+        if languageChoice == 1 {
+            learningLabel.text = "Learning"
+            readingLabel.text = "Reading"
+            gamesLabel.text = "Games"
+        }
+        if languageChoice == 0 {
+            learningLabel.text = "Öğrenme"
+            readingLabel.text = "Okuma"
+            gamesLabel.text = "Oyunlar"
+        }
+    }
     
     
     func doAnimation() {

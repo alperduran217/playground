@@ -1,23 +1,21 @@
 //
-//  EpisodesViewController.swift
+//  EpisodesPageTwoViewController.swift
 //  Playground
 //
-//  Created by Mehmet Alper Duran on 03/04/16.
+//  Created by Mehmet Alper Duran on 30/04/16.
 //  Copyright © 2016 Alper Duran. All rights reserved.
 //
 
 import UIKit
 
-class EpisodesViewController: UIViewController, UIScrollViewDelegate {
+class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
 
-//  PRE-LOAD
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.delegate = self
-        
-        translatorEpisodes()
+
+        translatorEpisodesPageTwo()
         // Do any additional setup after loading the view.
     }
 
@@ -26,39 +24,33 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-//  MAIN STORYBOARD
-  
-    @IBOutlet weak var alphabetsLabel: UILabel!
-    @IBOutlet weak var shapesLabel: UILabel!
-
-    @IBOutlet weak var animalsLabel: UILabel!
-    
-    @IBOutlet weak var pageControl: UIPageControl!
-    
+    @IBOutlet weak var fruitsLabel: UILabel!
+    @IBOutlet weak var colorsLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
-    
-//  FUNCTIONS
-    
-    func translatorEpisodes() {
+
+    @IBOutlet weak var pageControl: UIPageControl!
+ 
+    func translatorEpisodesPageTwo() {
         
         if languageChoice == 1 {
-            animalsLabel.text = "Animals"
-            shapesLabel.text = "Shapes"
-            alphabetsLabel.text = "Alphabets"
-
-        }
-        
-        if languageChoice == 0 {
-            animalsLabel.text = "Hayvanlar"
-            shapesLabel.text = "Şekiller"
-            alphabetsLabel.text = "Harfler"
+           fruitsLabel.text = "Fruits and Veggies"
+            colorsLabel.text = "Colors"
             
         }
         
-      
+        if languageChoice == 0 {
+            fruitsLabel.text = "Meyveler ve Sebzeler"
+            colorsLabel.text = "Renkler"
+            
+        }
+        
+        
     }
 
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView){ // This function makes slider move vertically
+    
+    // This function makes slider move 
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView){
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
         
