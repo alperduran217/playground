@@ -11,24 +11,22 @@ import QuartzCore
 import AVFoundation
 
 class ColorsViewController: UIViewController {
-
+    
+// !!== PRE-LOAD == !!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
+        let image = UIImage(named: picsArray[Int(randomNumber)]) as UIImage? // takes random image from array
         
-        let image = UIImage(named: picsArray[Int(randomNumber)]) as UIImage?
+        button.setImage(image, forState: .Normal) // sets button to that random image
         
-        button.setImage(image, forState: .Normal)
+        button.frame = CGRectMake(70, 200, 250, 250) // sets the location of the button
         
-        button.frame = CGRectMake(70, 200, 250, 250)
+        button.setTitle("", forState: UIControlState.Normal) // sets the title of the button
         
-        button.setTitle("", forState: UIControlState.Normal)
+        button.addTarget(self, action: #selector(ColorsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside) // this line makes the button actionable button
         
-        button.addTarget(self, action: #selector(ColorsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        
-        self.view.addSubview(button)
+        self.view.addSubview(button) // delegates to add sub view
         
         
         if languageChoice == 0 {
@@ -45,17 +43,19 @@ class ColorsViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
         
       
     }
     
+// !!== UI Outlet Objects == !!
+
     @IBOutlet weak var label: UILabel!
 
+// !!== VARIABLES == !!
     
-    let button = UIButton()
+    let button = UIButton() // creating button programmatically
     
-    let speechSynthesizer = AVSpeechSynthesizer()
+    let speechSynthesizer = AVSpeechSynthesizer() // creates a constant for text-to-speech
     
     var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png"]
     
@@ -64,12 +64,12 @@ class ColorsViewController: UIViewController {
     var namesArrayTur:[String] = ["Mavi","Yeşil","Turuncu","Kırmızı","Sarı"]
     
     var namesArray:[String] = []
-
     
     var randomNumber = arc4random_uniform(5)
     
-    //  FUNCTIONS
+// !!== FUNCTIONS == !!
     
+    // function makes button clickable
     func buttonAction(sender:UIButton!)
     {
         
