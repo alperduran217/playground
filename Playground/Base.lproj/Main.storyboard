@@ -342,7 +342,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="BUy-pq-tDI" firstAttribute="top" secondItem="dja-xB-ft6" secondAttribute="bottom" constant="8" id="9Ny-xI-Iey"/>
                                                     <constraint firstItem="dja-xB-ft6" firstAttribute="top" secondItem="tud-K4-4Fq" secondAttribute="top" constant="20" id="BYt-ag-NoK"/>
@@ -2195,9 +2195,9 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
         <segue reference="4fc-5d-y0S"/>
         <segue reference="6Tb-Yg-RLf"/>
         <segue reference="Adk-ZJ-Pvn"/>
-        <segue reference="IJA-jh-Igx"/>
+        <segue reference="DYp-Du-MVt"/>
         <segue reference="Ei9-LC-hn5"/>
+        <segue reference="Zam-W0-Jua"/>
         <segue reference="wzS-tT-ewt"/>
-        <segue reference="wxB-LC-NKT"/>
     </inferredMetricsTieBreakers>
 </document>
