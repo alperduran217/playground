@@ -11,7 +11,8 @@ import UIKit
 public var languageChoice:Int = 0
 
 class OptionsViewController: UIViewController {
-
+    
+// !!== VARIABLES == !!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +24,9 @@ class OptionsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+// !!== UI Outlet Objects == !!
+
     @IBAction func turkishLang(sender: AnyObject) {
         
         languageChoice = 0
