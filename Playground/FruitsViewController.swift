@@ -13,23 +13,25 @@ import AVFoundation
 
 
 class FruitsViewController: UIViewController {
+    
+// !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let image = UIImage(named: picsArray[Int(randomNumber)]) as UIImage? // takes random image from array
+
         
-        let image = UIImage(named: picsArray[Int(randomNumber)]) as UIImage?
+        button.setImage(image, forState: .Normal) // sets button to that random image
         
-        button.setImage(image, forState: .Normal)
+        button.frame = CGRectMake(70, 200, 250, 250) // sets the location of the button
         
-        button.frame = CGRectMake(70, 200, 250, 250)
+        button.setTitle("", forState: UIControlState.Normal) // sets the title of the button
         
-        button.setTitle("", forState: UIControlState.Normal)
+        button.addTarget(self, action: #selector(FruitsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside) // this line makes the button actionable button
+
         
-        button.addTarget(self, action: #selector(FruitsViewController.buttonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        
-        self.view.addSubview(button)
+        self.view.addSubview(button) // delegates to add sub view
         
         
         if languageChoice == 0 {
@@ -46,18 +48,22 @@ class FruitsViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-// VARIABLES
+// !!== UI Outlet Objects == !!
     
-    var namesArray:[String] = []
     
     @IBOutlet weak var label: UILabel!
     
-    let button = UIButton()
+// !!== VARIABLES == !!
+
     
-    let speechSynthesizer = AVSpeechSynthesizer()
+    var namesArray:[String] = []
+
+    
+    let button = UIButton() // creating button programmatically
+    
+    let speechSynthesizer = AVSpeechSynthesizer() // creates a constant for text-to-speech
     
     var picsArray:[String] = ["apple.png","apricot.png","avocado.png","banana.png","beans.png","blackberry.png","carrot.png","cherry.png","corn.png","cucumber.png","grapes.png","green apple.png","lemon.png","orang.png","peach.png","pepper.png","pomegranate.png","strawberry.png","tomatos.png","watermelon.png"]
     
@@ -67,8 +73,9 @@ class FruitsViewController: UIViewController {
     
     var randomNumber = arc4random_uniform(20)
     
-    //  FUNCTIONS
+// !!== FUNCTIONS == !!
     
+    // function makes button clickable
     func buttonAction(sender:UIButton!)
     {
         
