@@ -18,6 +18,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // this delegate, delegates itself for moving on x- axis
         speechSynthesizer.delegate = self
 
         setInitialFontAttribute()
@@ -167,17 +168,18 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
 // FUNCTIONS
     
+    // THis function takes the text string and store all of them by one by
     func setInitialFontAttribute() {
-        let rangeOfWholeText = NSMakeRange(0, storyText.text.utf16.count)
-        let attributedText = NSMutableAttributedString(string: storyText.text)
-        attributedText.addAttribute(NSFontAttributeName, value: UIFont(name: "Arial", size: 18.0)!, range: rangeOfWholeText)
+        let rangeOfWholeText = NSMakeRange(0, storyText.text.utf16.count) // This constant takes the range of the text
+        let attributedText = NSMutableAttributedString(string: storyText.text) // This constant splits text word by word
+        attributedText.addAttribute(NSFontAttributeName, value: UIFont(name: "Arial", size: 18.0)!, range: rangeOfWholeText) //  This object adds the next string into attributedText
         storyText.textStorage.beginEditing()
         storyText.textStorage.replaceCharactersInRange(rangeOfWholeText, withAttributedString: attributedText)
         storyText.textStorage.endEditing()
     }
     
     
-//  The function checks the speech finishes it or not
+    //  The function checks the speech finishes it or not
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didFinishSpeechUtterance utterance: AVSpeechUtterance) {
         spokenTextLengths = spokenTextLengths + utterance.speechString.utf16.count + 1
         
@@ -195,13 +197,13 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     }
     
-    
+    // This function takes the next word on the text
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didStartSpeechUtterance utterance: AVSpeechUtterance) {
         currentUtterance = currentUtterance + 1
 
     }
     
-    
+    // this function reads the text
     func speechSynthesizer(synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
         
         let progress: Float = Float(spokenTextLengths + characterRange.location) * 100 / Float(totalTextLength)
@@ -248,6 +250,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         // Keep the currently selected range so as to remove the orange text color next.
         previousSelectedRange = rangeInTotalText
+        
         
         if previousSelectedRange.location == 194 {
             
@@ -309,7 +312,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
             animateActionButtonAppearance(false)
             
-            timer.invalidate()
+            timer.invalidate() // we have to invalidate the timers for memory management
             timer2.invalidate()
             timer3.invalidate()
             timer4.invalidate()
@@ -344,7 +347,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     }
     
     
-    
+    // same animation function
     func doAnimation() {
         
         
@@ -469,7 +472,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
     
     
-    
+    // this function animate the buttons 
     func animateActionButtonAppearance(shouldHideSpeakButton: Bool) {
         var speakButtonAlphaValue: CGFloat = 1.0
         var pauseStopButtonsAlphaValue: CGFloat = 0.0

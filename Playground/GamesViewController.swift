@@ -19,7 +19,6 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
         
          scrollView.delegate = self
         
-        // Do any additional setup after loading the view.
         
     timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(GamesViewController.doAnimation), userInfo: nil, repeats: true)
         
@@ -27,7 +26,6 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 // MAIN STORYBOARD
