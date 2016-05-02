@@ -9,6 +9,8 @@
 import UIKit
 
 class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
+    
+    // !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +29,16 @@ class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
         // Dispose of any resources that can be recreated.
     }
     
+    // !!== UI OUTLET OBJECTS == !!
+
+    
     @IBOutlet weak var fruitsLabel: UILabel! //UI Object where hold the fruits label
     @IBOutlet weak var colorsLabel: UILabel! //UI Object where hold the colors label
     @IBOutlet weak var scrollView: UIScrollView! // scrollView UI Object for slide the page on x-axis
-    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var pageControl: UIPageControl! // scrollView UI Object for slide the page on x-axis
+    
+    
+    // !!== FUNCTIONS == !!
  
     func translatorEpisodesPageTwo() {
         
