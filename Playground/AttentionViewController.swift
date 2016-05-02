@@ -10,6 +10,7 @@ import UIKit
 
 class AttentionViewController: UIViewController {
     
+// !!== PRE-LOAD == !!
     
     //This function executes immediatly when the app start working.
     override func viewDidLoad() {
@@ -33,10 +34,9 @@ class AttentionViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-// VARIABLES
+// !!== VARIABLES == !!
     
     var timer = NSTimer()   //This is a time variable. This variable created for Counter.
     var timer2 = NSTimer()  //This is an another time variable. This variable created for automatic segues.
@@ -45,6 +45,9 @@ class AttentionViewController: UIViewController {
     var timeValue = 50
     
     var points = 0
+    
+    var tapped:Int = 0
+
     
     var foundValue1 = 0
     var foundValue2 = 0
@@ -61,7 +64,7 @@ class AttentionViewController: UIViewController {
     var picsArray:[String] = ["blue.png","green.png","orange.png","red.png","yellow.png","apple.png","apricot.png","avocado.png","banana.png","beans.png","blackberry.png","carrot.png","cherry.png","corn.png","cucumber.png","grapes.png","green apple.png","lemon.png","orang.png","peach.png","pepper.png","pomegranate.png","strawberry.png","tomatos.png","watermelon.png","parallelogram.png","star.png","rectangle.png","heart.png","square.png","triangle.png","oval.png","circle.png","trapezoid.png","deltoid.png","pentagon.png","hexagon.png","monkey.png","lion.png","snake.png","zebra.png","giraffe.png","elephant.png","crocodile.png","cat.png"]
     
 
-    //Variables on View
+// !!== UI OUTLET OBJECTS == !!
     @IBOutlet weak var questionPic: UIImageView!
     @IBOutlet weak var answer1: UIButton!
     @IBOutlet weak var answer2: UIButton!
@@ -73,15 +76,15 @@ class AttentionViewController: UIViewController {
 
             foundValue1 = 0
 
-            self.view.backgroundColor = UIColor.greenColor()
+            self.view.backgroundColor = UIColor.greenColor() // turns background into green
             
-            if languageChoice == 0 {
+            if languageChoice == 0 { //for Turkish
             
             answerLabel.text = "Doğru"
             
             }
             
-            if languageChoice == 1 {
+            if languageChoice == 1 { // for English
                 
                 answerLabel.text = "Correct"
                 
@@ -224,8 +227,6 @@ class AttentionViewController: UIViewController {
        reappear()
     }
     
-    var tapped:Int = 0
-
     
     @IBAction func tutorialAction(sender: AnyObject) {
         
@@ -306,10 +307,10 @@ class AttentionViewController: UIViewController {
         start.alpha = 1
     }
     
-    
-    
-// This function makes every image appear
+// !!== FUNCTIONS == !!
 
+    
+    // This function makes every image appear
     func setupImage() {
         
         let picsArrayValue = UInt32(picsArray.count)
@@ -320,8 +321,7 @@ class AttentionViewController: UIViewController {
        
     }
     
-// This function randomize the correct answer each time
-    
+    // This function randomize the correct answer each time
     func correctAnswer() {
         
         if randomButton == 0 {
@@ -435,7 +435,7 @@ class AttentionViewController: UIViewController {
         }
     }
     
-    
+    //Function holds the odher functions
     func reappear() {
         
         setupImage()
@@ -445,8 +445,7 @@ class AttentionViewController: UIViewController {
     }
     
 
-// This function first shows the question and than shows the choices
-
+    //This function first shows the question and than shows the choices
     func delayPic() {
         
         answer1.alpha = 0
@@ -467,8 +466,7 @@ class AttentionViewController: UIViewController {
     
     }
     
-//  Counter from 50 to 0
-    
+    //Counter from 50 to 0
     func reverseCounter() {
         
         timeValue = timeValue - 1
@@ -477,8 +475,7 @@ class AttentionViewController: UIViewController {
         
     }
 
-//  Makes delay inside the function
-    
+    //Makes delay inside the function
     func delay(delay: Double, closure: ()->()) {
         dispatch_after(
             dispatch_time(
@@ -490,8 +487,7 @@ class AttentionViewController: UIViewController {
         )
     }
     
-// This function take the Attention View to Records View
-    
+    //This function take the Attention View to Records View
     func timeToMoveOn() {
         
         recordsOperation.append(String(points))

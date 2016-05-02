@@ -10,7 +10,7 @@ import UIKit
 
 class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
     
-    // !!== PRE-LOAD == !!
+// !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +26,9 @@ class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    // !!== UI OUTLET OBJECTS == !!
+// !!== UI OUTLET OBJECTS == !!
 
     
     @IBOutlet weak var fruitsLabel: UILabel! //UI Object where hold the fruits label
@@ -38,7 +37,7 @@ class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
     @IBOutlet weak var pageControl: UIPageControl! // scrollView UI Object for slide the page on x-axis
     
     
-    // !!== FUNCTIONS == !!
+// !!== FUNCTIONS == !!
  
     func translatorEpisodesPageTwo() {
         
@@ -58,8 +57,7 @@ class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
     }
 
     
-    // This function makes slider move 
-    
+    // This function makes slider move
     func scrollViewDidEndDecelerating(scrollView: UIScrollView){
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
