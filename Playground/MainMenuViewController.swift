@@ -13,12 +13,14 @@ import SpriteKit
 
 class MainMenuViewController: UIViewController {
 
+    
+// !!== PRE-LOAD == !!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
          translator()
 
-        // Do any additional setup after loading the view.
         
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -38,14 +40,23 @@ class MainMenuViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    
+// !!== UI Outlet Objects == !!
+
     @IBOutlet weak var startLabel: UILabel!
     
     @IBOutlet weak var settingsLabel: UILabel!
     
+// !!== Variables == !!
     
+    var backgroundMusicPlayer = AVAudioPlayer()
+
+    
+// !!== Functions == !!
+    
+    // translates the labels with the language choice variable's value
     func translator() {
         
         if languageChoice == 1 {
@@ -62,7 +73,6 @@ class MainMenuViewController: UIViewController {
     
     
     
-    var backgroundMusicPlayer = AVAudioPlayer()
     // this function plays music on background
     
     func playBackgroundMusic(filename: String) {
