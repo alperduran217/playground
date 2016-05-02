@@ -10,15 +10,14 @@ import UIKit
 
 class EpisodesViewController: UIViewController, UIScrollViewDelegate {
 
-//  PRE-LOAD
+// !!== PRE-LOAD == !!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.delegate = self
+        scrollView.delegate = self // this delegate, delegates itself for moving on x- axis
         
-        translatorEpisodes()
-        // Do any additional setup after loading the view.
+        translatorEpisodes() // translates the labels
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +25,7 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-//  MAIN STORYBOARD
+// !!== UI Outlet Objects == !!
   
     @IBOutlet weak var alphabetsLabel: UILabel!
     @IBOutlet weak var shapesLabel: UILabel!
@@ -37,8 +36,9 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-//  FUNCTIONS
+// !!== FUNCTIONS == !!
     
+    // translates the labels with the language choice variable's value
     func translatorEpisodes() {
         
         if languageChoice == 1 {
@@ -57,7 +57,7 @@ class EpisodesViewController: UIViewController, UIScrollViewDelegate {
         
       
     }
-
+    // function for horizontal slide
     func scrollViewDidEndDecelerating(scrollView: UIScrollView){ // This function makes slider move vertically
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
