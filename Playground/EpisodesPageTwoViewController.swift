@@ -16,8 +16,8 @@ class EpisodesPageTwoViewController: UIViewController , UIScrollViewDelegate{
         super.viewDidLoad()
         
         
-        // this delegate, delegates itself for moving on x- axis
-        scrollView.delegate = self
+        scrollView.delegate = self  // this delegate, delegates itself for moving on x- axis
+
 
         
         //translates the label on page 2

@@ -17,9 +17,9 @@ class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
         
         translator() // translates the labels
         
-        scrollView.delegate = self
+        scrollView.delegate = self // this delegate, delegates itself for moving on x- axis
 
-        // Do any additional setup after loading the view.
+
         
         // NSObject that runs doAnimation function in every 0.1 seconds
         
@@ -33,7 +33,6 @@ class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // !!== VARIABLES == !!

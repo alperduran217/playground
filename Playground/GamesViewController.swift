@@ -10,14 +10,14 @@ import UIKit
 
 class GamesViewController: UIViewController, UIScrollViewDelegate{
     
-//  PRE-LOAD
+// !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         translator()
         
-         scrollView.delegate = self
+         scrollView.delegate = self // this delegate, delegates itself for moving on x- axis
         
         
     timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(GamesViewController.doAnimation), userInfo: nil, repeats: true)
@@ -28,7 +28,7 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
         super.didReceiveMemoryWarning()
     }
 
-// MAIN STORYBOARD
+// !!== UI Outlet Objects == !!
     @IBOutlet weak var gameImage: UIImageView!
     
     @IBOutlet weak var tigerImage: UIImageView!
@@ -45,7 +45,7 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
     
     @IBOutlet weak var gamesLabel: UILabel!
     
-// VARIABLES
+// !!== VARIABLES == !!
     
     var counterGame = 1
     
@@ -57,8 +57,9 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
     
     var isAnimating = true
     
-// FUNCTIONS
+// !!== FUNCTIONS == !!
     
+    // translates the labels with the language choice variable's value
     func translator() {
         if languageChoice == 1 {
             learningLabel.text = "Learning"
@@ -72,7 +73,7 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
         }
     }
     
-    
+    // it's not an animation function. It's just holds the information of the animation. timer(NS Object) does animate. doAnimation runs every n seconds where n is timer's value.
     func doAnimation() {
         
         
@@ -112,6 +113,7 @@ class GamesViewController: UIViewController, UIScrollViewDelegate{
         
     }
     
+    // function for horizontal slide
     func scrollViewDidEndDecelerating(scrollView: UIScrollView){ // This function makes slider move vertically
         
         let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
