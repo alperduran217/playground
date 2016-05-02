@@ -9,11 +9,11 @@
 import UIKit
 
 class OperationViewController: UIViewController {
+// !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
         // Labels are invisible until the user taps the start button
         div.alpha = 0
@@ -39,6 +39,9 @@ class OperationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+// !!== VARIABLES == !!
+
     
     var points:Int = 0 // where earned pointes are stored
     
@@ -70,6 +73,7 @@ class OperationViewController: UIViewController {
     
     var isTapped = false
 
+// !!== UI Outlet Objects == !!
 
     @IBAction func tutorialAction(sender: AnyObject) {
         tapped += 1
@@ -205,6 +209,7 @@ class OperationViewController: UIViewController {
         button1Answer()
       
     }
+
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var pointsLabel: UILabel!
@@ -216,7 +221,8 @@ class OperationViewController: UIViewController {
     
     @IBOutlet weak var numBox: UITextField!
     
-// disables the buttons
+// !!== Functions == !!
+    // disables the buttons
     func disableButton() {
             //division
         if operation == 1 {

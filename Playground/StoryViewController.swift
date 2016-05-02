@@ -472,7 +472,7 @@ class StoryViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
     
     
-    // this function animate the buttons 
+    // this function animate the buttons
     func animateActionButtonAppearance(shouldHideSpeakButton: Bool) {
         var speakButtonAlphaValue: CGFloat = 1.0
         var pauseStopButtonsAlphaValue: CGFloat = 0.0
