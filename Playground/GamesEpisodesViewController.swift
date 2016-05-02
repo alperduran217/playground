@@ -9,6 +9,8 @@
 import UIKit
 
 class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
+    
+    // !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +36,17 @@ class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // !!== VARIABLES == !!
+
     
     
     var timer = NSTimer() // NSObject for animations
     var timer2 = NSTimer()
     var counterOperation:Int = 0 //This counter holds the frame of the animation Operation
     var counterAttention:Int = 0 //This counter holds the frame of the animation Attention
+    
+    // !!== UI Outlet Objects == !!
+
     
     @IBOutlet weak var attentionImage: UIImageView! // UI Object where attention animation's first frame holds
     @IBOutlet weak var operationImage: UIImageView! // UI Object where operation animation's first frame holds
@@ -48,6 +55,9 @@ class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var operationsLabel: UILabel! // UI Object where operation label's text holds
     @IBOutlet weak var pageControl: UIPageControl! // pageControl UI Object for navigate the page
     @IBOutlet weak var scrollView: UIScrollView! // scrollView UI Object for slide the page on x-axis
+    
+    // !!== Functions == !!
+
     
     // translates the labels with the language choice variable's value
     func translator() {
