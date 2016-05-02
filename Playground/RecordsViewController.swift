@@ -8,19 +8,21 @@
 
 import UIKit
 
-var recordsOperation = [String]()
+var recordsOperation = [String]() // This is a global variable. All conrols can reach this object.
 
 
 class RecordsViewController: UIViewController, UITableViewDelegate {
 
+    
+// !!== PRE-LOAD == !!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
         if NSUserDefaults.standardUserDefaults().objectForKey("recordsOperation") != nil {
             
-            records = NSUserDefaults.standardUserDefaults().objectForKey("recordsOperation") as! [String]
+            records = NSUserDefaults.standardUserDefaults().objectForKey("recordsOperation") as! [String] // This is the NS Object for saving the records
             
         }
 
@@ -28,18 +30,21 @@ class RecordsViewController: UIViewController, UITableViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var recordsOperationTable: UITableView!
+// !!== UI OUTLET OBJECTS == !!
+    
+    @IBOutlet weak var recordsOperationTable: UITableView! // Showing the records on the record table
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // This is function that returns the Rows
         
         return recordsOperation.count
         
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+// !!== FUNCTIONS == !!
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell { // This is function that returns cell
         
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         
@@ -52,7 +57,7 @@ class RecordsViewController: UIViewController, UITableViewDelegate {
     
     
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) { // This is for reloading data when changes makes on the table view
         
         recordsOperationTable.reloadData()
         
