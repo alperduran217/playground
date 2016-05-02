@@ -13,12 +13,18 @@ class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        translator() // translates the labels
+        
         scrollView.delegate = self
 
         // Do any additional setup after loading the view.
         
+        // NSObject that runs doAnimation function in every 0.1 seconds
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(GamesEpisodesViewController.doAnimation), userInfo: nil, repeats: true)
-           timer2 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(GamesEpisodesViewController.doAnimation2), userInfo: nil, repeats: true)
+        
+        
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(GamesEpisodesViewController.doAnimation2), userInfo: nil, repeats: true)
 
     }
 
@@ -87,6 +93,8 @@ class GamesEpisodesViewController: UIViewController, UIScrollViewDelegate {
         
         
     }
+    
+    // function for horizontal slide
 
     func scrollViewDidEndDecelerating(scrollView: UIScrollView){ // This function makes slider move vertically
         

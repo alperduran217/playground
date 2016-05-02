@@ -21,6 +21,12 @@ class AttentionViewController: UIViewController {
         answer3.alpha = 0
         answer4.alpha = 0
         questionPic.alpha = 0
+        
+        
+        if languageChoice == 1 {
+            tutorial.setImage(UIImage(named: "start1-en.png"), forState: UIControlState.Normal)
+
+        }
 
   
     }
@@ -44,9 +50,6 @@ class AttentionViewController: UIViewController {
     var foundValue2 = 0
     var foundValue3 = 0
     var foundValue4 = 0
-    
-    
-    
     
     var randomButton:Int = Int(arc4random_uniform(3))
 
@@ -221,6 +224,71 @@ class AttentionViewController: UIViewController {
        reappear()
     }
     
+    var tapped:Int = 0
+
+    
+    @IBAction func tutorialAction(sender: AnyObject) {
+        
+        tapped += 1
+        start.alpha = 0
+        
+        if languageChoice == 0 {
+            
+            if tapped == 0 {
+                tutorial.setImage(UIImage(named: "start1-tr.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 1 {
+                tutorial.setImage(UIImage(named: "attentiongame-time-tr.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 2 {
+                tutorial.setImage(UIImage(named: "attentiongame-pic-tr.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 3 {
+                tutorial.setImage(UIImage(named: "attentiongame-pick-tr.png"), forState: UIControlState.Normal)
+                
+                
+                tutorial.alpha = 0
+                start.alpha = 1
+            }
+            
+            
+        }
+        
+        if languageChoice == 1 {
+            
+            if tapped == 0 {
+                tutorial.setImage(UIImage(named: "start1-en.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 1 {
+                tutorial.setImage(UIImage(named: "attentiongame-time-en.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 2 {
+                tutorial.setImage(UIImage(named: "attentiongame-pic-en.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 3 {
+                tutorial.setImage(UIImage(named: "attentiongame-pick-en.png"), forState: UIControlState.Normal)
+                
+                
+                tutorial.alpha = 0
+                start.alpha = 1
+            }
+            
+            
+        }
+    }
+    @IBOutlet weak var tutorial: UIButton!
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var start: UIButton!

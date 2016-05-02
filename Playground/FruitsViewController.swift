@@ -74,15 +74,17 @@ class FruitsViewController: UIViewController {
         
         button.enabled = false
         
-        let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)])
+        let speechUtterance = AVSpeechUtterance(string: namesArray[Int(randomNumber)]) // turns the string to speakable constant
         
         if languageChoice == 1 {
             
-            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US") // this line makes the speech in english
             
         }
-        speechSynthesizer.speakUtterance(speechUtterance)
+        speechSynthesizer.speakUtterance(speechUtterance) // where the speaks happens
         
+        
+        // delays between two frames
         delay(2.0) {
             
             self.button.enabled = true

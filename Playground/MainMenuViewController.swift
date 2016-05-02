@@ -15,6 +15,8 @@ class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         translator()
 
         // Do any additional setup after loading the view.
         
@@ -38,7 +40,30 @@ class MainMenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var startLabel: UILabel!
+    
+    @IBOutlet weak var settingsLabel: UILabel!
+    
+    
+    func translator() {
+        
+        if languageChoice == 1 {
+            startLabel.text = "START"
+            settingsLabel.text = "LANGUAGES"
+        }
+        
+        if languageChoice == 0 {
+            startLabel.text = "BAŞLAT"
+            settingsLabel.text = "DİL AYARI"
+        }
+        
+    }
+    
+    
+    
     var backgroundMusicPlayer = AVAudioPlayer()
+    // this function plays music on background
     
     func playBackgroundMusic(filename: String) {
         let url = NSBundle.mainBundle().URLForResource(filename, withExtension: nil)

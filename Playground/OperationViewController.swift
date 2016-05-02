@@ -21,6 +21,15 @@ class OperationViewController: UIViewController {
         minus.alpha = 0
         multi.alpha = 0
         
+        if languageChoice == 1 {
+            tutorial.setImage(UIImage(named: "start-en.png"), forState: UIControlState.Normal)
+
+        }
+        
+        if isTapped == true {
+            tutorial.alpha = 0
+        }
+        
        
 
  
@@ -33,31 +42,120 @@ class OperationViewController: UIViewController {
     
     var points:Int = 0 // where earned pointes are stored
     
-    var operation = 0
+    var operation = 0 // holds the value of the operations
     
-    var button1Value = 0
+    var button1Value = 0 // Hold the one of the answers
     
-    var button2Value = 0
+    var button2Value = 0 // Hold the onf of the answers
     
-    var randomChoice:Int = 0
+    var randomChoice:Int = 0 // Holds the answers position
     
-    var randomNumber:Int = -1
+    var randomNumber:Int = -1 // changes the value of the correct answer
     
-    var labelRandomNumber1:Int = -1
+    var labelRandomNumber1:Int = -1 // one of the answer
     
-    var labelRandomNumber2:Int = -1
+    var labelRandomNumber2:Int = -1 // one of the answer
     
-    var result:Int = 0
+    var result:Int = 0 // result
     
-    var fakeResult:Int = 0
+    var fakeResult:Int = 0 // fakeResult
     
-    var timer = NSTimer()
+    var timer = NSTimer() // this is NS object and it's runs the reversCounter function
     
-    var timer2 = NSTimer()
+    var timer2 = NSTimer() // this is NS object and it's runs the timetoMoveOn function
     
     var timeValue:Int = 50
 
+    var tapped:Int = 0
+    
+    var isTapped = false
 
+
+    @IBAction func tutorialAction(sender: AnyObject) {
+        tapped += 1
+        start.alpha = 0
+        
+        if languageChoice == 0 {
+            
+            if tapped == 0 {
+                tutorial.setImage(UIImage(named: "start-tr.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 1 {
+                tutorial.setImage(UIImage(named: "operationgame-time-tr.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 2 {
+                tutorial.setImage(UIImage(named: "operationgame-score-tr.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 3 {
+                tutorial.setImage(UIImage(named: "operationgame-answer-tr.png"), forState: UIControlState.Normal)
+                
+                
+             
+            }
+            
+            if tapped == 4 {
+                tutorial.setImage(UIImage(named: "attentiongame-pick-tr.png"), forState: UIControlState.Normal)
+                
+                
+                tutorial.alpha = 0
+                start.alpha = 1
+                
+                isTapped = true
+           
+                
+            }
+            
+            
+        }
+        
+        
+        if languageChoice == 1 {
+            
+            if tapped == 0 {
+                tutorial.setImage(UIImage(named: "start-en.png"), forState: UIControlState.Normal)
+                
+                
+            }
+            
+            if tapped == 1 {
+                tutorial.setImage(UIImage(named: "operationgame-time-en.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 2 {
+                tutorial.setImage(UIImage(named: "operationgame-score-en.png"), forState: UIControlState.Normal)
+                
+            }
+            
+            if tapped == 3 {
+                tutorial.setImage(UIImage(named: "operationgame-answer-en.png"), forState: UIControlState.Normal)
+                
+            
+                
+            }
+            
+            if tapped == 4 {
+                tutorial.setImage(UIImage(named: "attentiongame-pick-en.png"), forState: UIControlState.Normal)
+                
+                
+                tutorial.alpha = 0
+                start.alpha = 1
+                
+            }
+            
+            
+            
+        }
+        
+
+    }
+    @IBOutlet weak var tutorial: UIButton!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet var operationView: UIView!
     @IBOutlet weak var multi: UILabel!
@@ -120,6 +218,7 @@ class OperationViewController: UIViewController {
     
 // disables the buttons
     func disableButton() {
+            //division
         if operation == 1 {
             
             div.alpha = 1
@@ -128,7 +227,7 @@ class OperationViewController: UIViewController {
             multi.alpha = 0
             
         }
-        
+            //Addition
         if operation == 2 {
             div.alpha = 0
             add.alpha = 1
@@ -136,7 +235,7 @@ class OperationViewController: UIViewController {
             multi.alpha = 0
         }
         
-        
+            //Minus
         if operation == 3 {
             div.alpha = 0
             add.alpha = 0
@@ -144,7 +243,7 @@ class OperationViewController: UIViewController {
             multi.alpha = 0
         }
         
-        
+            //Multi
         if operation == 4 {
             div.alpha = 0
             add.alpha = 0
@@ -154,12 +253,16 @@ class OperationViewController: UIViewController {
         
     }
     
+    // function that decides which operation should go
+    
     func buttonSelect() {
         
         
         randomNumber = Int(arc4random_uniform(5))
         
         operation = randomNumber
+        
+        // prevents the operation value get zero
         
         if operation == 0 {
             
@@ -172,10 +275,10 @@ class OperationViewController: UIViewController {
         disableButton()
         randomLabelNumbers()
         
-      
-        
         
     }
+    
+    // Function that all operations happens
     
     func doOperation() {
         
@@ -246,6 +349,7 @@ class OperationViewController: UIViewController {
     }
     
     
+    // Function that arranges the questions everytime.
     func randomLabelNumbers() {
         
         labelRandomNumber1 = Int(arc4random_uniform(10))
@@ -262,6 +366,8 @@ class OperationViewController: UIViewController {
         smallLabel.text = String(labelRandomNumber2)
         
     }
+    
+    // what happens when buttons in actions
     
     func button1Answer() {
         
@@ -355,7 +461,7 @@ class OperationViewController: UIViewController {
     }
     
 
-    
+    // reverse for timer
     
     func reverseCounter() {
         
@@ -364,6 +470,8 @@ class OperationViewController: UIViewController {
         timeLabel.text = String(timeValue)
         
     }
+    
+    // button for change
     
     func buttonReverse() {
         
@@ -385,6 +493,9 @@ class OperationViewController: UIViewController {
 
     }
     
+    
+    // segue function
+    
     func timeToMoveOn() {
         
         records.append(String(points))
@@ -394,6 +505,8 @@ class OperationViewController: UIViewController {
         
         self.performSegueWithIdentifier("goToResults", sender: self)
     }
+    
+    // delay function
     
     func delay(delay: Double, closure: ()->()) {
         dispatch_after(

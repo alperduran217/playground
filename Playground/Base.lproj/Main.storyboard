@@ -21,8 +21,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKn-6c-gxv">
                                 <rect key="frame" x="249" y="149" width="102" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="104" id="QDI-tz-2CO"/>
-                                    <constraint firstAttribute="width" constant="102" id="zmh-6K-1Wp"/>
+                                    <constraint firstAttribute="height" constant="104" id="aLG-T9-JeK"/>
+                                    <constraint firstAttribute="width" constant="102" id="hMv-41-qct"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="playButton.png"/>
                                 <connections>
@@ -30,10 +30,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfJ-na-1II">
-                                <rect key="frame" x="249" y="283" width="102" height="104"/>
+                                <rect key="frame" x="249" y="342" width="102" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="102" id="NgM-1r-zsh"/>
-                                    <constraint firstAttribute="height" constant="104" id="Oph-JX-twm"/>
+                                    <constraint firstAttribute="width" constant="102" id="Sda-7E-1Ap"/>
+                                    <constraint firstAttribute="height" constant="104" id="kIQ-57-EPp"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="settingButton.png"/>
                                 <connections>
@@ -47,21 +47,49 @@
                                     <constraint firstAttribute="width" constant="560" id="qpt-ew-wii"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAŞLAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH9-uQ-FFC">
+                                <rect key="frame" x="207" y="263" width="187" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Osu-yP-6uD"/>
+                                    <constraint firstAttribute="height" constant="73" id="Zrn-El-tMS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DİL AYARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es2-yl-auS">
+                                <rect key="frame" x="187" y="472" width="226" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="lyH-sn-fzh"/>
+                                    <constraint firstAttribute="height" constant="82" id="z3t-H5-xpz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="JfJ-na-1II" firstAttribute="top" secondItem="RKn-6c-gxv" secondAttribute="bottom" constant="30" id="1xA-a7-iGf"/>
-                            <constraint firstItem="JfJ-na-1II" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="IVk-1x-M8Q"/>
-                            <constraint firstItem="RKn-6c-gxv" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="JTW-Cm-IDH"/>
-                            <constraint firstItem="RKn-6c-gxv" firstAttribute="top" secondItem="G6x-5K-07D" secondAttribute="bottom" constant="129" id="JVS-aP-LVD"/>
+                            <constraint firstItem="es2-yl-auS" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="1gW-75-bTI"/>
+                            <constraint firstItem="JfJ-na-1II" firstAttribute="top" secondItem="rH9-uQ-FFC" secondAttribute="bottom" constant="6" id="2qc-CS-ZmM"/>
+                            <constraint firstItem="RKn-6c-gxv" firstAttribute="top" secondItem="gMr-3O-ruS" secondAttribute="bottom" constant="15" id="NSv-4f-N9O"/>
+                            <constraint firstItem="rH9-uQ-FFC" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="QdZ-fP-lds"/>
                             <constraint firstItem="gMr-3O-ruS" firstAttribute="leading" secondItem="pMG-e6-nDq" secondAttribute="leadingMargin" id="Qpy-gf-3Gp"/>
                             <constraint firstItem="gMr-3O-ruS" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="WNG-yX-yT4"/>
+                            <constraint firstItem="RKn-6c-gxv" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="ZS6-lh-eM7"/>
+                            <constraint firstItem="JfJ-na-1II" firstAttribute="centerX" secondItem="pMG-e6-nDq" secondAttribute="centerX" id="a8U-cn-64U"/>
                             <constraint firstItem="gMr-3O-ruS" firstAttribute="top" secondItem="G6x-5K-07D" secondAttribute="bottom" constant="8" id="amu-pl-fTp"/>
+                            <constraint firstItem="es2-yl-auS" firstAttribute="top" secondItem="JfJ-na-1II" secondAttribute="bottom" constant="26" id="eHz-l2-u8g"/>
+                            <constraint firstItem="rH9-uQ-FFC" firstAttribute="top" secondItem="RKn-6c-gxv" secondAttribute="bottom" constant="10" id="fYx-Lo-nSF"/>
                             <constraint firstItem="gMr-3O-ruS" firstAttribute="trailing" secondItem="pMG-e6-nDq" secondAttribute="trailingMargin" id="qml-ze-A73"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="settingsLabel" destination="es2-yl-auS" id="y4e-My-d5r"/>
+                        <outlet property="startLabel" destination="rH9-uQ-FFC" id="nhl-sf-31D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWo-2Y-Gut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1076,6 +1104,17 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auV-EG-xeF">
+                                <rect key="frame" x="0.0" y="-1" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="Lnx-zj-1Mz"/>
+                                    <constraint firstAttribute="height" constant="600" id="eiY-J5-VKq"/>
+                                </constraints>
+                                <state key="normal" image="start-tr.png"/>
+                                <connections>
+                                    <action selector="tutorialAction:" destination="Kie-be-PgD" eventType="touchUpInside" id="0Ch-Ex-bOd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1086,6 +1125,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="rKA-G3-Hzd" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="7wZ-HH-CBO"/>
                             <constraint firstItem="HFh-o4-dQ0" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" id="8Nm-uN-hpZ"/>
                             <constraint firstItem="O7v-lG-2G0" firstAttribute="leading" secondItem="TMW-Ag-A7O" secondAttribute="trailing" constant="8" id="BLH-4t-dSA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="auV-EG-xeF" secondAttribute="trailing" constant="-20" id="DUn-RA-erQ"/>
                             <constraint firstItem="TJE-Gd-Rab" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="LKn-SD-joJ"/>
                             <constraint firstItem="2le-vh-qfM" firstAttribute="top" secondItem="I1a-75-zIY" secondAttribute="bottom" constant="10" id="LPH-P4-b6y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2le-vh-qfM" secondAttribute="trailing" constant="95" id="MWP-MB-mA1"/>
@@ -1098,16 +1138,20 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="I1a-75-zIY" firstAttribute="top" secondItem="YmL-BW-xiZ" secondAttribute="bottom" constant="97" id="aQ4-Gh-jrJ"/>
                             <constraint firstItem="rKA-G3-Hzd" firstAttribute="top" secondItem="lr6-zs-o0l" secondAttribute="bottom" id="bff-gU-gbC"/>
                             <constraint firstItem="9Zs-JY-3C9" firstAttribute="top" secondItem="rKA-G3-Hzd" secondAttribute="bottom" constant="208" id="cEe-sI-aTp"/>
+                            <constraint firstItem="auV-EG-xeF" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="-20" id="dns-B0-TSj"/>
                             <constraint firstItem="kjh-I5-APE" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="50" id="e0v-Fe-KrD"/>
                             <constraint firstItem="TMW-Ag-A7O" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="95" id="eRb-we-XCJ"/>
                             <constraint firstItem="xac-ir-Yly" firstAttribute="top" secondItem="rKA-G3-Hzd" secondAttribute="bottom" constant="46" id="egG-A6-z7e"/>
                             <constraint firstItem="TJE-Gd-Rab" firstAttribute="top" secondItem="2le-vh-qfM" secondAttribute="bottom" constant="8" id="jrF-j2-SD5"/>
+                            <constraint firstItem="auV-EG-xeF" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="lTG-56-28s"/>
+                            <constraint firstItem="Q9T-tw-J8H" firstAttribute="top" secondItem="auV-EG-xeF" secondAttribute="bottom" constant="1" id="lm3-bx-kj2"/>
                             <constraint firstItem="rKA-G3-Hzd" firstAttribute="leading" secondItem="IgO-vd-ASr" secondAttribute="leadingMargin" constant="-20" id="mYm-02-Ram"/>
                             <constraint firstItem="2le-vh-qfM" firstAttribute="leading" secondItem="O7v-lG-2G0" secondAttribute="trailing" constant="8" id="nI1-WK-YH6"/>
                             <constraint firstItem="xac-ir-Yly" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="nVj-DB-reh"/>
                             <constraint firstItem="TMW-Ag-A7O" firstAttribute="top" secondItem="kjh-I5-APE" secondAttribute="bottom" constant="10" id="nmx-MP-Fu5"/>
                             <constraint firstItem="YmL-BW-xiZ" firstAttribute="trailing" secondItem="IgO-vd-ASr" secondAttribute="trailingMargin" id="o0c-IC-Uch"/>
                             <constraint firstItem="oyU-xp-5ZJ" firstAttribute="centerX" secondItem="IgO-vd-ASr" secondAttribute="centerX" id="oI7-xh-Vdd"/>
+                            <constraint firstItem="auV-EG-xeF" firstAttribute="top" secondItem="IgO-vd-ASr" secondAttribute="topMargin" constant="-1" id="qGo-s0-kxR"/>
                             <constraint firstItem="1CB-Zc-xIm" firstAttribute="top" secondItem="rKA-G3-Hzd" secondAttribute="bottom" constant="208" id="qzN-Cd-YBN"/>
                             <constraint firstItem="YmL-BW-xiZ" firstAttribute="top" secondItem="rKA-G3-Hzd" secondAttribute="bottom" constant="34" id="tlj-Ti-YBa"/>
                             <constraint firstItem="O7v-lG-2G0" firstAttribute="top" secondItem="9Zs-JY-3C9" secondAttribute="bottom" constant="54" id="vpA-rF-S0l"/>
@@ -1129,6 +1173,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                         <outlet property="smallLabel" destination="I1a-75-zIY" id="ymr-Na-p5t"/>
                         <outlet property="start" destination="xac-ir-Yly" id="ekE-eM-DoE"/>
                         <outlet property="timeLabel" destination="HFh-o4-dQ0" id="jEz-Gu-CNo"/>
+                        <outlet property="tutorial" destination="auV-EG-xeF" id="TE8-n0-M3q"/>
                         <segue destination="Sdl-7b-Onv" kind="modal" identifier="goToResults" id="Epv-3N-PTg"/>
                     </connections>
                 </viewController>
@@ -1770,6 +1815,17 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYI-XB-0P1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="3aA-Ig-uhx"/>
+                                    <constraint firstAttribute="width" constant="600" id="Qip-U8-mdR"/>
+                                </constraints>
+                                <state key="normal" image="start1-tr.png"/>
+                                <connections>
+                                    <action selector="tutorialAction:" destination="GjU-ov-aw7" eventType="touchUpInside" id="xBS-9r-ctb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1777,6 +1833,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="f80-yo-efO" firstAttribute="top" secondItem="ISZ-FL-L4d" secondAttribute="bottom" constant="8" id="22B-nP-bwd"/>
                             <constraint firstItem="VPT-NG-8Lz" firstAttribute="top" secondItem="5D5-oo-7yh" secondAttribute="bottom" id="4DQ-wo-av8"/>
                             <constraint firstItem="sjA-i9-mNt" firstAttribute="trailing" secondItem="Wx9-JD-MJu" secondAttribute="trailingMargin" id="853-lu-t9V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sYI-XB-0P1" secondAttribute="trailing" constant="-20" id="ADU-h8-VKE"/>
                             <constraint firstItem="ISZ-FL-L4d" firstAttribute="top" secondItem="VPT-NG-8Lz" secondAttribute="bottom" constant="186" id="BRn-Xa-uh9"/>
                             <constraint firstItem="e3L-n5-Bi9" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="Bu1-KR-6EB"/>
                             <constraint firstItem="Wsm-r6-Pws" firstAttribute="trailing" secondItem="Wx9-JD-MJu" secondAttribute="trailingMargin" id="Er0-K7-nyG"/>
@@ -1786,13 +1843,17 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                             <constraint firstItem="VPT-NG-8Lz" firstAttribute="leading" secondItem="Wx9-JD-MJu" secondAttribute="leadingMargin" constant="-20" id="L4R-kI-2Ye"/>
                             <constraint firstItem="oBz-EC-fav" firstAttribute="top" secondItem="ez0-fm-4XJ" secondAttribute="bottom" constant="20" id="MjB-xu-LF1"/>
                             <constraint firstItem="e3L-n5-Bi9" firstAttribute="top" secondItem="VPT-NG-8Lz" secondAttribute="bottom" constant="181" id="QPz-pd-tCm"/>
+                            <constraint firstItem="sYI-XB-0P1" firstAttribute="leading" secondItem="Wx9-JD-MJu" secondAttribute="leadingMargin" constant="-20" id="ZI9-W0-W4M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VPT-NG-8Lz" secondAttribute="trailing" constant="-20" id="cnt-e4-17e"/>
                             <constraint firstItem="Z54-DD-big" firstAttribute="top" secondItem="VPT-NG-8Lz" secondAttribute="bottom" constant="34" id="csS-08-Aep"/>
                             <constraint firstItem="pMt-z4-40w" firstAttribute="top" secondItem="Z54-DD-big" secondAttribute="bottom" constant="58" id="cz9-T2-4L5"/>
                             <constraint firstItem="pMt-z4-40w" firstAttribute="leading" secondItem="Wx9-JD-MJu" secondAttribute="leadingMargin" id="fIj-zr-fhA"/>
+                            <constraint firstItem="sYI-XB-0P1" firstAttribute="top" secondItem="Wx9-JD-MJu" secondAttribute="topMargin" id="fYB-oz-fei"/>
                             <constraint firstItem="cGk-cr-aWl" firstAttribute="trailing" secondItem="Wx9-JD-MJu" secondAttribute="trailingMargin" id="hKT-ba-xbk"/>
                             <constraint firstItem="ISZ-FL-L4d" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="nav-4e-wku"/>
                             <constraint firstItem="oBz-EC-fav" firstAttribute="top" secondItem="Wsm-r6-Pws" secondAttribute="bottom" constant="20" id="pCR-nu-V6q"/>
+                            <constraint firstItem="sYI-XB-0P1" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="rYK-f3-wL7"/>
+                            <constraint firstItem="oBz-EC-fav" firstAttribute="top" secondItem="sYI-XB-0P1" secondAttribute="bottom" id="rvw-Tx-gcQ"/>
                             <constraint firstItem="f80-yo-efO" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="u2R-np-LxT"/>
                             <constraint firstItem="VPT-NG-8Lz" firstAttribute="centerX" secondItem="Wx9-JD-MJu" secondAttribute="centerX" id="yRH-Dp-hvF"/>
                         </constraints>
@@ -1809,6 +1870,7 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
                         <outlet property="questionPic" destination="e3L-n5-Bi9" id="KU7-h5-xbd"/>
                         <outlet property="start" destination="ISZ-FL-L4d" id="o5b-bl-uHS"/>
                         <outlet property="timeLabel" destination="Z54-DD-big" id="3Wg-Xd-7cb"/>
+                        <outlet property="tutorial" destination="sYI-XB-0P1" id="xrF-4h-G7k"/>
                         <segue destination="vPi-aB-oM3" kind="modal" identifier="goToAttentionResults" id="oc4-da-t6Y"/>
                     </connections>
                 </viewController>
@@ -2122,18 +2184,20 @@ O günden sonra tavşan korkusunu az da olsa yenmeyi başarmış.    M</string>
         <image name="playButton.png" width="108" height="108"/>
         <image name="restart.png" width="50" height="50"/>
         <image name="settingButton.png" width="108" height="108"/>
+        <image name="start-tr.png" width="750" height="1334"/>
+        <image name="start1-tr.png" width="750" height="1334"/>
         <image name="stop.png" width="60" height="60"/>
         <image name="tiger1.tiff" width="117" height="60"/>
         <image name="unplay.png" width="20" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="INL-1C-zdz"/>
-        <segue reference="yIb-Hc-vnC"/>
-        <segue reference="dQO-s5-d8d"/>
-        <segue reference="hL3-Jx-JWx"/>
-        <segue reference="Ei9-LC-hn5"/>
-        <segue reference="Zam-W0-Jua"/>
-        <segue reference="DYp-Du-MVt"/>
+        <segue reference="4fc-5d-y0S"/>
         <segue reference="6Tb-Yg-RLf"/>
+        <segue reference="Adk-ZJ-Pvn"/>
+        <segue reference="IJA-jh-Igx"/>
+        <segue reference="Ei9-LC-hn5"/>
+        <segue reference="wzS-tT-ewt"/>
+        <segue reference="wxB-LC-NKT"/>
     </inferredMetricsTieBreakers>
 </document>
