@@ -8,18 +8,21 @@
 
 import UIKit
 
-var records = [String]()
+var records = [String]() // This is a global variable. All conrols can reach this object.
 
 
 
 class RecordsTableViewController: UIViewController, UITableViewDelegate {
+
+// !!== PRE-LOAD == !!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if NSUserDefaults.standardUserDefaults().objectForKey("records") != nil {
             
-            records = NSUserDefaults.standardUserDefaults().objectForKey("records") as! [String]
+            records = NSUserDefaults.standardUserDefaults().objectForKey("records") as! [String] // This is the NS Object for saving the records
+
             
         }
        
@@ -27,19 +30,20 @@ class RecordsTableViewController: UIViewController, UITableViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    @IBOutlet weak var recordsTable: UITableView!
+    
+// !!== UI OUTLET OBJECTS == !!
+    
+    @IBOutlet weak var recordsTable: UITableView! // Showing the records on the record table
 
-    // MARK: - Table view data source
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {  // This is function that returns the Rows
         
         return records.count
         
     }
 
-     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {  // This is function that returns cell
         
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         
@@ -52,7 +56,7 @@ class RecordsTableViewController: UIViewController, UITableViewDelegate {
 
     
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) { // This is for reloading data when changes makes on the table view
         
         recordsTable.reloadData()
         
